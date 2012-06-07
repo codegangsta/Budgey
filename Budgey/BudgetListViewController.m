@@ -5,11 +5,11 @@
 //
 
 
-#import "BudgetCategoryViewController.h"
+#import "BudgetListViewController.h"
 #import "BGCategoryStore.h"
 
 
-@implementation BudgetCategoryViewController
+@implementation BudgetListViewController
 
 - (id)init
 {

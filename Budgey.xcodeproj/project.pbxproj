@@ -23,7 +23,7 @@
 		265E06C03432322C33230F87 /* TestListViewController.m in Sources */ = {isa = PBXBuildFile; };
 		265E06C03432322C33230F90 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F8F /* MainViewController.m */; };
 		265E06C03432322C33230F92 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F91 /* MainViewController.xib */; };
-		265E06C03432322C33230F94 /* BudgetCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F93 /* BudgetCategoryViewController.m */; };
+		265E06C03432322C33230F94 /* BudgetListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F93 /* BudgetListViewController.m */; };
 		265E06C03432322C33230F97 /* BGCategoryStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F96 /* BGCategoryStore.m */; };
 /* End PBXBuildFile section */
 
@@ -59,8 +59,8 @@
 		265E06C03432322C33230F8E /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		265E06C03432322C33230F8F /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		265E06C03432322C33230F91 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		265E06C03432322C33230F93 /* BudgetCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BudgetCategoryViewController.m; sourceTree = "<group>"; };
-		265E06C03432322C33230F95 /* BudgetCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BudgetCategoryViewController.h; sourceTree = "<group>"; };
+		265E06C03432322C33230F93 /* BudgetListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BudgetListViewController.m; sourceTree = "<group>"; };
+		265E06C03432322C33230F95 /* BudgetListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BudgetListViewController.h; sourceTree = "<group>"; };
 		265E06C03432322C33230F96 /* BGCategoryStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGCategoryStore.m; sourceTree = "<group>"; };
 		265E06C03432322C33230F98 /* BGCategoryStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGCategoryStore.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,8 +124,8 @@
 			children = (
 				265E06C03432322C33230F98 /* BGCategoryStore.h */,
 				265E06C03432322C33230F96 /* BGCategoryStore.m */,
-				265E06C03432322C33230F95 /* BudgetCategoryViewController.h */,
-				265E06C03432322C33230F93 /* BudgetCategoryViewController.m */,
+				265E06C03432322C33230F95 /* BudgetListViewController.h */,
+				265E06C03432322C33230F93 /* BudgetListViewController.m */,
 				265E06C03432322C33230F91 /* MainViewController.xib */,
 				265E06C03432322C33230F8F /* MainViewController.m */,
 				265E06C03432322C33230F8E /* MainViewController.h */,
@@ -285,7 +285,7 @@
 				265E06C03432322C33230F66 /* AppDelegate.m in Sources */,
 				265E06C03432322C33230F87 /* TestListViewController.m in Sources */,
 				265E06C03432322C33230F90 /* MainViewController.m in Sources */,
-				265E06C03432322C33230F94 /* BudgetCategoryViewController.m in Sources */,
+				265E06C03432322C33230F94 /* BudgetListViewController.m in Sources */,
 				265E06C03432322C33230F97 /* BGCategoryStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
