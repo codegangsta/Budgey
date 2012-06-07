@@ -32,6 +32,13 @@
     return [self init];
 }
 
+- (void)viewDidLoad
+{
+    // set a clear color for the background since we
+    // want a consistent background throughout the app
+    self.tableView.backgroundColor = [UIColor clearColor];
+}
+
 //---------------------------------------------------
 //  Data Source Methods
 //---------------------------------------------------
