@@ -31,6 +31,7 @@
 
     if (self) {
         allCategories = [[NSMutableArray alloc] init];
+        sections = [NSMutableArray arrayWithObjects:@"Section 1",@"Section 2",nil];
     }
 
     return self;
@@ -41,12 +42,35 @@
     return allCategories;
 }
 
-- (NSString *)createCategory
+- (NSDictionary *)createCategory
 {
-    NSString *cat = [NSString stringWithFormat:@"Category: %i", [allCategories count] + 1];
+    NSDictionary *cat = [[NSDictionary alloc] initWithObjectsAndKeys:
+            [NSString stringWithFormat:@"Category: %i", [allCategories count] + 1], @"name",
+            [sections objectAtIndex:[allCategories count] % [sections count]], @"section",
+            nil];
+
+
     [allCategories addObject:cat];
 
     return cat;
+}
+
+- (NSArray *)sections
+{
+    return sections;
+}
+
+- (NSArray *)categoriesForSection:(NSString *)section
+{
+    NSMutableArray *result = [[NSMutableArray alloc] init];
+
+    for (int i = 0; i < [allCategories count]; i++) {
+        NSDictionary *category = [allCategories objectAtIndex:i];
+        if ([category objectForKey:@"section"] == section)
+            [result addObject:category];
+    }
+
+    return result;
 }
 
 

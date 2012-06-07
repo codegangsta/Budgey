@@ -17,7 +17,7 @@
     self = [super initWithStyle:UITableViewStyleGrouped];
     if (self) {
         // create our categories for our datasource
-        for (int j = 0; j < 3; j++) {
+        for (int j = 0; j < 7; j++) {
             [[BGCategoryStore sharedStore] createCategory];
         }
     }
@@ -42,22 +42,35 @@
 //---------------------------------------------------
 //  Data Source Methods
 //---------------------------------------------------
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return [[[BGCategoryStore sharedStore] allCategories] count];
-}
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // create an instance of UITableViewCell with default appearance
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"UITableViewCell"];
 
     // get the category and set the text in the cell
-    NSString *category = [[[BGCategoryStore sharedStore] allCategories] objectAtIndex:[indexPath row]];
+    NSString *currentSection = [[[BGCategoryStore sharedStore] sections] objectAtIndex:[indexPath section]];
+    NSDictionary *category = [[[BGCategoryStore sharedStore] categoriesForSection:currentSection] objectAtIndex:[indexPath row]];
 
-    [[cell textLabel] setText:category];
+    [[cell textLabel] setText:[category objectForKey:@"name"]];
 
     return cell;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return [[[BGCategoryStore sharedStore] sections] count];
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    NSArray *sections = [[BGCategoryStore sharedStore] sections];
+    return [sections objectAtIndex:section];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    NSString *currentSection = [[[BGCategoryStore sharedStore] sections] objectAtIndex:section];
+    return [[[BGCategoryStore sharedStore] categoriesForSection:currentSection] count];
 }
 
 @end
