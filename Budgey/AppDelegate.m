@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "BudgetCategoryViewController.h"
 
 @implementation AppDelegate
 
@@ -19,6 +20,9 @@
 
     // set the background image
     self.window.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"background.jpg"]];
+
+    [self.window setRootViewController:[[BudgetCategoryViewController alloc] init]];
+
     [self.window makeKeyAndVisible];
 
     return YES;

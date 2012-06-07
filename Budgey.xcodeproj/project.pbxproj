@@ -20,6 +20,11 @@
 		265E06C03432322C33230F7E /* BudgeyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F7D /* BudgeyTests.m */; };
 		265E06C03432322C33230F83 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F82 /* background.jpg */; };
 		265E06C03432322C33230F85 /* background@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F84 /* background@2x.jpg */; };
+		265E06C03432322C33230F87 /* TestListViewController.m in Sources */ = {isa = PBXBuildFile; };
+		265E06C03432322C33230F90 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F8F /* MainViewController.m */; };
+		265E06C03432322C33230F92 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F91 /* MainViewController.xib */; };
+		265E06C03432322C33230F94 /* BudgetCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F93 /* BudgetCategoryViewController.m */; };
+		265E06C03432322C33230F97 /* BGCategoryStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F96 /* BGCategoryStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,13 @@
 		265E06C03432322C33230F7D /* BudgeyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BudgeyTests.m; sourceTree = "<group>"; };
 		265E06C03432322C33230F82 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 		265E06C03432322C33230F84 /* background@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "background@2x.jpg"; sourceTree = "<group>"; };
+		265E06C03432322C33230F8E /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		265E06C03432322C33230F8F /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		265E06C03432322C33230F91 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		265E06C03432322C33230F93 /* BudgetCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BudgetCategoryViewController.m; sourceTree = "<group>"; };
+		265E06C03432322C33230F95 /* BudgetCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BudgetCategoryViewController.h; sourceTree = "<group>"; };
+		265E06C03432322C33230F96 /* BGCategoryStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGCategoryStore.m; sourceTree = "<group>"; };
+		265E06C03432322C33230F98 /* BGCategoryStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGCategoryStore.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +122,13 @@
 		265E06C03432322C33230F5B /* Budgey */ = {
 			isa = PBXGroup;
 			children = (
+				265E06C03432322C33230F98 /* BGCategoryStore.h */,
+				265E06C03432322C33230F96 /* BGCategoryStore.m */,
+				265E06C03432322C33230F95 /* BudgetCategoryViewController.h */,
+				265E06C03432322C33230F93 /* BudgetCategoryViewController.m */,
+				265E06C03432322C33230F91 /* MainViewController.xib */,
+				265E06C03432322C33230F8F /* MainViewController.m */,
+				265E06C03432322C33230F8E /* MainViewController.h */,
 				265E06C03432322C33230F65 /* AppDelegate.m */,
 				265E06C03432322C33230F64 /* AppDelegate.h */,
 				265E06C03432322C33230F5C /* Supporting Files */,
@@ -227,6 +246,7 @@
 				265E06C03432322C33230F60 /* InfoPlist.strings in Resources */,
 				265E06C03432322C33230F83 /* background.jpg in Resources */,
 				265E06C03432322C33230F85 /* background@2x.jpg in Resources */,
+				265E06C03432322C33230F92 /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +283,10 @@
 			files = (
 				265E06C03432322C33230F62 /* main.m in Sources */,
 				265E06C03432322C33230F66 /* AppDelegate.m in Sources */,
+				265E06C03432322C33230F87 /* TestListViewController.m in Sources */,
+				265E06C03432322C33230F90 /* MainViewController.m in Sources */,
+				265E06C03432322C33230F94 /* BudgetCategoryViewController.m in Sources */,
+				265E06C03432322C33230F97 /* BGCategoryStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
