@@ -8,6 +8,7 @@
 #import "BudgetListViewController.h"
 #import "BGCategoryStore.h"
 #import "BGColorUtil.h"
+#import "QuartzCore/CALayer.h"
 
 
 @implementation BudgetListViewController
@@ -38,6 +39,12 @@
     // set a clear color for the background since we
     // want a consistent background throughout the app
     self.tableView.backgroundColor = [UIColor clearColor];
+
+    self.tableView.layer.shadowColor = [UIColor blackColor].CGColor;
+    self.tableView.layer.shadowOpacity = 0.5;
+    self.tableView.layer.shadowRadius = 5;
+    self.tableView.layer.shadowOffset = CGSizeMake(3.0f, 3.0f);
+    self.tableView.clipsToBounds = NO;
 }
 
 //---------------------------------------------------
