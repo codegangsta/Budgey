@@ -7,7 +7,7 @@
 //
 
 #import "MainViewController.h"
-#import "BudgetCategoryViewController.h"
+#import "BudgetListViewController.h"
 
 @interface MainViewController ()
 
@@ -35,7 +35,7 @@
     [super viewDidLoad];
 
     // add the budget category table
-    UITableViewController *categoryController = [[BudgetCategoryViewController alloc] init];
+    UITableViewController *categoryController = [[BudgetListViewController alloc] init];
     //[self addChildViewController:categoryController];
 }
 

@@ -9,5 +9,5 @@
 
 //  View controller for a Budget category table that
 //  shows up in the main view in Budgey
-@interface BudgetCategoryViewController : UITableViewController
+@interface BudgetListViewController : UITableViewController
 @end

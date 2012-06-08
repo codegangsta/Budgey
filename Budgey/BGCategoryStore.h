@@ -8,13 +8,20 @@
 #import <Foundation/Foundation.h>
 
 
-@interface BGCategoryStore : NSObject {
+@interface BGCategoryStore : NSObject
+{
     NSMutableArray *allCategories;
+    NSMutableArray *sections;
 }
 
 + (BGCategoryStore *)sharedStore;
 
 - (NSArray *)allCategories;
-- (NSString *)createCategory;
+
+- (NSDictionary *)createCategory;
+
+- (NSArray *)sections;
+
+- (NSArray *)categoriesForSection:(NSString *)section;
 
 @end
