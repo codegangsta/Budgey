@@ -7,6 +7,7 @@
 
 #import "BudgetListViewController.h"
 #import "BGCategoryStore.h"
+#import "BGColorUtil.h"
 
 
 @implementation BudgetListViewController
@@ -53,6 +54,12 @@
 
     [[cell textLabel] setText:[category objectForKey:@"name"]];
 
+    UIView *backgroundView = [[UIView alloc] init];
+    backgroundView.backgroundColor = [BGColorUtil colorWithHexString:@"dfdfdf"];
+
+    [cell setBackgroundView:backgroundView];
+    cell.contentView.alpha = 0;
+
     return cell;
 }
 
@@ -72,5 +79,35 @@
     NSString *currentSection = [[[BGCategoryStore sharedStore] sections] objectAtIndex:section];
     return [[[BGCategoryStore sharedStore] categoriesForSection:currentSection] count];
 }
+
+//---------------------------------------------------
+//  Header and Footer
+//---------------------------------------------------
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    UIImageView *header = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"header.png"]];
+    return header;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    UIImageView *footer = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"footer.png"]];
+    return footer;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 57;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    return 75;
+}
+
+//---------------------------------------------------
+//  UITableViewCell Logic
+//---------------------------------------------------
+
 
 @end
