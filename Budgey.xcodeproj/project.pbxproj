@@ -20,17 +20,18 @@
 		265E06C03432322C33230F7E /* BudgeyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F7D /* BudgeyTests.m */; };
 		265E06C03432322C33230F83 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F82 /* background.jpg */; };
 		265E06C03432322C33230F85 /* background@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F84 /* background@2x.jpg */; };
-		265E06C03432322C33230F87 /* TestListViewController.m in Sources */ = {isa = PBXBuildFile; };
+		265E06C03432322C33230F87 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		265E06C03432322C33230F90 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F8F /* MainViewController.m */; };
 		265E06C03432322C33230F92 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F91 /* MainViewController.xib */; };
 		265E06C03432322C33230F94 /* BudgetListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F93 /* BudgetListViewController.m */; };
 		265E06C03432322C33230F97 /* BGCategoryStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F96 /* BGCategoryStore.m */; };
 		265E06C03432322C33230F9A /* header.png in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F99 /* header.png */; };
 		265E06C03432322C33230F9C /* header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F9B /* header@2x.png */; };
-		265E06C03432322C33230FA0 /* paperTexture@2x.png in Resources */ = {isa = PBXBuildFile; };
+		265E06C03432322C33230FA0 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		265E06C03432322C33230FA2 /* BGColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230FA1 /* BGColorUtil.m */; };
 		265E06C03432322C33230FA5 /* footer.png in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230FA4 /* footer.png */; };
 		265E06C03432322C33230FA7 /* footer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230FA6 /* footer@2x.png */; };
+		7AF397361584501B0023B057 /* BudgetHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397351584501B0023B057 /* BudgetHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		265E06C03432322C33230FA3 /* BGColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGColorUtil.h; sourceTree = "<group>"; };
 		265E06C03432322C33230FA4 /* footer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = footer.png; sourceTree = "<group>"; };
 		265E06C03432322C33230FA6 /* footer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "footer@2x.png"; sourceTree = "<group>"; };
+		7AF397351584501B0023B057 /* BudgetHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BudgetHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 				265E06C03432322C33230F64 /* AppDelegate.h */,
 				265E06C03432322C33230F5C /* Supporting Files */,
 				265E06C03432322C33230F7F /* Assets */,
+				7AF397351584501B0023B057 /* BudgetHeaderView.xib */,
 			);
 			path = Budgey;
 			sourceTree = "<group>";
@@ -267,9 +270,10 @@
 				265E06C03432322C33230F92 /* MainViewController.xib in Resources */,
 				265E06C03432322C33230F9A /* header.png in Resources */,
 				265E06C03432322C33230F9C /* header@2x.png in Resources */,
-				265E06C03432322C33230FA0 /* paperTexture@2x.png in Resources */,
+				265E06C03432322C33230FA0 /* (null) in Resources */,
 				265E06C03432322C33230FA5 /* footer.png in Resources */,
 				265E06C03432322C33230FA7 /* footer@2x.png in Resources */,
+				7AF397361584501B0023B057 /* BudgetHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +310,7 @@
 			files = (
 				265E06C03432322C33230F62 /* main.m in Sources */,
 				265E06C03432322C33230F66 /* AppDelegate.m in Sources */,
-				265E06C03432322C33230F87 /* TestListViewController.m in Sources */,
+				265E06C03432322C33230F87 /* (null) in Sources */,
 				265E06C03432322C33230F90 /* MainViewController.m in Sources */,
 				265E06C03432322C33230F94 /* BudgetListViewController.m in Sources */,
 				265E06C03432322C33230F97 /* BGCategoryStore.m in Sources */,
@@ -472,6 +476,7 @@
 				265E06C03432322C33230F50 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		265E06C03432322C33230F69 /* Build configuration list for PBXNativeTarget "BudgeyTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +485,7 @@
 				265E06C03432322C33230F6B /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
