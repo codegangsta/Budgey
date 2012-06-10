@@ -67,9 +67,7 @@
 
     UIView *backgroundView = [[UIView alloc] init];
     backgroundView.backgroundColor = [BGColorUtil colorWithHexString:@"dfdfdf"];
-
     [cell setBackgroundView:backgroundView];
-    cell.contentView.alpha = 0;
 
     return cell;
 }
