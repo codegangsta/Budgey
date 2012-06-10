@@ -67,9 +67,7 @@
 
     UIView *backgroundView = [[UIView alloc] init];
     backgroundView.backgroundColor = [BGColorUtil colorWithHexString:@"dfdfdf"];
-
     [cell setBackgroundView:backgroundView];
-    cell.contentView.alpha = 0;
 
     return cell;
 }
@@ -103,8 +101,9 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
 {
-    UIImageView *footer = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"footer.png"]];
-    return footer;
+    UINib *nib = [UINib nibWithNibName:@"BudgetFooterView" bundle:nil];
+    [nib instantiateWithOwner:self options:nil];
+    return currentFooterView;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
