@@ -12,6 +12,10 @@
 
 
 @implementation BudgetListViewController
+@synthesize currentFooterView;
+@synthesize currentCell;
+@synthesize currentHeaderView;
+
 
 - (id)init
 {
@@ -92,8 +96,9 @@
 //---------------------------------------------------
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    UIImageView *header = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"header.png"]];
-    return header;
+    UINib *nib = [UINib nibWithNibName:@"BudgetHeaderView" bundle:nil];
+    [nib instantiateWithOwner:self options:nil];
+    return currentHeaderView;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
@@ -115,6 +120,4 @@
 //---------------------------------------------------
 //  UITableViewCell Logic
 //---------------------------------------------------
-
-
 @end
