@@ -31,6 +31,7 @@
 		265E06C03432322C33230FA2 /* BGColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230FA1 /* BGColorUtil.m */; };
 		265E06C03432322C33230FA5 /* footer.png in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230FA4 /* footer.png */; };
 		265E06C03432322C33230FA7 /* footer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230FA6 /* footer@2x.png */; };
+		7AECD39E158458E1002EA79C /* BudgetFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AECD39D158458E1002EA79C /* BudgetFooterView.xib */; };
 		7AF397361584501B0023B057 /* BudgetHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397351584501B0023B057 /* BudgetHeaderView.xib */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,7 @@
 		265E06C03432322C33230FA3 /* BGColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGColorUtil.h; sourceTree = "<group>"; };
 		265E06C03432322C33230FA4 /* footer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = footer.png; sourceTree = "<group>"; };
 		265E06C03432322C33230FA6 /* footer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "footer@2x.png"; sourceTree = "<group>"; };
+		7AECD39D158458E1002EA79C /* BudgetFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BudgetFooterView.xib; sourceTree = "<group>"; };
 		7AF397351584501B0023B057 /* BudgetHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BudgetHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,6 +152,7 @@
 				265E06C03432322C33230F5C /* Supporting Files */,
 				265E06C03432322C33230F7F /* Assets */,
 				7AF397351584501B0023B057 /* BudgetHeaderView.xib */,
+				7AECD39D158458E1002EA79C /* BudgetFooterView.xib */,
 			);
 			path = Budgey;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				265E06C03432322C33230FA5 /* footer.png in Resources */,
 				265E06C03432322C33230FA7 /* footer@2x.png in Resources */,
 				7AF397361584501B0023B057 /* BudgetHeaderView.xib in Resources */,
+				7AECD39E158458E1002EA79C /* BudgetFooterView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
