@@ -56,20 +56,25 @@
 //---------------------------------------------------
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // create an instance of UITableViewCell with default appearance
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"UITableViewCell"];
-
     // get the category and set the text in the cell
     NSString *currentSection = [[[BGCategoryStore sharedStore] sections] objectAtIndex:[indexPath section]];
     NSDictionary *category = [[[BGCategoryStore sharedStore] categoriesForSection:currentSection] objectAtIndex:[indexPath row]];
 
-    [[cell textLabel] setText:[category objectForKey:@"name"]];
+    UINib *nib = [UINib nibWithNibName:@"BudgetTableCell" bundle:nil];
+    [nib instantiateWithOwner:self options:nil];
 
-    UIView *backgroundView = [[UIView alloc] init];
-    backgroundView.backgroundColor = [BGColorUtil colorWithHexString:@"dfdfdf"];
-    [cell setBackgroundView:backgroundView];
+    UIView *backView = [[UIView alloc] init];
+    backView.backgroundColor = [BGColorUtil colorWithHexString:@"dfdfdf"];
+    currentCell.backgroundView = backView;
 
-    return cell;
+    //[[cell textLabel] setText:[category objectForKey:@"name"]];
+
+    return currentCell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 39;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
