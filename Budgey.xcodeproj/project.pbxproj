@@ -17,7 +17,7 @@
 		265E06C03432322C33230F72 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F55 /* UIKit.framework */; };
 		265E06C03432322C33230F73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F57 /* Foundation.framework */; };
 		265E06C03432322C33230F7B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F7A /* InfoPlist.strings */; };
-		265E06C03432322C33230F7E /* BudgeyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F7D /* BudgeyTests.m */; };
+		265E06C03432322C33230F7E /* BudgeyTests.m in Sources */ = {isa = PBXBuildFile; };
 		265E06C03432322C33230F83 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F82 /* background.jpg */; };
 		265E06C03432322C33230F85 /* background@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F84 /* background@2x.jpg */; };
 		265E06C03432322C33230F87 /* (null) in Sources */ = {isa = PBXBuildFile; };
@@ -35,6 +35,8 @@
 		7AECD39E158458E1002EA79C /* BudgetFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AECD39D158458E1002EA79C /* BudgetFooterView.xib */; };
 		7AF397361584501B0023B057 /* BudgetHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397351584501B0023B057 /* BudgetHeaderView.xib */; };
 		7AF397361584501B0023B059 /* rounded_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B058 /* rounded_button.png */; };
+		7AF397361584501B0023B05C /* LSInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B05B /* LSInjector.m */; };
+		7AF397361584501B0023B05F /* TestLSInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B05E /* TestLSInjector.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +64,6 @@
 		265E06C03432322C33230F70 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		265E06C03432322C33230F78 /* BudgeyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "BudgeyTests-Info.plist"; sourceTree = "<group>"; };
 		265E06C03432322C33230F79 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		265E06C03432322C33230F7C /* BudgeyTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BudgeyTests.h; sourceTree = "<group>"; };
-		265E06C03432322C33230F7D /* BudgeyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BudgeyTests.m; sourceTree = "<group>"; };
 		265E06C03432322C33230F82 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 		265E06C03432322C33230F84 /* background@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "background@2x.jpg"; sourceTree = "<group>"; };
 		265E06C03432322C33230F8E /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -83,6 +83,9 @@
 		7AECD39D158458E1002EA79C /* BudgetFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BudgetFooterView.xib; sourceTree = "<group>"; };
 		7AF397351584501B0023B057 /* BudgetHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BudgetHeaderView.xib; sourceTree = "<group>"; };
 		7AF397361584501B0023B058 /* rounded_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rounded_button.png; sourceTree = "<group>"; };
+		7AF397361584501B0023B05B /* LSInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSInjector.m; sourceTree = "<group>"; };
+		7AF397361584501B0023B05D /* LSInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSInjector.h; sourceTree = "<group>"; };
+		7AF397361584501B0023B05E /* TestLSInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLSInjector.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +161,7 @@
 				7AF397351584501B0023B057 /* BudgetHeaderView.xib */,
 				7AECD39D158458E1002EA79C /* BudgetFooterView.xib */,
 				7AD41DDF1584657E003E7926 /* BudgetTableCell.xib */,
+				7AF397361584501B0023B05A /* Injector */,
 			);
 			path = Budgey;
 			sourceTree = "<group>";
@@ -176,8 +180,7 @@
 		265E06C03432322C33230F76 /* BudgeyTests */ = {
 			isa = PBXGroup;
 			children = (
-				265E06C03432322C33230F7D /* BudgeyTests.m */,
-				265E06C03432322C33230F7C /* BudgeyTests.h */,
+				7AF397361584501B0023B05E /* TestLSInjector.m */,
 				265E06C03432322C33230F77 /* Supporting Files */,
 			);
 			path = BudgeyTests;
@@ -204,6 +207,15 @@
 				265E06C03432322C33230F82 /* background.jpg */,
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		7AF397361584501B0023B05A /* Injector */ = {
+			isa = PBXGroup;
+			children = (
+				7AF397361584501B0023B05D /* LSInjector.h */,
+				7AF397361584501B0023B05B /* LSInjector.m */,
+			);
+			path = Injector;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,6 +339,7 @@
 				265E06C03432322C33230F94 /* BudgetListViewController.m in Sources */,
 				265E06C03432322C33230F97 /* BGCategoryStore.m in Sources */,
 				265E06C03432322C33230FA2 /* BGColorUtil.m in Sources */,
+				7AF397361584501B0023B05C /* LSInjector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				265E06C03432322C33230F7E /* BudgeyTests.m in Sources */,
+				7AF397361584501B0023B05F /* TestLSInjector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
