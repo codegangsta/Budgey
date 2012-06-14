@@ -37,6 +37,9 @@
 		7AF397361584501B0023B059 /* rounded_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B058 /* rounded_button.png */; };
 		7AF397361584501B0023B05C /* LSInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B05B /* LSInjector.m */; };
 		7AF397361584501B0023B05F /* TestLSInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B05E /* TestLSInjector.m */; };
+		7AF397361584501B0023B061 /* BGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B060 /* BGTabBarController.m */; };
+		7AF397361584501B0023B064 /* capture-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B063 /* capture-button.png */; };
+		7AF397361584501B0023B066 /* capture-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B065 /* capture-button@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +89,10 @@
 		7AF397361584501B0023B05B /* LSInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSInjector.m; sourceTree = "<group>"; };
 		7AF397361584501B0023B05D /* LSInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSInjector.h; sourceTree = "<group>"; };
 		7AF397361584501B0023B05E /* TestLSInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLSInjector.m; sourceTree = "<group>"; };
+		7AF397361584501B0023B060 /* BGTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGTabBarController.m; sourceTree = "<group>"; };
+		7AF397361584501B0023B062 /* BGTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGTabBarController.h; sourceTree = "<group>"; };
+		7AF397361584501B0023B063 /* capture-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "capture-button.png"; sourceTree = "<group>"; };
+		7AF397361584501B0023B065 /* capture-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "capture-button@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +152,8 @@
 		265E06C03432322C33230F5B /* Budgey */ = {
 			isa = PBXGroup;
 			children = (
+				7AF397361584501B0023B062 /* BGTabBarController.h */,
+				7AF397361584501B0023B060 /* BGTabBarController.m */,
 				265E06C03432322C33230FA3 /* BGColorUtil.h */,
 				265E06C03432322C33230FA1 /* BGColorUtil.m */,
 				265E06C03432322C33230F98 /* BGCategoryStore.h */,
@@ -198,6 +207,8 @@
 		265E06C03432322C33230F7F /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				7AF397361584501B0023B065 /* capture-button@2x.png */,
+				7AF397361584501B0023B063 /* capture-button.png */,
 				7AF397361584501B0023B058 /* rounded_button.png */,
 				265E06C03432322C33230FA6 /* footer@2x.png */,
 				265E06C03432322C33230FA4 /* footer.png */,
@@ -298,6 +309,8 @@
 				7AECD39E158458E1002EA79C /* BudgetFooterView.xib in Resources */,
 				7AF397361584501B0023B059 /* rounded_button.png in Resources */,
 				7AD41DE01584657E003E7926 /* BudgetTableCell.xib in Resources */,
+				7AF397361584501B0023B064 /* capture-button.png in Resources */,
+				7AF397361584501B0023B066 /* capture-button@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +353,7 @@
 				265E06C03432322C33230F97 /* BGCategoryStore.m in Sources */,
 				265E06C03432322C33230FA2 /* BGColorUtil.m in Sources */,
 				7AF397361584501B0023B05C /* LSInjector.m in Sources */,
+				7AF397361584501B0023B061 /* BGTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
