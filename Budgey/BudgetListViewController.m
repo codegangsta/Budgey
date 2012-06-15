@@ -40,6 +40,11 @@
 
 - (void)viewDidLoad
 {
+    [self.navigationItem setTitle:@"budgey"];
+
+    UIBarButtonItem *calendarButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"83-calendar.png"] style:UIBarButtonItemStyleBordered target:nil action:nil];
+    [self.navigationItem setLeftBarButtonItem:calendarButton];
+
     // set a clear color for the background since we
     // want a consistent background throughout the app
     self.tableView.backgroundColor = [UIColor clearColor];

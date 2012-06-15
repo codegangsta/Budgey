@@ -7,6 +7,7 @@
 
 #import "BGTabBarController.h"
 #import "BudgetListViewController.h"
+#import "BudgetViewController.h"
 
 
 @implementation BGTabBarController
@@ -17,9 +18,9 @@
     self = [super init];
 
     // create the budget list
-    BudgetListViewController *budgetListViewController = [[BudgetListViewController alloc] init];
-    [budgetListViewController setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"Budget" image:[UIImage imageNamed:@"162-receipt.png"] tag:0]];
-    [self addChildViewController:budgetListViewController];
+    BudgetViewController *budgetViewController = [[BudgetViewController alloc] initWithRootViewController:[[BudgetListViewController alloc] init]];
+    [budgetViewController setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"Budget" image:[UIImage imageNamed:@"162-receipt.png"] tag:0]];
+    [self addChildViewController:budgetViewController];
 
     // create the savings list
     [self addChildViewController:[self viewControllerWithTabTitle:@"Savings" image:[UIImage imageNamed:@"119-piggy-bank.png"]]];

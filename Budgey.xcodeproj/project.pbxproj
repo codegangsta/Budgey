@@ -17,7 +17,7 @@
 		265E06C03432322C33230F72 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F55 /* UIKit.framework */; };
 		265E06C03432322C33230F73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F57 /* Foundation.framework */; };
 		265E06C03432322C33230F7B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F7A /* InfoPlist.strings */; };
-		265E06C03432322C33230F7E /* BudgeyTests.m in Sources */ = {isa = PBXBuildFile; };
+		265E06C03432322C33230F7E /* (null) in Sources */ = {isa = PBXBuildFile; };
 		265E06C03432322C33230F83 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F82 /* background.jpg */; };
 		265E06C03432322C33230F85 /* background@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F84 /* background@2x.jpg */; };
 		265E06C03432322C33230F87 /* (null) in Sources */ = {isa = PBXBuildFile; };
@@ -42,11 +42,19 @@
 		7AF397361584501B0023B066 /* capture-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B065 /* capture-button@2x.png */; };
 		7AF397361584501B0023B068 /* 162-receipt.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B067 /* 162-receipt.png */; };
 		7AF397361584501B0023B06A /* 162-receipt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B069 /* 162-receipt@2x.png */; };
-		7AF397361584501B0023B06E /* 192-credit-card@2x.png in Resources */ = {isa = PBXBuildFile; };
+		7AF397361584501B0023B06E /* (null) in Resources */ = {isa = PBXBuildFile; };
 		7AF397361584501B0023B070 /* 119-piggy-bank.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B06F /* 119-piggy-bank.png */; };
 		7AF397361584501B0023B072 /* 119-piggy-bank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B071 /* 119-piggy-bank@2x.png */; };
 		7AF397361584501B0023B074 /* 172-pricetag.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B073 /* 172-pricetag.png */; };
 		7AF397361584501B0023B076 /* 172-pricetag@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B075 /* 172-pricetag@2x.png */; };
+		7AF397361584501B0023B078 /* BudgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B077 /* BudgetViewController.m */; };
+		7AF397361584501B0023B07B /* Museo900-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B07A /* Museo900-Regular.otf */; };
+		7AF397361584501B0023B07D /* tab-bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B07C /* tab-bar.png */; };
+		7AF397361584501B0023B07F /* tab-bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B07E /* tab-bar@2x.png */; };
+		7AF397361584501B0023B081 /* navigation-bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B080 /* navigation-bar.png */; };
+		7AF397361584501B0023B083 /* navigation-bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B082 /* navigation-bar@2x.png */; };
+		7AF397361584501B0023B085 /* 83-calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B084 /* 83-calendar.png */; };
+		7AF397361584501B0023B087 /* 83-calendar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B086 /* 83-calendar@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +114,15 @@
 		7AF397361584501B0023B071 /* 119-piggy-bank@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "119-piggy-bank@2x.png"; sourceTree = "<group>"; };
 		7AF397361584501B0023B073 /* 172-pricetag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "172-pricetag.png"; sourceTree = "<group>"; };
 		7AF397361584501B0023B075 /* 172-pricetag@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "172-pricetag@2x.png"; sourceTree = "<group>"; };
+		7AF397361584501B0023B077 /* BudgetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BudgetViewController.m; sourceTree = "<group>"; };
+		7AF397361584501B0023B079 /* BudgetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BudgetViewController.h; sourceTree = "<group>"; };
+		7AF397361584501B0023B07A /* Museo900-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file.otf; path = "Museo900-Regular.otf"; sourceTree = "<group>"; };
+		7AF397361584501B0023B07C /* tab-bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab-bar.png"; sourceTree = "<group>"; };
+		7AF397361584501B0023B07E /* tab-bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab-bar@2x.png"; sourceTree = "<group>"; };
+		7AF397361584501B0023B080 /* navigation-bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation-bar.png"; sourceTree = "<group>"; };
+		7AF397361584501B0023B082 /* navigation-bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation-bar@2x.png"; sourceTree = "<group>"; };
+		7AF397361584501B0023B084 /* 83-calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "83-calendar.png"; sourceTree = "<group>"; };
+		7AF397361584501B0023B086 /* 83-calendar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "83-calendar@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +182,8 @@
 		265E06C03432322C33230F5B /* Budgey */ = {
 			isa = PBXGroup;
 			children = (
+				7AF397361584501B0023B079 /* BudgetViewController.h */,
+				7AF397361584501B0023B077 /* BudgetViewController.m */,
 				7AF397361584501B0023B062 /* BGTabBarController.h */,
 				7AF397361584501B0023B060 /* BGTabBarController.m */,
 				265E06C03432322C33230FA3 /* BGColorUtil.h */,
@@ -220,6 +239,13 @@
 		265E06C03432322C33230F7F /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				7AF397361584501B0023B086 /* 83-calendar@2x.png */,
+				7AF397361584501B0023B084 /* 83-calendar.png */,
+				7AF397361584501B0023B082 /* navigation-bar@2x.png */,
+				7AF397361584501B0023B080 /* navigation-bar.png */,
+				7AF397361584501B0023B07E /* tab-bar@2x.png */,
+				7AF397361584501B0023B07C /* tab-bar.png */,
+				7AF397361584501B0023B07A /* Museo900-Regular.otf */,
 				7AF397361584501B0023B075 /* 172-pricetag@2x.png */,
 				7AF397361584501B0023B073 /* 172-pricetag.png */,
 				7AF397361584501B0023B071 /* 119-piggy-bank@2x.png */,
@@ -332,11 +358,18 @@
 				7AF397361584501B0023B066 /* capture-button@2x.png in Resources */,
 				7AF397361584501B0023B068 /* 162-receipt.png in Resources */,
 				7AF397361584501B0023B06A /* 162-receipt@2x.png in Resources */,
-				7AF397361584501B0023B06E /* 192-credit-card@2x.png in Resources */,
+				7AF397361584501B0023B06E /* (null) in Resources */,
 				7AF397361584501B0023B070 /* 119-piggy-bank.png in Resources */,
 				7AF397361584501B0023B072 /* 119-piggy-bank@2x.png in Resources */,
 				7AF397361584501B0023B074 /* 172-pricetag.png in Resources */,
 				7AF397361584501B0023B076 /* 172-pricetag@2x.png in Resources */,
+				7AF397361584501B0023B07B /* Museo900-Regular.otf in Resources */,
+				7AF397361584501B0023B07D /* tab-bar.png in Resources */,
+				7AF397361584501B0023B07F /* tab-bar@2x.png in Resources */,
+				7AF397361584501B0023B081 /* navigation-bar.png in Resources */,
+				7AF397361584501B0023B083 /* navigation-bar@2x.png in Resources */,
+				7AF397361584501B0023B085 /* 83-calendar.png in Resources */,
+				7AF397361584501B0023B087 /* 83-calendar@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +413,7 @@
 				265E06C03432322C33230FA2 /* BGColorUtil.m in Sources */,
 				7AF397361584501B0023B05C /* LSInjector.m in Sources */,
 				7AF397361584501B0023B061 /* BGTabBarController.m in Sources */,
+				7AF397361584501B0023B078 /* BudgetViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,7 +421,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				265E06C03432322C33230F7E /* BudgeyTests.m in Sources */,
+				265E06C03432322C33230F7E /* (null) in Sources */,
 				7AF397361584501B0023B05F /* TestLSInjector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,4 +12,7 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+// put any UIAppearance changes here
+-(void)skinControls;
+
 @end

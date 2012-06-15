@@ -14,9 +14,10 @@
 
 @synthesize window = _window;
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [self skinControls];
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
     // set the background image
@@ -61,6 +62,12 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 
+}
+
+- (void)skinControls
+{
+    [[UITabBar appearance] setBackgroundImage:[UIImage imageNamed:@"tab-bar.png"]];
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navigation-bar.png"] forBarMetrics:UIBarMetricsDefault];
 }
 
 @end
