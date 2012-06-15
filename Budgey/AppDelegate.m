@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "BudgetListViewController.h"
+#import "BGTabBarController.h"
 
 @implementation AppDelegate
 
@@ -21,7 +22,9 @@
     // set the background image
     self.window.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"background.jpg"]];
 
-    [self.window setRootViewController:[[BudgetListViewController alloc] init]];
+    // root view controller
+    BGTabBarController *tabBarController = [[BGTabBarController alloc] init];
+    [self.window setRootViewController:tabBarController];
 
     [self.window makeKeyAndVisible];
 
