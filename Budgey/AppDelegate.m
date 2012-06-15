@@ -26,25 +26,6 @@
     BGTabBarController *tabBarController = [[BGTabBarController alloc] init];
     [self.window setRootViewController:tabBarController];
 
-    // create the budget list
-    BudgetListViewController *budgetListViewController = [[BudgetListViewController alloc] init];
-    [budgetListViewController setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"Budget" image:nil tag:0]];
-    [tabBarController addChildViewController:budgetListViewController];
-
-    // create the savings list
-    [tabBarController addChildViewController:[tabBarController viewControllerWithTabTitle:@"Savings" image:nil]];
-
-    // center button
-    [tabBarController addChildViewController:[tabBarController viewControllerWithTabTitle:@"" image:nil]];
-
-    // create the debts list
-    [tabBarController addChildViewController:[tabBarController viewControllerWithTabTitle:@"Debt" image:nil]];
-
-    // create the settings
-    [tabBarController addChildViewController:[tabBarController viewControllerWithTabTitle:@"Settings" image:nil]];
-
-    [tabBarController addCenterButtonWithImage:[UIImage imageNamed:@"capture-button.png"] highlightImage:nil];
-
     [self.window makeKeyAndVisible];
 
     return YES;

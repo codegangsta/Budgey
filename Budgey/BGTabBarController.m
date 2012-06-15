@@ -6,9 +6,42 @@
 
 
 #import "BGTabBarController.h"
+#import "BudgetListViewController.h"
 
 
 @implementation BGTabBarController
+
+
+- (id)init
+{
+    self = [super init];
+
+    // create the budget list
+    BudgetListViewController *budgetListViewController = [[BudgetListViewController alloc] init];
+    [budgetListViewController setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"Budget" image:[UIImage imageNamed:@"162-receipt.png"] tag:0]];
+    [self addChildViewController:budgetListViewController];
+
+    // create the savings list
+    [self addChildViewController:[self viewControllerWithTabTitle:@"Savings" image:[UIImage imageNamed:@"119-piggy-bank.png"]]];
+
+    // center button
+    UIViewController *quickAdd = [self viewControllerWithTabTitle:@"" image:nil];
+    [quickAdd.tabBarItem setEnabled:NO];
+    [self addChildViewController:quickAdd];
+
+    // create the debts list
+    [self addChildViewController:[self viewControllerWithTabTitle:@"Debt" image:[UIImage imageNamed:@"172-pricetag.png"]]];
+
+    // create the settings
+    UIViewController *moreController = [[UIViewController alloc] init];
+    [moreController setTabBarItem:[[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemMore tag:0]];
+    [self addChildViewController:moreController];
+
+
+    [self addCenterButtonWithImage:[UIImage imageNamed:@"capture-button.png"] highlightImage:nil];
+
+    return self;
+}
 
 // Create a custom UIButton and add it to the center of our tab bar
 -(void) addCenterButtonWithImage:(UIImage*)buttonImage highlightImage:(UIImage*)highlightImage
@@ -30,11 +63,6 @@
     }
 
     [self.view addSubview:button];
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return YES;
 }
 
 // Create a view controller and setup it's tab bar item with a title and image
