@@ -42,7 +42,7 @@
 {
     [self.navigationItem setTitle:@"budgey"];
 
-    UIBarButtonItem *calendarButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"83-calendar.png"] style:UIBarButtonItemStyleBordered target:nil action:nil];
+    UIBarButtonItem *calendarButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"259-list.png"] style:UIBarButtonItemStyleBordered target:nil action:nil];
     [self.navigationItem setLeftBarButtonItem:calendarButton];
 
     // set a clear color for the background since we

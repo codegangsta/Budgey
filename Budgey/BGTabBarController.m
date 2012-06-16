@@ -26,8 +26,7 @@
     [self addChildViewController:[self viewControllerWithTabTitle:@"Savings" image:[UIImage imageNamed:@"119-piggy-bank.png"]]];
 
     // center button
-    UIViewController *quickAdd = [self viewControllerWithTabTitle:@"" image:nil];
-    [quickAdd.tabBarItem setEnabled:NO];
+    UIViewController *quickAdd = [self viewControllerWithTabTitle:@"Add" image:nil];
     [self addChildViewController:quickAdd];
 
     // create the debts list
@@ -39,7 +38,7 @@
     [self addChildViewController:moreController];
 
 
-    [self addCenterButtonWithImage:[UIImage imageNamed:@"capture-button.png"] highlightImage:nil];
+    [self addCenterButtonWithImage:[UIImage imageNamed:@"cameraTabBarItem.png"] highlightImage:nil];
 
     return self;
 }

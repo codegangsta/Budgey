@@ -55,6 +55,10 @@
 		7AF397361584501B0023B083 /* navigation-bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B082 /* navigation-bar@2x.png */; };
 		7AF397361584501B0023B085 /* 83-calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B084 /* 83-calendar.png */; };
 		7AF397361584501B0023B087 /* 83-calendar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B086 /* 83-calendar@2x.png */; };
+		7AF397361584501B0023B089 /* cameraTabBarItem.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B088 /* cameraTabBarItem.png */; };
+		7AF397361584501B0023B08B /* cameraTabBarItem@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B08A /* cameraTabBarItem@2x.png */; };
+		7AF397361584501B0023B08D /* 259-list.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B08C /* 259-list.png */; };
+		7AF397361584501B0023B08F /* 259-list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B08E /* 259-list@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +127,10 @@
 		7AF397361584501B0023B082 /* navigation-bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation-bar@2x.png"; sourceTree = "<group>"; };
 		7AF397361584501B0023B084 /* 83-calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "83-calendar.png"; sourceTree = "<group>"; };
 		7AF397361584501B0023B086 /* 83-calendar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "83-calendar@2x.png"; sourceTree = "<group>"; };
+		7AF397361584501B0023B088 /* cameraTabBarItem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraTabBarItem.png; sourceTree = "<group>"; };
+		7AF397361584501B0023B08A /* cameraTabBarItem@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraTabBarItem@2x.png"; sourceTree = "<group>"; };
+		7AF397361584501B0023B08C /* 259-list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "259-list.png"; sourceTree = "<group>"; };
+		7AF397361584501B0023B08E /* 259-list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "259-list@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +247,10 @@
 		265E06C03432322C33230F7F /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				7AF397361584501B0023B08E /* 259-list@2x.png */,
+				7AF397361584501B0023B08C /* 259-list.png */,
+				7AF397361584501B0023B08A /* cameraTabBarItem@2x.png */,
+				7AF397361584501B0023B088 /* cameraTabBarItem.png */,
 				7AF397361584501B0023B086 /* 83-calendar@2x.png */,
 				7AF397361584501B0023B084 /* 83-calendar.png */,
 				7AF397361584501B0023B082 /* navigation-bar@2x.png */,
@@ -370,6 +382,10 @@
 				7AF397361584501B0023B083 /* navigation-bar@2x.png in Resources */,
 				7AF397361584501B0023B085 /* 83-calendar.png in Resources */,
 				7AF397361584501B0023B087 /* 83-calendar@2x.png in Resources */,
+				7AF397361584501B0023B089 /* cameraTabBarItem.png in Resources */,
+				7AF397361584501B0023B08B /* cameraTabBarItem@2x.png in Resources */,
+				7AF397361584501B0023B08D /* 259-list.png in Resources */,
+				7AF397361584501B0023B08F /* 259-list@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
