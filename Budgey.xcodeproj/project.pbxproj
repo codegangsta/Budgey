@@ -21,8 +21,7 @@
 		265E06C03432322C33230F83 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F82 /* background.jpg */; };
 		265E06C03432322C33230F85 /* background@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F84 /* background@2x.jpg */; };
 		265E06C03432322C33230F87 /* (null) in Sources */ = {isa = PBXBuildFile; };
-		265E06C03432322C33230F90 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F8F /* MainViewController.m */; };
-		265E06C03432322C33230F92 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F91 /* MainViewController.xib */; };
+		265E06C03432322C33230F90 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; };
 		265E06C03432322C33230F94 /* BudgetListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F93 /* BudgetListViewController.m */; };
 		265E06C03432322C33230F97 /* BGCategoryStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F96 /* BGCategoryStore.m */; };
 		265E06C03432322C33230F9A /* header.png in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F99 /* header.png */; };
@@ -59,6 +58,11 @@
 		7AF397361584501B0023B08B /* cameraTabBarItem@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B08A /* cameraTabBarItem@2x.png */; };
 		7AF397361584501B0023B08D /* 259-list.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B08C /* 259-list.png */; };
 		7AF397361584501B0023B08F /* 259-list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B08E /* 259-list@2x.png */; };
+		7AF397361584501B0023B09A /* PSStackedViewController.m in Sources */ = {isa = PBXBuildFile; };
+		7AF397361584501B0023B09E /* PSStackedViewGlobal.m in Sources */ = {isa = PBXBuildFile; };
+		7AF397361584501B0023B0A1 /* PSStackedViewSegue.m in Sources */ = {isa = PBXBuildFile; };
+		7AF397361584501B0023B0A4 /* PSSVContainerView.m in Sources */ = {isa = PBXBuildFile; };
+		7AF397361584501B0023B0A7 /* UIView+PSSizes.m in Sources */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,9 +92,6 @@
 		265E06C03432322C33230F79 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		265E06C03432322C33230F82 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 		265E06C03432322C33230F84 /* background@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "background@2x.jpg"; sourceTree = "<group>"; };
-		265E06C03432322C33230F8E /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		265E06C03432322C33230F8F /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		265E06C03432322C33230F91 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		265E06C03432322C33230F93 /* BudgetListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BudgetListViewController.m; sourceTree = "<group>"; };
 		265E06C03432322C33230F95 /* BudgetListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BudgetListViewController.h; sourceTree = "<group>"; };
 		265E06C03432322C33230F96 /* BGCategoryStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGCategoryStore.m; sourceTree = "<group>"; };
@@ -190,27 +191,15 @@
 		265E06C03432322C33230F5B /* Budgey */ = {
 			isa = PBXGroup;
 			children = (
-				7AF397361584501B0023B079 /* BudgetViewController.h */,
-				7AF397361584501B0023B077 /* BudgetViewController.m */,
-				7AF397361584501B0023B062 /* BGTabBarController.h */,
-				7AF397361584501B0023B060 /* BGTabBarController.m */,
-				265E06C03432322C33230FA3 /* BGColorUtil.h */,
-				265E06C03432322C33230FA1 /* BGColorUtil.m */,
-				265E06C03432322C33230F98 /* BGCategoryStore.h */,
-				265E06C03432322C33230F96 /* BGCategoryStore.m */,
-				265E06C03432322C33230F95 /* BudgetListViewController.h */,
-				265E06C03432322C33230F93 /* BudgetListViewController.m */,
-				265E06C03432322C33230F91 /* MainViewController.xib */,
-				265E06C03432322C33230F8F /* MainViewController.m */,
-				265E06C03432322C33230F8E /* MainViewController.h */,
 				265E06C03432322C33230F65 /* AppDelegate.m */,
 				265E06C03432322C33230F64 /* AppDelegate.h */,
 				265E06C03432322C33230F5C /* Supporting Files */,
 				265E06C03432322C33230F7F /* Assets */,
-				7AF397351584501B0023B057 /* BudgetHeaderView.xib */,
-				7AECD39D158458E1002EA79C /* BudgetFooterView.xib */,
-				7AD41DDF1584657E003E7926 /* BudgetTableCell.xib */,
-				7AF397361584501B0023B05A /* Injector */,
+				7AF397361584501B0023B090 /* Model */,
+				7AF397361584501B0023B091 /* View */,
+				7AF397361584501B0023B092 /* Controller */,
+				7AF397361584501B0023B093 /* Helpers */,
+				7AF397361584501B0023B095 /* ThirdParty */,
 			);
 			path = Budgey;
 			sourceTree = "<group>";
@@ -277,13 +266,70 @@
 			name = Assets;
 			sourceTree = "<group>";
 		};
-		7AF397361584501B0023B05A /* Injector */ = {
+		7AF397361584501B0023B05A /* LSInjector */ = {
 			isa = PBXGroup;
 			children = (
 				7AF397361584501B0023B05D /* LSInjector.h */,
 				7AF397361584501B0023B05B /* LSInjector.m */,
 			);
-			path = Injector;
+			path = LSInjector;
+			sourceTree = "<group>";
+		};
+		7AF397361584501B0023B090 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				265E06C03432322C33230F96 /* BGCategoryStore.m */,
+				265E06C03432322C33230F98 /* BGCategoryStore.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7AF397361584501B0023B091 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7AF397351584501B0023B057 /* BudgetHeaderView.xib */,
+				7AECD39D158458E1002EA79C /* BudgetFooterView.xib */,
+				7AD41DDF1584657E003E7926 /* BudgetTableCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7AF397361584501B0023B092 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7AF397361584501B0023B060 /* BGTabBarController.m */,
+				7AF397361584501B0023B062 /* BGTabBarController.h */,
+				7AF397361584501B0023B094 /* Budget */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7AF397361584501B0023B093 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				265E06C03432322C33230FA1 /* BGColorUtil.m */,
+				265E06C03432322C33230FA3 /* BGColorUtil.h */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7AF397361584501B0023B094 /* Budget */ = {
+			isa = PBXGroup;
+			children = (
+				7AF397361584501B0023B077 /* BudgetViewController.m */,
+				7AF397361584501B0023B079 /* BudgetViewController.h */,
+				265E06C03432322C33230F93 /* BudgetListViewController.m */,
+				265E06C03432322C33230F95 /* BudgetListViewController.h */,
+			);
+			path = Budget;
+			sourceTree = "<group>";
+		};
+		7AF397361584501B0023B095 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				7AF397361584501B0023B05A /* LSInjector */,
+			);
+			path = ThirdParty;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,7 +402,6 @@
 				265E06C03432322C33230F60 /* InfoPlist.strings in Resources */,
 				265E06C03432322C33230F83 /* background.jpg in Resources */,
 				265E06C03432322C33230F85 /* background@2x.jpg in Resources */,
-				265E06C03432322C33230F92 /* MainViewController.xib in Resources */,
 				265E06C03432322C33230F9A /* header.png in Resources */,
 				265E06C03432322C33230F9C /* header@2x.png in Resources */,
 				265E06C03432322C33230FA0 /* (null) in Resources */,
@@ -430,6 +475,11 @@
 				7AF397361584501B0023B05C /* LSInjector.m in Sources */,
 				7AF397361584501B0023B061 /* BGTabBarController.m in Sources */,
 				7AF397361584501B0023B078 /* BudgetViewController.m in Sources */,
+				7AF397361584501B0023B09A /* PSStackedViewController.m in Sources */,
+				7AF397361584501B0023B09E /* PSStackedViewGlobal.m in Sources */,
+				7AF397361584501B0023B0A1 /* PSStackedViewSegue.m in Sources */,
+				7AF397361584501B0023B0A4 /* PSSVContainerView.m in Sources */,
+				7AF397361584501B0023B0A7 /* UIView+PSSizes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
