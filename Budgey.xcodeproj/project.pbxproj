@@ -21,7 +21,7 @@
 		265E06C03432322C33230F83 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F82 /* background.jpg */; };
 		265E06C03432322C33230F85 /* background@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F84 /* background@2x.jpg */; };
 		265E06C03432322C33230F87 /* (null) in Sources */ = {isa = PBXBuildFile; };
-		265E06C03432322C33230F90 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; };
+		265E06C03432322C33230F90 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		265E06C03432322C33230F94 /* BudgetListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F93 /* BudgetListViewController.m */; };
 		265E06C03432322C33230F97 /* BGCategoryStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F96 /* BGCategoryStore.m */; };
 		265E06C03432322C33230F9A /* header.png in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F99 /* header.png */; };
@@ -30,6 +30,12 @@
 		265E06C03432322C33230FA2 /* BGColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230FA1 /* BGColorUtil.m */; };
 		265E06C03432322C33230FA5 /* footer.png in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230FA4 /* footer.png */; };
 		265E06C03432322C33230FA7 /* footer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230FA6 /* footer@2x.png */; };
+		7A1DB4F7159016600026A77B /* TransactionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DB4F5159016600026A77B /* TransactionViewController.m */; };
+		7A1DB4F8159016600026A77B /* TransactionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A1DB4F6159016600026A77B /* TransactionViewController.xib */; };
+		7A1DB4FE159017FC0026A77B /* footer-trimmed.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A1DB4FA159017FC0026A77B /* footer-trimmed.png */; };
+		7A1DB4FF159017FC0026A77B /* footer-trimmed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A1DB4FB159017FC0026A77B /* footer-trimmed@2x.png */; };
+		7A1DB500159017FC0026A77B /* header-trimmed.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A1DB4FC159017FC0026A77B /* header-trimmed.png */; };
+		7A1DB501159017FC0026A77B /* header-trimmed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A1DB4FD159017FC0026A77B /* header-trimmed@2x.png */; };
 		7AD41DE01584657E003E7926 /* BudgetTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AD41DDF1584657E003E7926 /* BudgetTableCell.xib */; };
 		7AECD39E158458E1002EA79C /* BudgetFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AECD39D158458E1002EA79C /* BudgetFooterView.xib */; };
 		7AF397361584501B0023B057 /* BudgetHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397351584501B0023B057 /* BudgetHeaderView.xib */; };
@@ -58,11 +64,12 @@
 		7AF397361584501B0023B08B /* cameraTabBarItem@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B08A /* cameraTabBarItem@2x.png */; };
 		7AF397361584501B0023B08D /* 259-list.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B08C /* 259-list.png */; };
 		7AF397361584501B0023B08F /* 259-list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B08E /* 259-list@2x.png */; };
-		7AF397361584501B0023B09A /* PSStackedViewController.m in Sources */ = {isa = PBXBuildFile; };
-		7AF397361584501B0023B09E /* PSStackedViewGlobal.m in Sources */ = {isa = PBXBuildFile; };
-		7AF397361584501B0023B0A1 /* PSStackedViewSegue.m in Sources */ = {isa = PBXBuildFile; };
-		7AF397361584501B0023B0A4 /* PSSVContainerView.m in Sources */ = {isa = PBXBuildFile; };
-		7AF397361584501B0023B0A7 /* UIView+PSSizes.m in Sources */ = {isa = PBXBuildFile; };
+		7AF397361584501B0023B09A /* (null) in Sources */ = {isa = PBXBuildFile; };
+		7AF397361584501B0023B09E /* (null) in Sources */ = {isa = PBXBuildFile; };
+		7AF397361584501B0023B0A1 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		7AF397361584501B0023B0A4 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		7AF397361584501B0023B0A7 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		7AF397361584501B0023B0A9 /* BGNotificationNames.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B0A8 /* BGNotificationNames.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +109,13 @@
 		265E06C03432322C33230FA3 /* BGColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGColorUtil.h; sourceTree = "<group>"; };
 		265E06C03432322C33230FA4 /* footer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = footer.png; sourceTree = "<group>"; };
 		265E06C03432322C33230FA6 /* footer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "footer@2x.png"; sourceTree = "<group>"; };
+		7A1DB4F4159016600026A77B /* TransactionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionViewController.h; sourceTree = "<group>"; };
+		7A1DB4F5159016600026A77B /* TransactionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionViewController.m; sourceTree = "<group>"; };
+		7A1DB4F6159016600026A77B /* TransactionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TransactionViewController.xib; path = ../Controller/Budget/TransactionViewController.xib; sourceTree = "<group>"; };
+		7A1DB4FA159017FC0026A77B /* footer-trimmed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "footer-trimmed.png"; sourceTree = "<group>"; };
+		7A1DB4FB159017FC0026A77B /* footer-trimmed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "footer-trimmed@2x.png"; sourceTree = "<group>"; };
+		7A1DB4FC159017FC0026A77B /* header-trimmed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header-trimmed.png"; sourceTree = "<group>"; };
+		7A1DB4FD159017FC0026A77B /* header-trimmed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header-trimmed@2x.png"; sourceTree = "<group>"; };
 		7AD41DDF1584657E003E7926 /* BudgetTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BudgetTableCell.xib; sourceTree = "<group>"; };
 		7AECD39D158458E1002EA79C /* BudgetFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BudgetFooterView.xib; sourceTree = "<group>"; };
 		7AF397351584501B0023B057 /* BudgetHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BudgetHeaderView.xib; sourceTree = "<group>"; };
@@ -132,6 +146,8 @@
 		7AF397361584501B0023B08A /* cameraTabBarItem@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraTabBarItem@2x.png"; sourceTree = "<group>"; };
 		7AF397361584501B0023B08C /* 259-list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "259-list.png"; sourceTree = "<group>"; };
 		7AF397361584501B0023B08E /* 259-list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "259-list@2x.png"; sourceTree = "<group>"; };
+		7AF397361584501B0023B0A8 /* BGNotificationNames.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGNotificationNames.m; sourceTree = "<group>"; };
+		7AF397361584501B0023B0AA /* BGNotificationNames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGNotificationNames.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +252,10 @@
 		265E06C03432322C33230F7F /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				7A1DB4FA159017FC0026A77B /* footer-trimmed.png */,
+				7A1DB4FB159017FC0026A77B /* footer-trimmed@2x.png */,
+				7A1DB4FC159017FC0026A77B /* header-trimmed.png */,
+				7A1DB4FD159017FC0026A77B /* header-trimmed@2x.png */,
 				7AF397361584501B0023B08E /* 259-list@2x.png */,
 				7AF397361584501B0023B08C /* 259-list.png */,
 				7AF397361584501B0023B08A /* cameraTabBarItem@2x.png */,
@@ -287,6 +307,7 @@
 		7AF397361584501B0023B091 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7A1DB4F6159016600026A77B /* TransactionViewController.xib */,
 				7AF397351584501B0023B057 /* BudgetHeaderView.xib */,
 				7AECD39D158458E1002EA79C /* BudgetFooterView.xib */,
 				7AD41DDF1584657E003E7926 /* BudgetTableCell.xib */,
@@ -307,6 +328,8 @@
 		7AF397361584501B0023B093 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				7AF397361584501B0023B0AA /* BGNotificationNames.h */,
+				7AF397361584501B0023B0A8 /* BGNotificationNames.m */,
 				265E06C03432322C33230FA1 /* BGColorUtil.m */,
 				265E06C03432322C33230FA3 /* BGColorUtil.h */,
 			);
@@ -320,6 +343,8 @@
 				7AF397361584501B0023B079 /* BudgetViewController.h */,
 				265E06C03432322C33230F93 /* BudgetListViewController.m */,
 				265E06C03432322C33230F95 /* BudgetListViewController.h */,
+				7A1DB4F4159016600026A77B /* TransactionViewController.h */,
+				7A1DB4F5159016600026A77B /* TransactionViewController.m */,
 			);
 			path = Budget;
 			sourceTree = "<group>";
@@ -431,6 +456,11 @@
 				7AF397361584501B0023B08B /* cameraTabBarItem@2x.png in Resources */,
 				7AF397361584501B0023B08D /* 259-list.png in Resources */,
 				7AF397361584501B0023B08F /* 259-list@2x.png in Resources */,
+				7A1DB4F8159016600026A77B /* TransactionViewController.xib in Resources */,
+				7A1DB4FE159017FC0026A77B /* footer-trimmed.png in Resources */,
+				7A1DB4FF159017FC0026A77B /* footer-trimmed@2x.png in Resources */,
+				7A1DB500159017FC0026A77B /* header-trimmed.png in Resources */,
+				7A1DB501159017FC0026A77B /* header-trimmed@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,18 +498,20 @@
 				265E06C03432322C33230F62 /* main.m in Sources */,
 				265E06C03432322C33230F66 /* AppDelegate.m in Sources */,
 				265E06C03432322C33230F87 /* (null) in Sources */,
-				265E06C03432322C33230F90 /* MainViewController.m in Sources */,
+				265E06C03432322C33230F90 /* (null) in Sources */,
 				265E06C03432322C33230F94 /* BudgetListViewController.m in Sources */,
 				265E06C03432322C33230F97 /* BGCategoryStore.m in Sources */,
 				265E06C03432322C33230FA2 /* BGColorUtil.m in Sources */,
 				7AF397361584501B0023B05C /* LSInjector.m in Sources */,
 				7AF397361584501B0023B061 /* BGTabBarController.m in Sources */,
 				7AF397361584501B0023B078 /* BudgetViewController.m in Sources */,
-				7AF397361584501B0023B09A /* PSStackedViewController.m in Sources */,
-				7AF397361584501B0023B09E /* PSStackedViewGlobal.m in Sources */,
-				7AF397361584501B0023B0A1 /* PSStackedViewSegue.m in Sources */,
-				7AF397361584501B0023B0A4 /* PSSVContainerView.m in Sources */,
-				7AF397361584501B0023B0A7 /* UIView+PSSizes.m in Sources */,
+				7AF397361584501B0023B09A /* (null) in Sources */,
+				7AF397361584501B0023B09E /* (null) in Sources */,
+				7AF397361584501B0023B0A1 /* (null) in Sources */,
+				7AF397361584501B0023B0A4 /* (null) in Sources */,
+				7AF397361584501B0023B0A7 /* (null) in Sources */,
+				7A1DB4F7159016600026A77B /* TransactionViewController.m in Sources */,
+				7AF397361584501B0023B0A9 /* BGNotificationNames.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

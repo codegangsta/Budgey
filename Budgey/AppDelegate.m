@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "BudgetListViewController.h"
 #import "BGTabBarController.h"
+#import "BGNotificationNames.h"
+#import "TransactionViewController.h"
 
 @implementation AppDelegate
 
@@ -28,6 +30,9 @@
     [self.window setRootViewController:tabBarController];
 
     [self.window makeKeyAndVisible];
+
+    // listen to notification for center button
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onCenterButtonClick) name:BGCenterButtonWasClicked object:nil];
 
     return YES;
 }
@@ -53,7 +58,7 @@
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
-{   
+{
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 
 }
@@ -62,6 +67,12 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 
+}
+
+- (void)onCenterButtonClick
+{
+    UIViewController *transactionController = [[TransactionViewController alloc] init];
+    [[[self.window rootViewController] view] addSubview:[transactionController view]];
 }
 
 - (void)skinControls
