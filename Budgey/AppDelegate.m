@@ -14,7 +14,7 @@
 
 @implementation AppDelegate
 
-@synthesize window = _window;
+@synthesize window = _window, currentTransactionView;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -73,6 +73,7 @@
 {
     UIViewController *transactionController = [[TransactionViewController alloc] init];
     [[[self.window rootViewController] view] addSubview:[transactionController view]];
+    [self setCurrentTransactionView:transactionController];
 }
 
 - (void)skinControls

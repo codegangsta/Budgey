@@ -8,6 +8,8 @@
 #import "BGNotificationNames.h"
 
 NSString *const BGCenterButtonWasClicked = @"BGCenterButtonWasClicked";
+NSString *const BGTransactionWasSaved = @"BGTransactionWasSaved";
+NSString *const BGTransactionWasCanceled = @"BGTransactionWasCanceled";
 
 @implementation BGNotificationNames
 @end

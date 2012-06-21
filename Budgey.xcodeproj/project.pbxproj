@@ -30,6 +30,10 @@
 		265E06C03432322C33230FA2 /* BGColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230FA1 /* BGColorUtil.m */; };
 		265E06C03432322C33230FA5 /* footer.png in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230FA4 /* footer.png */; };
 		265E06C03432322C33230FA7 /* footer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230FA6 /* footer@2x.png */; };
+		7A1095C71592883900E76226 /* cancel-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A1095C51592883900E76226 /* cancel-button.png */; };
+		7A1095C81592883900E76226 /* cancel-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A1095C61592883900E76226 /* cancel-button@2x.png */; };
+		7A1095D015928A5300E76226 /* save-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A1095CE15928A5300E76226 /* save-button.png */; };
+		7A1095D115928A5300E76226 /* save-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A1095CF15928A5300E76226 /* save-button@2x.png */; };
 		7A1DB4F7159016600026A77B /* TransactionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DB4F5159016600026A77B /* TransactionViewController.m */; };
 		7A1DB4F8159016600026A77B /* TransactionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A1DB4F6159016600026A77B /* TransactionViewController.xib */; };
 		7A1DB4FE159017FC0026A77B /* footer-trimmed.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A1DB4FA159017FC0026A77B /* footer-trimmed.png */; };
@@ -109,6 +113,10 @@
 		265E06C03432322C33230FA3 /* BGColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGColorUtil.h; sourceTree = "<group>"; };
 		265E06C03432322C33230FA4 /* footer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = footer.png; sourceTree = "<group>"; };
 		265E06C03432322C33230FA6 /* footer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "footer@2x.png"; sourceTree = "<group>"; };
+		7A1095C51592883900E76226 /* cancel-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cancel-button.png"; path = "../../../Downloads/doubleencore-DETweetComposeViewController-740628c/DETweetComposeViewController/Resources/cancel-button.png"; sourceTree = "<group>"; };
+		7A1095C61592883900E76226 /* cancel-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cancel-button@2x.png"; path = "../../../Downloads/doubleencore-DETweetComposeViewController-740628c/DETweetComposeViewController/Resources/cancel-button@2x.png"; sourceTree = "<group>"; };
+		7A1095CE15928A5300E76226 /* save-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "save-button.png"; path = "../../../Downloads/doubleencore-DETweetComposeViewController-740628c/DETweetComposeViewController/Resources/save-button.png"; sourceTree = "<group>"; };
+		7A1095CF15928A5300E76226 /* save-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "save-button@2x.png"; path = "../../../Downloads/doubleencore-DETweetComposeViewController-740628c/DETweetComposeViewController/Resources/save-button@2x.png"; sourceTree = "<group>"; };
 		7A1DB4F4159016600026A77B /* TransactionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionViewController.h; sourceTree = "<group>"; };
 		7A1DB4F5159016600026A77B /* TransactionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionViewController.m; sourceTree = "<group>"; };
 		7A1DB4F6159016600026A77B /* TransactionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TransactionViewController.xib; path = ../Controller/Budget/TransactionViewController.xib; sourceTree = "<group>"; };
@@ -252,6 +260,10 @@
 		265E06C03432322C33230F7F /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				7A1095CE15928A5300E76226 /* save-button.png */,
+				7A1095CF15928A5300E76226 /* save-button@2x.png */,
+				7A1095C51592883900E76226 /* cancel-button.png */,
+				7A1095C61592883900E76226 /* cancel-button@2x.png */,
 				7A1DB4FA159017FC0026A77B /* footer-trimmed.png */,
 				7A1DB4FB159017FC0026A77B /* footer-trimmed@2x.png */,
 				7A1DB4FC159017FC0026A77B /* header-trimmed.png */,
@@ -461,6 +473,10 @@
 				7A1DB4FF159017FC0026A77B /* footer-trimmed@2x.png in Resources */,
 				7A1DB500159017FC0026A77B /* header-trimmed.png in Resources */,
 				7A1DB501159017FC0026A77B /* header-trimmed@2x.png in Resources */,
+				7A1095C71592883900E76226 /* cancel-button.png in Resources */,
+				7A1095C81592883900E76226 /* cancel-button@2x.png in Resources */,
+				7A1095D015928A5300E76226 /* save-button.png in Resources */,
+				7A1095D115928A5300E76226 /* save-button@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

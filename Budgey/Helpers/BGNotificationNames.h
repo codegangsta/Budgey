@@ -15,3 +15,5 @@
 // when the center button in the main toolbar
 // was clicked.
 extern NSString *const BGCenterButtonWasClicked;
+extern NSString *const BGTransactionWasSaved;
+extern NSString *const BGTransactionWasCanceled;
