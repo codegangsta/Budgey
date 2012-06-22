@@ -1,40 +1,27 @@
 //
-// Created by jeremysaenz on 6/4/12.
+// Created by jeremysaenz on 6/21/12.
 //
 // To change the template use AppCode | Preferences | File Templates.
 //
 
 
-#import "BudgetListViewController.h"
-#import "BGCategoryStore.h"
-#import "BGColorUtil.h"
-#import "QuartzCore/CALayer.h"
+#import <CoreGraphics/CoreGraphics.h>
 #import "BudgetItemListViewController.h"
 #import "BGShadowUtil.h"
+#import "BGColorUtil.h"
+#import "BGNotificationNames.h"
+#import "TransactionViewController.h"
 
 
-@implementation BudgetListViewController
-@synthesize currentFooterView;
-@synthesize currentCell;
-@synthesize currentHeaderView;
-
+@implementation BudgetItemListViewController
+@synthesize currentCell, currentFooterView, currentHeaderView;
 
 - (id)init
 {
-    // call the superclasses initializer
     self = [super initWithStyle:UITableViewStyleGrouped];
-    if (self) {
-        // create our categories for our datasource
-        for (int j = 0; j < 7; j++) {
-            [[BGCategoryStore sharedStore] createCategory];
-        }
-    }
-
     return self;
 }
 
-// this will make sure we use the grouped style
-// no matter what
 - (id)initWithStyle:(UITableViewStyle)style
 {
     return [self init];
@@ -42,10 +29,7 @@
 
 - (void)viewDidLoad
 {
-    [self.navigationItem setTitle:@"budgey"];
-
-    UIBarButtonItem *calendarButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"259-list.png"] style:UIBarButtonItemStyleBordered target:nil action:nil];
-    [self.navigationItem setLeftBarButtonItem:calendarButton];
+    [self.navigationItem setTitle:@"Entertainment"];
 
     // set a clear color for the background since we
     // want a consistent background throughout the app
@@ -60,10 +44,6 @@
 //---------------------------------------------------
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // get the category and set the text in the cell
-    NSString *currentSection = [[[BGCategoryStore sharedStore] sections] objectAtIndex:[indexPath section]];
-    NSDictionary *category = [[[BGCategoryStore sharedStore] categoriesForSection:currentSection] objectAtIndex:[indexPath row]];
-
     UINib *nib = [UINib nibWithNibName:@"BudgetTableCell" bundle:nil];
     [nib instantiateWithOwner:self options:nil];
 
@@ -83,26 +63,34 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return [[[BGCategoryStore sharedStore] sections] count];
+    return 1;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    NSArray *sections = [[BGCategoryStore sharedStore] sections];
-    return [sections objectAtIndex:section];
+    return @"Hello World";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSString *currentSection = [[[BGCategoryStore sharedStore] sections] objectAtIndex:section];
-    return [[[BGCategoryStore sharedStore] categoriesForSection:currentSection] count];
+    return 10;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // push a new view when we select
-    UIViewController *budgetItemListController = [[BudgetItemListViewController alloc] init];
-    [(UINavigationController *)self.parentViewController pushViewController:budgetItemListController animated:YES];
+    NSDictionary *transactionData = [[NSDictionary alloc] initWithObjectsAndKeys:
+            @"Some Expense",@"name",
+            @"50.00", @"amount",
+            @"Entertainment",@"category",
+            [[NSDate alloc] init], @"date",
+            nil];
+
+    UIViewController *transactionController = [[TransactionViewController alloc] initWithData:transactionData];
+    [(UINavigationController *)self.parentViewController pushViewController:transactionController animated:YES];
+
+    // position the view controller properly and add a shadow
+    [BGShadowUtil applyShadowToView:transactionController.view.layer];
+    transactionController.view.clipsToBounds = NO;
 }
 
 //---------------------------------------------------
@@ -135,4 +123,5 @@
 //---------------------------------------------------
 //  UITableViewCell Logic
 //---------------------------------------------------
+
 @end

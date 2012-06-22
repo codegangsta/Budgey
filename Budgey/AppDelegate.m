@@ -71,7 +71,7 @@
 
 - (void)onCenterButtonClick
 {
-    UIViewController *transactionController = [[TransactionViewController alloc] init];
+    UIViewController *transactionController = [[TransactionViewController alloc] initWithModal];
     [[[self.window rootViewController] view] addSubview:[transactionController view]];
     [self setCurrentTransactionView:transactionController];
 }

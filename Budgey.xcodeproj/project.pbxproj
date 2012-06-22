@@ -74,6 +74,8 @@
 		7AF397361584501B0023B0A4 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		7AF397361584501B0023B0A7 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		7AF397361584501B0023B0A9 /* BGNotificationNames.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B0A8 /* BGNotificationNames.m */; };
+		7AF397361584501B0023B0AC /* BudgetItemListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B0AB /* BudgetItemListViewController.m */; };
+		7AF397361584501B0023B0AF /* BGShadowUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B0AE /* BGShadowUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,6 +158,10 @@
 		7AF397361584501B0023B08E /* 259-list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "259-list@2x.png"; sourceTree = "<group>"; };
 		7AF397361584501B0023B0A8 /* BGNotificationNames.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGNotificationNames.m; sourceTree = "<group>"; };
 		7AF397361584501B0023B0AA /* BGNotificationNames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGNotificationNames.h; sourceTree = "<group>"; };
+		7AF397361584501B0023B0AB /* BudgetItemListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BudgetItemListViewController.m; sourceTree = "<group>"; };
+		7AF397361584501B0023B0AD /* BudgetItemListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BudgetItemListViewController.h; sourceTree = "<group>"; };
+		7AF397361584501B0023B0AE /* BGShadowUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGShadowUtil.m; sourceTree = "<group>"; };
+		7AF397361584501B0023B0B0 /* BGShadowUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGShadowUtil.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -340,6 +346,8 @@
 		7AF397361584501B0023B093 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				7AF397361584501B0023B0B0 /* BGShadowUtil.h */,
+				7AF397361584501B0023B0AE /* BGShadowUtil.m */,
 				7AF397361584501B0023B0AA /* BGNotificationNames.h */,
 				7AF397361584501B0023B0A8 /* BGNotificationNames.m */,
 				265E06C03432322C33230FA1 /* BGColorUtil.m */,
@@ -351,6 +359,8 @@
 		7AF397361584501B0023B094 /* Budget */ = {
 			isa = PBXGroup;
 			children = (
+				7AF397361584501B0023B0AD /* BudgetItemListViewController.h */,
+				7AF397361584501B0023B0AB /* BudgetItemListViewController.m */,
 				7AF397361584501B0023B077 /* BudgetViewController.m */,
 				7AF397361584501B0023B079 /* BudgetViewController.h */,
 				265E06C03432322C33230F93 /* BudgetListViewController.m */,
@@ -528,6 +538,8 @@
 				7AF397361584501B0023B0A7 /* (null) in Sources */,
 				7A1DB4F7159016600026A77B /* TransactionViewController.m in Sources */,
 				7AF397361584501B0023B0A9 /* BGNotificationNames.m in Sources */,
+				7AF397361584501B0023B0AC /* BudgetItemListViewController.m in Sources */,
+				7AF397361584501B0023B0AF /* BGShadowUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

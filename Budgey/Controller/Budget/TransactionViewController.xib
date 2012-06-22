@@ -40,7 +40,7 @@
 				<array class="NSMutableArray" key="NSSubviews">
 					<object class="IBUIView" id="191373211">
 						<reference key="NSNextResponder" ref="530531868"/>
-						<int key="NSvFlags">274</int>
+						<int key="NSvFlags">293</int>
 						<array class="NSMutableArray" key="NSSubviews">
 							<object class="IBUIImageView" id="660763930">
 								<reference key="NSNextResponder" ref="191373211"/>
@@ -59,7 +59,7 @@
 							</object>
 							<object class="IBUIImageView" id="157272511">
 								<reference key="NSNextResponder" ref="191373211"/>
-								<int key="NSvFlags">258</int>
+								<int key="NSvFlags">264</int>
 								<string key="NSFrame">{{0, 202}, {302, 13}}</string>
 								<reference key="NSSuperview" ref="191373211"/>
 								<reference key="NSWindow"/>
@@ -74,7 +74,7 @@
 							</object>
 							<object class="IBUIView" id="682731032">
 								<reference key="NSNextResponder" ref="191373211"/>
-								<int key="NSvFlags">292</int>
+								<int key="NSvFlags">277</int>
 								<array class="NSMutableArray" key="NSSubviews">
 									<object class="IBUILabel" id="150900731">
 										<reference key="NSNextResponder" ref="682731032"/>
@@ -517,6 +517,30 @@
 					<int key="connectionID">44</int>
 				</object>
 				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">backgroundView</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="530531868"/>
+					</object>
+					<int key="connectionID">45</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">cardView</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="191373211"/>
+					</object>
+					<int key="connectionID">46</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">dateLineView</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="483711200"/>
+					</object>
+					<int key="connectionID">47</int>
+				</object>
+				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">next:</string>
 						<reference key="source" ref="566368952"/>
@@ -721,7 +745,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">44</int>
+			<int key="maxID">47</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -749,9 +773,12 @@
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="amountField">UITextField</string>
+						<string key="backgroundView">UIView</string>
 						<string key="cancelButton">UIButton</string>
+						<string key="cardView">UIView</string>
 						<string key="categoryField">UITextField</string>
 						<string key="dateField">UITextField</string>
+						<string key="dateLineView">UIView</string>
 						<string key="expenseField">UITextField</string>
 						<string key="saveButton">UIButton</string>
 					</dictionary>
@@ -760,9 +787,17 @@
 							<string key="name">amountField</string>
 							<string key="candidateClassName">UITextField</string>
 						</object>
+						<object class="IBToOneOutletInfo" key="backgroundView">
+							<string key="name">backgroundView</string>
+							<string key="candidateClassName">UIView</string>
+						</object>
 						<object class="IBToOneOutletInfo" key="cancelButton">
 							<string key="name">cancelButton</string>
 							<string key="candidateClassName">UIButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="cardView">
+							<string key="name">cardView</string>
+							<string key="candidateClassName">UIView</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="categoryField">
 							<string key="name">categoryField</string>
@@ -771,6 +806,10 @@
 						<object class="IBToOneOutletInfo" key="dateField">
 							<string key="name">dateField</string>
 							<string key="candidateClassName">UITextField</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="dateLineView">
+							<string key="name">dateLineView</string>
+							<string key="candidateClassName">UIView</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="expenseField">
 							<string key="name">expenseField</string>

@@ -6,11 +6,14 @@
 //  Copyright (c) 2012 Leedo Studios. All rights reserved.
 //
 
+#import <CoreGraphics/CoreGraphics.h>
 #import "TransactionViewController.h"
 #import "BGNotificationNames.h"
 
 @implementation TransactionViewController
-@synthesize saveButton, cancelButton, expenseField, amountField, categoryField, categoryPickerView, dateField, datePickerView;
+@synthesize saveButton, cancelButton, expenseField, amountField,
+categoryField, categoryPickerView, dateField, datePickerView,
+backgroundView, cardView, dateLineView;
 
 - (id)init
 {
@@ -18,6 +21,24 @@
 
     return self;
 }
+
+- (id)initWithModal
+{
+    self = [self init];
+    isModal = YES;
+
+    return self;
+}
+
+- (id)initWithData:(NSDictionary *)dictionary
+{
+    self = [self init];
+
+    data = [NSMutableDictionary dictionaryWithDictionary:dictionary];
+
+    return self;;
+}
+
 
 - (void)viewDidLoad
 {
@@ -28,6 +49,21 @@
     [cancelButton setBackgroundImage:cancelButtonImage forState:UIControlStateNormal];
     UIImage *saveButtonImage = [[UIImage imageNamed:@"save-button.png"] stretchableImageWithLeftCapWidth:4 topCapHeight:0];
     [saveButton setBackgroundImage:saveButtonImage forState:UIControlStateNormal];
+
+    if (!isModal) {
+        backgroundView.backgroundColor = [UIColor clearColor];
+
+        // size the card to fit in with a navigation bar
+        CGRect frame = cardView.frame;
+        frame = CGRectOffset(cardView.frame, 0, -22);
+        frame.size.height = 170;
+        [cardView setFrame:frame];
+
+        // hide bottom buttons
+        [saveButton setHidden:YES];
+        [cancelButton setHidden:YES];
+        [dateLineView setHidden:YES];
+    }
 
     // set the keyboard type to decimal
     amountField.keyboardType = UIKeyboardTypeDecimalPad;
@@ -48,6 +84,19 @@
     [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
     [dateField setText:[dateFormatter stringFromDate:[[NSDate alloc] init]]];
 
+    // set any data if we have it
+    if (data != nil)
+    {
+        if([data valueForKey:@"name"])
+            [expenseField setText:[data valueForKey:@"name"]];
+        if([data valueForKey:@"amount"])
+            [amountField setText:[data valueForKey:@"amount"]];
+        if([data valueForKey:@"category"])
+            [categoryField setText:[data valueForKey:@"category"]];
+        if([data valueForKey:@"date"])
+            [dateField setText:[dateFormatter stringFromDate:[data valueForKey:@"date"]]];
+    }
+
     // set the expense field to be the primary focus
     [expenseField becomeFirstResponder];
 }
@@ -67,7 +116,6 @@
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
-
 
 //---------------------------------------------------
 //  IBActions

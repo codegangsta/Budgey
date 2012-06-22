@@ -10,6 +10,9 @@
 
 @interface TransactionViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 {
+    //---------------------------------------------------
+    //  UI
+    //---------------------------------------------------
     UIButton *saveButton;
     UIButton *cancelButton;
     UITextField *expenseField;
@@ -18,6 +21,19 @@
     UIPickerView *categoryPickerView;
     UITextField *dateField;
     UIDatePicker *datePickerView;
+    UIView *backgroundView;
+    UIView *cardView;
+    UIView *dateLineView;
+
+    //---------------------------------------------------
+    //  Flags
+    //---------------------------------------------------
+    BOOL isModal;
+
+    //---------------------------------------------------
+    //  Data
+    //---------------------------------------------------
+    NSMutableDictionary *data;
 }
 
 @property (nonatomic, strong) IBOutlet UIButton *saveButton;
@@ -28,6 +44,13 @@
 @property (nonatomic, strong) UIPickerView *categoryPickerView;
 @property (nonatomic, strong) IBOutlet UITextField *dateField;
 @property (nonatomic, strong) UIDatePicker *datePickerView;
+@property (nonatomic, strong) IBOutlet UIView *backgroundView;
+@property (nonatomic, strong) IBOutlet UIView *cardView;
+@property (nonatomic, strong) IBOutlet UIView *dateLineView;
+
+-(id)initWithModal;
+
+-(id)initWithData:(NSDictionary *)dictionary;
 
 -(IBAction)cancel:(id)sender;
 -(IBAction)save:(id)sender;
