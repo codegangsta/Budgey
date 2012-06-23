@@ -42,6 +42,8 @@ backgroundView, cardView, dateLineView;
 
 - (void)viewDidLoad
 {
+    [self.navigationItem setTitle:@"Edit"];
+
     [super viewDidLoad];
 
     // skin our cancel and save buttons

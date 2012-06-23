@@ -29,7 +29,11 @@
 
 - (void)viewDidLoad
 {
-    [self.navigationItem setTitle:@"Entertainment"];
+    [self.navigationItem setTitle:@"Details"];
+
+    // setup the add button at the top right
+    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:nil action:nil];
+    [self.navigationItem setRightBarButtonItem:addButton];
 
     // set a clear color for the background since we
     // want a consistent background throughout the app
@@ -44,7 +48,7 @@
 //---------------------------------------------------
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UINib *nib = [UINib nibWithNibName:@"BudgetTableCell" bundle:nil];
+    UINib *nib = [UINib nibWithNibName:@"BudgetItemTableCell" bundle:nil];
     [nib instantiateWithOwner:self options:nil];
 
     UIView *backView = [[UIView alloc] init];
@@ -58,7 +62,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 39;
+    return 58;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -98,26 +102,26 @@
 //---------------------------------------------------
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    UINib *nib = [UINib nibWithNibName:@"BudgetHeaderView" bundle:nil];
+    UINib *nib = [UINib nibWithNibName:@"BudgetItemHeaderView" bundle:nil];
     [nib instantiateWithOwner:self options:nil];
     return currentHeaderView;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
 {
-    UINib *nib = [UINib nibWithNibName:@"BudgetFooterView" bundle:nil];
+    UINib *nib = [UINib nibWithNibName:@"BudgetItemFooterView" bundle:nil];
     [nib instantiateWithOwner:self options:nil];
     return currentFooterView;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return 57;
+    return 195;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
-    return 75;
+    return 24;
 }
 
 //---------------------------------------------------

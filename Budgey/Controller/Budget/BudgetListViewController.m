@@ -25,7 +25,7 @@
     self = [super initWithStyle:UITableViewStyleGrouped];
     if (self) {
         // create our categories for our datasource
-        for (int j = 0; j < 7; j++) {
+        for (int j = 0; j < 5; j++) {
             [[BGCategoryStore sharedStore] createCategory];
         }
     }
@@ -76,10 +76,6 @@
     return currentCell;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 39;
-}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
