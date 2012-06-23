@@ -17,3 +17,4 @@
 extern NSString *const BGCenterButtonWasClicked;
 extern NSString *const BGTransactionWasSaved;
 extern NSString *const BGTransactionWasCanceled;
+extern NSString *const BGRevealLeftView;

@@ -7,10 +7,10 @@
 //
 
 #import "AppDelegate.h"
-#import "BudgetListViewController.h"
 #import "BGTabBarController.h"
-#import "BGNotificationNames.h"
 #import "TransactionViewController.h"
+#import "PPRevealSideViewController.h"
+#import "BudgetMonthTableViewController.h"
 
 @implementation AppDelegate
 
@@ -22,17 +22,20 @@
 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    // set the background image
-    self.window.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"background.jpg"]];
-
     // root view controller
-    BGTabBarController *tabBarController = [[BGTabBarController alloc] init];
-    [self.window setRootViewController:tabBarController];
+    mainViewController = [[BGTabBarController alloc] init];
+    PPRevealSideViewController *revealController = [[PPRevealSideViewController alloc] initWithRootViewController:mainViewController];
+    [self.window setRootViewController:revealController];
 
     [self.window makeKeyAndVisible];
 
-    // listen to notification for center button
+    // month controller
+    BudgetMonthTableViewController *monthTableViewController = [[BudgetMonthTableViewController alloc] init];
+    [revealController preloadViewController:monthTableViewController forSide:PPRevealSideDirectionLeft];
+
+    // listen to notifications
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onCenterButtonClick) name:BGCenterButtonWasClicked object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onRevealLeftView) name:BGRevealLeftView object:nil];
 
     return YES;
 }
@@ -72,8 +75,13 @@
 - (void)onCenterButtonClick
 {
     UIViewController *transactionController = [[TransactionViewController alloc] initWithModal];
-    [[[self.window rootViewController] view] addSubview:[transactionController view]];
+    [[mainViewController view] addSubview:[transactionController view]];
     [self setCurrentTransactionView:transactionController];
+}
+
+- (void)onRevealLeftView
+{
+    [(PPRevealSideViewController *) self.window.rootViewController pushOldViewControllerOnDirection:PPRevealSideDirectionLeft animated:YES];
 }
 
 - (void)skinControls

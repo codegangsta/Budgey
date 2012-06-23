@@ -93,6 +93,8 @@
 		7AFBD2CA15965C7400C875AB /* SummaryFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AFBD2C915965C7400C875AB /* SummaryFooterView.xib */; };
 		7AFBD2CD159668FF00C875AB /* chart-placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AFBD2CB159668FF00C875AB /* chart-placeholder.png */; };
 		7AFBD2CE159668FF00C875AB /* chart-placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AFBD2CC159668FF00C875AB /* chart-placeholder@2x.png */; };
+		7AFBD2CE159668FF00C875AF /* PPRevealSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2CE159668FF00C875AE /* PPRevealSideViewController.m */; };
+		7AFBD2CE159668FF00C875B1 /* BudgetMonthTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2CE159668FF00C875B0 /* BudgetMonthTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -196,6 +198,10 @@
 		7AFBD2C915965C7400C875AB /* SummaryFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SummaryFooterView.xib; sourceTree = "<group>"; };
 		7AFBD2CB159668FF00C875AB /* chart-placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chart-placeholder.png"; sourceTree = "<group>"; };
 		7AFBD2CC159668FF00C875AB /* chart-placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chart-placeholder@2x.png"; sourceTree = "<group>"; };
+		7AFBD2CE159668FF00C875AD /* PPRevealSideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPRevealSideViewController.h; sourceTree = "<group>"; };
+		7AFBD2CE159668FF00C875AE /* PPRevealSideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPRevealSideViewController.m; sourceTree = "<group>"; };
+		7AFBD2CE159668FF00C875B0 /* BudgetMonthTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BudgetMonthTableViewController.m; sourceTree = "<group>"; };
+		7AFBD2CE159668FF00C875B2 /* BudgetMonthTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BudgetMonthTableViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -410,6 +416,8 @@
 		7AF397361584501B0023B094 /* Budget */ = {
 			isa = PBXGroup;
 			children = (
+				7AFBD2CE159668FF00C875B2 /* BudgetMonthTableViewController.h */,
+				7AFBD2CE159668FF00C875B0 /* BudgetMonthTableViewController.m */,
 				7AF397361584501B0023B0AD /* BudgetItemListViewController.h */,
 				7AF397361584501B0023B0AB /* BudgetItemListViewController.m */,
 				7AF397361584501B0023B077 /* BudgetViewController.m */,
@@ -426,8 +434,18 @@
 			isa = PBXGroup;
 			children = (
 				7AF397361584501B0023B05A /* LSInjector */,
+				7AFBD2CE159668FF00C875AC /* PPRevealSideviewController */,
 			);
 			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		7AFBD2CE159668FF00C875AC /* PPRevealSideviewController */ = {
+			isa = PBXGroup;
+			children = (
+				7AFBD2CE159668FF00C875AE /* PPRevealSideViewController.m */,
+				7AFBD2CE159668FF00C875AD /* PPRevealSideViewController.h */,
+			);
+			path = PPRevealSideviewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -608,6 +626,8 @@
 				7AF397361584501B0023B0A9 /* BGNotificationNames.m in Sources */,
 				7AF397361584501B0023B0AC /* BudgetItemListViewController.m in Sources */,
 				7AF397361584501B0023B0AF /* BGShadowUtil.m in Sources */,
+				7AFBD2CE159668FF00C875AF /* PPRevealSideViewController.m in Sources */,
+				7AFBD2CE159668FF00C875B1 /* BudgetMonthTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

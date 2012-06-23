@@ -57,7 +57,7 @@ backgroundView, cardView, dateLineView;
 
         // size the card to fit in with a navigation bar
         CGRect frame = cardView.frame;
-        frame = CGRectOffset(cardView.frame, 0, -22);
+        //frame = CGRectOffset(cardView.frame, 0, -22);
         frame.size.height = 170;
         [cardView setFrame:frame];
 

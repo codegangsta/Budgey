@@ -12,7 +12,6 @@
 #import "BudgetItemListViewController.h"
 #import "BGShadowUtil.h"
 
-
 @implementation BudgetListViewController
 @synthesize currentFooterView;
 @synthesize currentCell;
@@ -44,8 +43,8 @@
 {
     [self.navigationItem setTitle:@"budgey"];
 
-    UIBarButtonItem *calendarButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"259-list.png"] style:UIBarButtonItemStyleBordered target:nil action:nil];
-    [self.navigationItem setLeftBarButtonItem:calendarButton];
+    UIBarButtonItem *leftViewButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"259-list.png"] style:UIBarButtonItemStyleBordered target:self action:@selector(onLeftViewButtonClicked)];
+    [self.navigationItem setLeftBarButtonItem:leftViewButton];
 
     // set a clear color for the background since we
     // want a consistent background throughout the app
@@ -184,6 +183,11 @@
 }
 
 //---------------------------------------------------
-//  UITableViewCell Logic
+//  Actions
 //---------------------------------------------------
+- (void)onLeftViewButtonClicked
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:BGRevealLeftView object:self];
+}
+
 @end

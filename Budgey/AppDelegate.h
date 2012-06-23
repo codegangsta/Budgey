@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate> {
+    UIViewController *mainViewController;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) UIViewController *currentTransactionView;
