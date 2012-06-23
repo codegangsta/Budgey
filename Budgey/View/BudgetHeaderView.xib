@@ -98,7 +98,7 @@
 						<int key="IBUIContentMode">7</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<string key="IBUIText">Budgeted</string>
+						<string key="IBUIText">Spent</string>
 						<object class="NSColor" key="IBUITextColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MC4yIDAuMiAwLjIAA</bytes>
@@ -107,13 +107,13 @@
 						<int key="IBUIBaselineAdjustment">0</int>
 						<float key="IBUIMinimumFontSize">10</float>
 						<int key="IBUITextAlignment">2</int>
-						<object class="IBUIFontDescription" key="IBUIFontDescription" id="937534848">
+						<object class="IBUIFontDescription" key="IBUIFontDescription" id="900921952">
 							<string key="name">Helvetica-Light</string>
 							<string key="family">Helvetica</string>
 							<int key="traits">0</int>
 							<double key="pointSize">12</double>
 						</object>
-						<object class="NSFont" key="IBUIFont" id="335696764">
+						<object class="NSFont" key="IBUIFont" id="189461957">
 							<string key="NSName">Helvetica</string>
 							<double key="NSSize">12</double>
 							<int key="NSfFlags">16</int>
@@ -132,7 +132,7 @@
 						<int key="IBUIContentMode">7</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<string key="IBUIText">Spent</string>
+						<string key="IBUIText">Budgeted</string>
 						<object class="NSColor" key="IBUITextColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MC4yIDAuMiAwLjIAA</bytes>
@@ -141,8 +141,8 @@
 						<int key="IBUIBaselineAdjustment">0</int>
 						<float key="IBUIMinimumFontSize">10</float>
 						<int key="IBUITextAlignment">2</int>
-						<reference key="IBUIFontDescription" ref="937534848"/>
-						<reference key="IBUIFont" ref="335696764"/>
+						<reference key="IBUIFontDescription" ref="900921952"/>
+						<reference key="IBUIFont" ref="189461957"/>
 					</object>
 					<object class="IBUIView" id="1022875003">
 						<reference key="NSNextResponder" ref="182852779"/>

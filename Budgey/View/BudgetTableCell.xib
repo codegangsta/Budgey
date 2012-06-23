@@ -85,7 +85,7 @@
 									<int key="traits">0</int>
 									<double key="pointSize">15</double>
 								</object>
-								<object class="NSFont" key="IBUIFont" id="412389524">
+								<object class="NSFont" key="IBUIFont" id="1028238274">
 									<string key="NSName">HelveticaNeue-Medium</string>
 									<double key="NSSize">15</double>
 									<int key="NSfFlags">16</int>
@@ -105,7 +105,7 @@
 								<int key="IBUIContentMode">7</int>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<string key="IBUIText">$500.00</string>
+								<string key="IBUIText">$463.71</string>
 								<object class="NSColor" key="IBUITextColor">
 									<int key="NSColorSpace">1</int>
 									<bytes key="NSRGB">MC4yIDAuMiAwLjIAA</bytes>
@@ -114,13 +114,13 @@
 								<int key="IBUIBaselineAdjustment">0</int>
 								<float key="IBUIMinimumFontSize">10</float>
 								<int key="IBUITextAlignment">2</int>
-								<object class="IBUIFontDescription" key="IBUIFontDescription" id="601555349">
-									<string key="name">HelveticaNeue</string>
+								<object class="IBUIFontDescription" key="IBUIFontDescription" id="27702384">
+									<string key="name">HelveticaNeue-Light</string>
 									<string key="family">Helvetica Neue</string>
 									<int key="traits">0</int>
 									<double key="pointSize">15</double>
 								</object>
-								<reference key="IBUIFont" ref="412389524"/>
+								<reference key="IBUIFont" ref="1028238274"/>
 							</object>
 							<object class="IBUILabel" id="415510176">
 								<reference key="NSNextResponder" ref="614375833"/>
@@ -135,7 +135,7 @@
 								<int key="IBUIContentMode">7</int>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<string key="IBUIText">$475.00</string>
+								<string key="IBUIText">$600.00</string>
 								<object class="NSColor" key="IBUITextColor">
 									<int key="NSColorSpace">1</int>
 									<bytes key="NSRGB">MC4yIDAuMiAwLjIAA</bytes>
@@ -144,8 +144,8 @@
 								<int key="IBUIBaselineAdjustment">0</int>
 								<float key="IBUIMinimumFontSize">10</float>
 								<int key="IBUITextAlignment">2</int>
-								<reference key="IBUIFontDescription" ref="601555349"/>
-								<reference key="IBUIFont" ref="412389524"/>
+								<reference key="IBUIFontDescription" ref="27702384"/>
+								<reference key="IBUIFont" ref="1028238274"/>
 							</object>
 						</array>
 						<string key="NSFrameSize">{300, 43}</string>
@@ -257,7 +257,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">13</int>
+			<int key="maxID">14</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
