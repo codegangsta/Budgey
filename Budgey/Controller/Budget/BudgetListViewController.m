@@ -68,7 +68,7 @@
     [nib instantiateWithOwner:self options:nil];
 
     UIView *backView = [[UIView alloc] init];
-    backView.backgroundColor = [BGColorUtil colorWithHexString:@"dfdfdf"];
+    backView.backgroundColor = [BGColorUtil colorWithHexString:@"d4d4d4"];
     currentCell.backgroundView = backView;
 
     //[[cell textLabel] setText:[category objectForKey:@"name"]];
@@ -120,7 +120,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return 57;
+    return 67;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section

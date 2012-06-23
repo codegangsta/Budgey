@@ -81,6 +81,12 @@
 		7AF397361584501B0023B0A9 /* BGNotificationNames.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B0A8 /* BGNotificationNames.m */; };
 		7AF397361584501B0023B0AC /* BudgetItemListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B0AB /* BudgetItemListViewController.m */; };
 		7AF397361584501B0023B0AF /* BGShadowUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B0AE /* BGShadowUtil.m */; };
+		7AFBD2B815962CF700C875AB /* App-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AFBD2B715962CF700C875AB /* App-Icon.png */; };
+		7AFBD2BA15962D1D00C875AB /* App-Icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AFBD2B915962D1D00C875AB /* App-Icon-small.png */; };
+		7AFBD2BC159632D000C875AB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AFBD2BB159632D000C875AB /* Default@2x.png */; };
+		7AFBD2BE159632D200C875AB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AFBD2BD159632D200C875AB /* Default.png */; };
+		7AFBD2C115964B2A00C875AB /* banner-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AFBD2BF15964B2A00C875AB /* banner-blue.png */; };
+		7AFBD2C215964B2A00C875AB /* banner-blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AFBD2C015964B2A00C875AB /* banner-blue@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -172,6 +178,12 @@
 		7AF397361584501B0023B0AD /* BudgetItemListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BudgetItemListViewController.h; sourceTree = "<group>"; };
 		7AF397361584501B0023B0AE /* BGShadowUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGShadowUtil.m; sourceTree = "<group>"; };
 		7AF397361584501B0023B0B0 /* BGShadowUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGShadowUtil.h; sourceTree = "<group>"; };
+		7AFBD2B715962CF700C875AB /* App-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App-Icon.png"; sourceTree = "<group>"; };
+		7AFBD2B915962D1D00C875AB /* App-Icon-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App-Icon-small.png"; sourceTree = "<group>"; };
+		7AFBD2BB159632D000C875AB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		7AFBD2BD159632D200C875AB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		7AFBD2BF15964B2A00C875AB /* banner-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner-blue.png"; sourceTree = "<group>"; };
+		7AFBD2C015964B2A00C875AB /* banner-blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner-blue@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +213,10 @@
 		265E06C03432322C33230F48 = {
 			isa = PBXGroup;
 			children = (
+				7AFBD2BD159632D200C875AB /* Default.png */,
+				7AFBD2BB159632D000C875AB /* Default@2x.png */,
+				7AFBD2B915962D1D00C875AB /* App-Icon-small.png */,
+				7AFBD2B715962CF700C875AB /* App-Icon.png */,
 				265E06C03432322C33230F49 /* Products */,
 				265E06C03432322C33230F54 /* Frameworks */,
 				265E06C03432322C33230F5B /* Budgey */,
@@ -276,6 +292,8 @@
 		265E06C03432322C33230F7F /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				7AFBD2BF15964B2A00C875AB /* banner-blue.png */,
+				7AFBD2C015964B2A00C875AB /* banner-blue@2x.png */,
 				7A4EEC45159411C600F50C24 /* header-blank.png */,
 				7A4EEC46159411C600F50C24 /* header-blank@2x.png */,
 				7A1095CE15928A5300E76226 /* save-button.png */,
@@ -507,6 +525,12 @@
 				7A4EEC4B159411E700F50C24 /* BudgetItemHeaderView.xib in Resources */,
 				7A4EEC4D1594183300F50C24 /* BudgetItemTableCell.xib in Resources */,
 				7A2A52F915950D9B0087DEAB /* BudgetItemFooterView.xib in Resources */,
+				7AFBD2B815962CF700C875AB /* App-Icon.png in Resources */,
+				7AFBD2BA15962D1D00C875AB /* App-Icon-small.png in Resources */,
+				7AFBD2BC159632D000C875AB /* Default@2x.png in Resources */,
+				7AFBD2BE159632D200C875AB /* Default.png in Resources */,
+				7AFBD2C115964B2A00C875AB /* banner-blue.png in Resources */,
+				7AFBD2C215964B2A00C875AB /* banner-blue@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

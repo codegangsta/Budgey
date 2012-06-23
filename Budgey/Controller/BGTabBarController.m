@@ -22,15 +22,15 @@
     [budgetViewController setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"Budget" image:[UIImage imageNamed:@"162-receipt.png"] tag:0]];
     [self addChildViewController:budgetViewController];
 
-    // create the savings list
-    [self addChildViewController:[self viewControllerWithTabTitle:@"Savings" image:[UIImage imageNamed:@"119-piggy-bank.png"]]];
+    // create the transactions list
+    [self addChildViewController:[self viewControllerWithTabTitle:@"Transactions" image:[UIImage imageNamed:@"172-pricetag.png"]]];
 
     // center button
     UIViewController *quickAdd = [self viewControllerWithTabTitle:@"Add" image:nil];
     [self addChildViewController:quickAdd];
 
-    // create the debts list
-    [self addChildViewController:[self viewControllerWithTabTitle:@"Debt" image:[UIImage imageNamed:@"172-pricetag.png"]]];
+    // create the savings list
+    [self addChildViewController:[self viewControllerWithTabTitle:@"Savings" image:[UIImage imageNamed:@"119-piggy-bank.png"]]];
 
     // create the settings
     UIViewController *moreController = [[UIViewController alloc] init];
