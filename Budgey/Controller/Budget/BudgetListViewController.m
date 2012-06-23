@@ -60,38 +60,63 @@
 //---------------------------------------------------
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // get the category and set the text in the cell
-    NSString *currentSection = [[[BGCategoryStore sharedStore] sections] objectAtIndex:[indexPath section]];
-    NSDictionary *category = [[[BGCategoryStore sharedStore] categoriesForSection:currentSection] objectAtIndex:[indexPath row]];
+    NSString *nibName;
 
-    UINib *nib = [UINib nibWithNibName:@"BudgetTableCell" bundle:nil];
+    // is it the summary?
+    if ([indexPath section] == 0) {
+        // return the right cell based on the index
+        if ([indexPath row] == 0) {
+            nibName = @"SummaryIncomeTableCell";
+        }
+        else {
+            nibName = @"SummarySpentTableCell";
+        }
+    }
+    else {
+        nibName = @"BudgetTableCell";
+    }
+
+    UINib *nib = [UINib nibWithNibName:nibName bundle:nil];
     [nib instantiateWithOwner:self options:nil];
 
+    // workaround to get border off of the grouped cells
     UIView *backView = [[UIView alloc] init];
     backView.backgroundColor = [BGColorUtil colorWithHexString:@"d4d4d4"];
     currentCell.backgroundView = backView;
 
-    //[[cell textLabel] setText:[category objectForKey:@"name"]];
-
     return currentCell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // is it the summary?
+    if ([indexPath section] == 0)
+        return 58;
+    else
+        return 44;
 }
 
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return [[[BGCategoryStore sharedStore] sections] count];
+    return [[[BGCategoryStore sharedStore] sections] count] + 1;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    NSArray *sections = [[BGCategoryStore sharedStore] sections];
-    return [sections objectAtIndex:section];
+    return @"";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSString *currentSection = [[[BGCategoryStore sharedStore] sections] objectAtIndex:section];
-    return [[[BGCategoryStore sharedStore] categoriesForSection:currentSection] count];
+    // is it the summary?
+    if (section == 0) {
+        return 2;
+    }
+    else {
+        NSString *currentSection = [[[BGCategoryStore sharedStore] sections] objectAtIndex:section-1];
+        return [[[BGCategoryStore sharedStore] categoriesForSection:currentSection] count];
+    }
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -106,26 +131,56 @@
 //---------------------------------------------------
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    UINib *nib = [UINib nibWithNibName:@"BudgetHeaderView" bundle:nil];
+    NSString *nibName;
+
+    // is it the summary?
+    if (section == 0) {
+        nibName = @"SummaryHeaderView";
+    }
+    else {
+        nibName = @"BudgetHeaderView";
+    }
+
+    UINib *nib = [UINib nibWithNibName:nibName bundle:nil];
     [nib instantiateWithOwner:self options:nil];
     return currentHeaderView;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
 {
-    UINib *nib = [UINib nibWithNibName:@"BudgetFooterView" bundle:nil];
+    NSString *nibName;
+
+    // is it the summary?
+    if (section == 0) {
+        nibName = @"SummaryFooterView";
+    }
+    else {
+        nibName = @"BudgetFooterView";
+    }
+
+    UINib *nib = [UINib nibWithNibName:nibName bundle:nil];
     [nib instantiateWithOwner:self options:nil];
     return currentFooterView;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return 67;
+    // is it the summary?
+    if (section == 0) {
+        return 178;
+    } else {
+        return 67;
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
-    return 75;
+    // is it the summary?
+    if (section == 0) {
+        return 62;
+    } else {
+        return 75;
+    }
 }
 
 //---------------------------------------------------
