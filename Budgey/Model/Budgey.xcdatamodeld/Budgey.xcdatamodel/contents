@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1171" systemVersion="11D50" minimumToolsVersion="Xcode 4.1" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="BGBudget" representedClassName="BGBudget" syncable="YES">
+        <attribute name="date" attributeType="Date" syncable="YES"/>
+        <attribute name="name" attributeType="String" minValueString="1" syncable="YES"/>
+        <relationship name="categories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BGCategory" inverseName="budget" inverseEntity="BGCategory" syncable="YES"/>
+    </entity>
+    <entity name="BGBudgetItem" representedClassName="BGBudgetItem" syncable="YES">
+        <attribute name="amount" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="category" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="BGCategory" inverseName="budgetItems" inverseEntity="BGCategory" syncable="YES"/>
+        <relationship name="transactions" toMany="YES" minCount="1" deletionRule="Nullify" destinationEntity="BGTransaction" inverseName="budgetItem" inverseEntity="BGTransaction" syncable="YES"/>
+    </entity>
+    <entity name="BGCategory" representedClassName="BGCategory" syncable="YES">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="budget" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BGBudget" inverseName="categories" inverseEntity="BGBudget" syncable="YES"/>
+        <relationship name="budgetItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BGBudgetItem" inverseName="category" inverseEntity="BGBudgetItem" syncable="YES"/>
+    </entity>
+    <entity name="BGTransaction" representedClassName="BGTransaction" syncable="YES">
+        <attribute name="amount" attributeType="Decimal" defaultValueString="0" syncable="YES"/>
+        <attribute name="date" attributeType="Date" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="budgetItem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BGBudgetItem" inverseName="transactions" inverseEntity="BGBudgetItem" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="BGBudget" positionX="-443" positionY="-27" width="128" height="90"/>
+        <element name="BGCategory" positionX="-261" positionY="63" width="128" height="90"/>
+        <element name="BGBudgetItem" positionX="-56" positionY="174" width="128" height="105"/>
+        <element name="BGTransaction" positionX="142" positionY="300" width="128" height="105"/>
+    </elements>
+</model>
