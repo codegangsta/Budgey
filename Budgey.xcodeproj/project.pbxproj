@@ -41,8 +41,6 @@
 		7A1DB500159017FC0026A77B /* header-trimmed.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A1DB4FC159017FC0026A77B /* header-trimmed.png */; };
 		7A1DB501159017FC0026A77B /* header-trimmed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A1DB4FD159017FC0026A77B /* header-trimmed@2x.png */; };
 		7A2A52F915950D9B0087DEAB /* BudgetItemFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A2A52F815950D9B0087DEAB /* BudgetItemFooterView.xib */; };
-		7A33F2D31598BDB4007909CF /* progress-bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A33F2D11598BDB4007909CF /* progress-bar.png */; };
-		7A33F2D41598BDB4007909CF /* progress-bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A33F2D21598BDB4007909CF /* progress-bar@2x.png */; };
 		7A33F2D71598C3AB007909CF /* SummaryProgressTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A33F2D61598C3AB007909CF /* SummaryProgressTableCell.xib */; };
 		7A4EEC47159411C600F50C24 /* header-blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A4EEC45159411C600F50C24 /* header-blank.png */; };
 		7A4EEC48159411C600F50C24 /* header-blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A4EEC46159411C600F50C24 /* header-blank@2x.png */; };
@@ -156,8 +154,6 @@
 		7A1DB4FC159017FC0026A77B /* header-trimmed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header-trimmed.png"; sourceTree = "<group>"; };
 		7A1DB4FD159017FC0026A77B /* header-trimmed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header-trimmed@2x.png"; sourceTree = "<group>"; };
 		7A2A52F815950D9B0087DEAB /* BudgetItemFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BudgetItemFooterView.xib; sourceTree = "<group>"; };
-		7A33F2D11598BDB4007909CF /* progress-bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-bar.png"; sourceTree = "<group>"; };
-		7A33F2D21598BDB4007909CF /* progress-bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-bar@2x.png"; sourceTree = "<group>"; };
 		7A33F2D61598C3AB007909CF /* SummaryProgressTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SummaryProgressTableCell.xib; sourceTree = "<group>"; };
 		7A4EEC45159411C600F50C24 /* header-blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header-blank.png"; sourceTree = "<group>"; };
 		7A4EEC46159411C600F50C24 /* header-blank@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header-blank@2x.png"; sourceTree = "<group>"; };
@@ -333,8 +329,6 @@
 		265E06C03432322C33230F7F /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				7A33F2D11598BDB4007909CF /* progress-bar.png */,
-				7A33F2D21598BDB4007909CF /* progress-bar@2x.png */,
 				7AFBD2BD159632D200C875AB /* Default.png */,
 				7AFBD2BB159632D000C875AB /* Default@2x.png */,
 				7AFBD2B915962D1D00C875AB /* App-Icon-small.png */,
@@ -622,8 +616,6 @@
 				7AFBD2CA15965C7400C875AB /* SummaryFooterView.xib in Resources */,
 				7AFBD2CD159668FF00C875AB /* chart-placeholder.png in Resources */,
 				7AFBD2CE159668FF00C875AB /* chart-placeholder@2x.png in Resources */,
-				7A33F2D31598BDB4007909CF /* progress-bar.png in Resources */,
-				7A33F2D41598BDB4007909CF /* progress-bar@2x.png in Resources */,
 				7A33F2D71598C3AB007909CF /* SummaryProgressTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
