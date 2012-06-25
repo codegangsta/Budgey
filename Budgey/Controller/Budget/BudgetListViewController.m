@@ -113,7 +113,7 @@
 {
     // is it the summary?
     if (section == 0) {
-        return 3;
+        return 1 ;
     }
     else {
         NSString *currentSection = [[[BGCategoryStore sharedStore] sections] objectAtIndex:section-1];
@@ -169,7 +169,7 @@
 {
     // is it the summary?
     if (section == 0) {
-        return 67;
+        return 198;
     } else {
         return 67;
     }
