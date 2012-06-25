@@ -67,8 +67,11 @@
         if ([indexPath row] == 0) {
             nibName = @"SummaryIncomeTableCell";
         }
-        else {
+        else if([indexPath row] == 1) {
             nibName = @"SummarySpentTableCell";
+        }
+        else {
+            nibName = @"SummaryProgressTableCell";
         }
     }
     else {
@@ -110,7 +113,7 @@
 {
     // is it the summary?
     if (section == 0) {
-        return 2;
+        return 3;
     }
     else {
         NSString *currentSection = [[[BGCategoryStore sharedStore] sections] objectAtIndex:section-1];
@@ -166,7 +169,7 @@
 {
     // is it the summary?
     if (section == 0) {
-        return 178;
+        return 67;
     } else {
         return 67;
     }
