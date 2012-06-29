@@ -9,4 +9,8 @@
 
 
 @interface BudgetMonthTableViewController : UITableViewController
+
+// refresh the data source and reload rows in the table view
+-(void)refresh;
+
 @end

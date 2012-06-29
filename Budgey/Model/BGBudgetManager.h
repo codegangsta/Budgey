@@ -1,22 +1,21 @@
 //
-// Created by jeremysaenz on 6/23/12.
+// Created by jeremysaenz on 6/28/12.
 //
 // To change the template use AppCode | Preferences | File Templates.
 //
 
 
 #import <Foundation/Foundation.h>
+#import "BGManager.h"
 
-@class NSManagedObjectContext;
-@class NSManagedObjectModel;
+@class BGBudget;
 
-/**
- * Manages and abstracts CoreData calls. Allows
- * the ability to access budgets
- */
-@interface BGBudgetManager : NSObject {
-    NSManagedObjectContext *context;
-    NSManagedObjectModel *model;
-}
+@interface BGBudgetManager : BGManager
+
+// Creates a budget item
+-(BGBudget *)createBudgetWithName:(NSString *)name andDate:(NSDate *)date;
+
+// creates a budget from a default template in the application
+-(BGBudget *)createBudgetFromDefaultTemplate:(NSString *)name andDate:(NSDate *)date;
 
 @end

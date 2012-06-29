@@ -1,47 +1,67 @@
 //
-// Created by jeremysaenz on 6/23/12.
+// Created by jeremysaenz on 6/28/12.
 //
 // To change the template use AppCode | Preferences | File Templates.
 //
 
 
-#import <CoreData/CoreData.h>
 #import "BGBudgetManager.h"
+#import "BGBudget.h"
+#import "BGCategory.h"
+#import "BGBudgetItem.h"
 
 
 @implementation BGBudgetManager
 
-- (id)init
+- (BGBudget *)createBudgetWithName:(NSString *)name andDate:(NSDate *)date
 {
-    self = [super init];
+    BGBudget *budget = [BGBudget MR_createEntity];
+    budget.name = name;
+    budget.date = [date timeIntervalSince1970];
 
-    if (self) {
+    // save this new budget
+    [self save];
 
-        // read in Budgey.xcdatamodeld
-        model = [NSManagedObjectModel mergedModelFromBundles:nil];
+    return budget;
+}
 
-        NSPersistentStoreCoordinator *persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:model];
+- (BGBudget *)createBudgetFromDefaultTemplate:(NSString *)name andDate:(NSDate *)date
+{
+    BGBudget *budget = [self createBudgetWithName:name andDate:date];
 
-        // Where does the SQLite file go?
-        NSArray *documentDirectories = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-        NSString *path = [[documentDirectories objectAtIndex:0] stringByAppendingString:@"store.data"];
+    // the default template will just be here for now
+    BGCategory *personalCategory = [BGCategory MR_createEntity];
+    personalCategory.name = @"Personal";
+    [budget addCategoriesObject:personalCategory];
 
-        NSURL *storeURL = [NSURL fileURLWithPath:path];
+    BGCategory *businessCategory = [BGCategory MR_createEntity];
+    businessCategory.name = @"Business";
+    [budget addCategoriesObject:businessCategory];
 
-        NSError *error = nil;
-        if (![persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
-            [NSException raise:@"Open failed" format:@"Reason: %@", [error localizedDescription]];
-        }
+    BGBudgetItem *jeremyBusiness = [BGBudgetItem MR_createEntity];
+    jeremyBusiness.name = @"Jeremy Business";
+    [businessCategory addBudgetItemsObject:jeremyBusiness];
 
-        // Create the managed object description
-        context = [[NSManagedObjectContext alloc] init];
-        [context setPersistentStoreCoordinator:persistentStoreCoordinator];
+    BGBudgetItem *lizzieBusiness = [BGBudgetItem MR_createEntity];
+    lizzieBusiness.name = @"Lizzie Business";
+    [businessCategory addBudgetItemsObject:lizzieBusiness];
 
-        // we don't need undo
-        [context setUndoManager:nil];
-    }
+    BGBudgetItem *test = [BGBudgetItem MR_createEntity];
+    test.name = @"Test";
+    [personalCategory addBudgetItemsObject:test];
 
-    return self;
+    BGBudgetItem *clothing = [BGBudgetItem MR_createEntity];
+    clothing.name = @"clothing";
+    [personalCategory addBudgetItemsObject:clothing];
+
+    [self save];
+
+    return budget;
+}
+
+- (NSArray *)findAll
+{
+    return [BGBudget MR_findAll];
 }
 
 @end

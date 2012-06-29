@@ -16,3 +16,4 @@
 #endif
 
 #import "BGNotificationNames.h"
+#import "CoreData+MagicalRecord.h"
