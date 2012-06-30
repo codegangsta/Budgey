@@ -22,6 +22,7 @@ backgroundView, cardView, dateLineView;
     return self;
 }
 
+// TODO: Implement an initWithMode: message instead
 - (id)initWithModal
 {
     self = [self init];

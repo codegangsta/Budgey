@@ -13,7 +13,4 @@
 // Finds all of the specific object that the manager is managing
 -(NSArray *)findAll;
 
-// calls save on the context that this manager holds
--(void)save;
-
 @end

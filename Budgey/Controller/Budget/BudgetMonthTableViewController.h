@@ -8,9 +8,14 @@
 #import <Foundation/Foundation.h>
 
 
-@interface BudgetMonthTableViewController : UITableViewController
+@interface BudgetMonthTableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
 
 // refresh the data source and reload rows in the table view
 -(void)refresh;
+
+// IBAction when the add button is clicked
+-(IBAction)addButtonClick:(id)sender;
 
 @end

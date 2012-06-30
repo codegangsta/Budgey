@@ -11,6 +11,10 @@ NSString *const BGCenterButtonWasClicked = @"BGCenterButtonWasClicked";
 NSString *const BGTransactionWasSaved = @"BGTransactionWasSaved";
 NSString *const BGTransactionWasCanceled = @"BGTransactionWasCanceled";
 NSString *const BGRevealLeftView = @"BGRevealLeftView";
+NSString *const BGShowCreateBudgetView = @"BGShowCreateBudgetView";
+NSString *const BGBudgetWasUpdated = @"BGBudgetWasUpdated";
+NSString *const BGBudgetWasCreated = @"BGBudgetWasCreated";
+NSString *const BGBudgetWasDeleted = @"BGBudgetWasDeleted";
 
 @implementation BGNotificationNames
 @end

@@ -17,10 +17,5 @@
     return nil;
 }
 
-- (void)save
-{
-    [[NSManagedObjectContext MR_contextForCurrentThread] MR_save];
-}
-
 
 @end

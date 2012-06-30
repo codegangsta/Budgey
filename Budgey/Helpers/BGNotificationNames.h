@@ -18,3 +18,11 @@ extern NSString *const BGCenterButtonWasClicked;
 extern NSString *const BGTransactionWasSaved;
 extern NSString *const BGTransactionWasCanceled;
 extern NSString *const BGRevealLeftView;
+extern NSString *const BGShowCreateBudgetView;
+
+//---------------------------------------------------
+//  BGBudget Functions
+//---------------------------------------------------
+extern NSString *const BGBudgetWasUpdated;
+extern NSString *const BGBudgetWasCreated;
+extern NSString *const BGBudgetWasDeleted;

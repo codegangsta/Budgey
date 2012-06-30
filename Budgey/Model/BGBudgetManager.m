@@ -13,6 +13,24 @@
 
 @implementation BGBudgetManager
 
+//---------------------------------------------------
+//  Static Functions
+//---------------------------------------------------
++ (BGBudgetManager *)sharedManager
+{
+    static BGBudgetManager *sharedManager = nil;
+
+    if (!sharedManager)
+        sharedManager = [[super allocWithZone:nil] init];
+
+    return sharedManager;
+}
+
++ (id)allocWithZone:(NSZone *)zone
+{
+    return [self sharedManager];
+}
+
 - (BGBudget *)createBudgetWithName:(NSString *)name andDate:(NSDate *)date
 {
     BGBudget *budget = [BGBudget MR_createEntity];
@@ -20,7 +38,8 @@
     budget.date = [date timeIntervalSince1970];
 
     // save this new budget
-    [self save];
+    [[NSManagedObjectContext MR_contextForCurrentThread] MR_save];
+    [[NSNotificationCenter defaultCenter] postNotificationName:BGBudgetWasCreated object:budget];
 
     return budget;
 }
@@ -54,9 +73,22 @@
     clothing.name = @"clothing";
     [personalCategory addBudgetItemsObject:clothing];
 
-    [self save];
+    [self updateBudget:budget];
 
     return budget;
+}
+
+- (void)deleteBudget:(BGBudget *)budget
+{
+    [budget MR_deleteEntity];
+    [[NSManagedObjectContext MR_contextForCurrentThread] MR_save];
+    [[NSNotificationCenter defaultCenter] postNotificationName:BGBudgetWasDeleted object:budget];
+}
+
+- (void)updateBudget:(BGBudget *)budget
+{
+    [[NSManagedObjectContext MR_contextForCurrentThread] MR_save];
+    [[NSNotificationCenter defaultCenter] postNotificationName:BGBudgetWasUpdated object:budget];
 }
 
 - (NSArray *)findAll

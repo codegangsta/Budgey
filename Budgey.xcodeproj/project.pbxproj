@@ -42,6 +42,9 @@
 		7A4EEC48159411C600F50C24 /* header-blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A4EEC46159411C600F50C24 /* header-blank@2x.png */; };
 		7A4EEC4B159411E700F50C24 /* BudgetItemHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A4EEC4A159411E700F50C24 /* BudgetItemHeaderView.xib */; };
 		7A4EEC4D1594183300F50C24 /* BudgetItemTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A4EEC4C1594183300F50C24 /* BudgetItemTableCell.xib */; };
+		7A79D4C2159E7B05000F887F /* BudgetMonthTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A79D4C1159E7B05000F887F /* BudgetMonthTableViewController.xib */; };
+		7A8EB818159E5088006C987E /* CreateBudgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8EB816159E5088006C987E /* CreateBudgetViewController.m */; };
+		7A8EB819159E5088006C987E /* CreateBudgetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A8EB817159E5088006C987E /* CreateBudgetViewController.xib */; };
 		7AD41DE01584657E003E7926 /* BudgetTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AD41DDF1584657E003E7926 /* BudgetTableCell.xib */; };
 		7AECD39E158458E1002EA79C /* BudgetFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AECD39D158458E1002EA79C /* BudgetFooterView.xib */; };
 		7AF397361584501B0023B057 /* BudgetHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397351584501B0023B057 /* BudgetHeaderView.xib */; };
@@ -131,6 +134,7 @@
 		7AFBD2F415969AEA00C8760F /* cancel-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C8760E /* cancel-button@2x.png */; };
 		7AFBD2F415969AEA00C87611 /* BGBudgetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C87610 /* BGBudgetManager.m */; };
 		7AFBD2F415969AEA00C87614 /* BGManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C87613 /* BGManager.m */; };
+		7AFBD2F415969AEA00C87617 /* RevealViewController.m in Sources */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -183,6 +187,10 @@
 		7A4EEC46159411C600F50C24 /* header-blank@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header-blank@2x.png"; sourceTree = "<group>"; };
 		7A4EEC4A159411E700F50C24 /* BudgetItemHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BudgetItemHeaderView.xib; sourceTree = "<group>"; };
 		7A4EEC4C1594183300F50C24 /* BudgetItemTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BudgetItemTableCell.xib; sourceTree = "<group>"; };
+		7A79D4C1159E7B05000F887F /* BudgetMonthTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BudgetMonthTableViewController.xib; sourceTree = "<group>"; };
+		7A8EB815159E5088006C987E /* CreateBudgetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateBudgetViewController.h; path = ../../View/CreateBudgetViewController.h; sourceTree = "<group>"; };
+		7A8EB816159E5088006C987E /* CreateBudgetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreateBudgetViewController.m; path = ../../View/CreateBudgetViewController.m; sourceTree = "<group>"; };
+		7A8EB817159E5088006C987E /* CreateBudgetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateBudgetViewController.xib; sourceTree = "<group>"; };
 		7AD41DDF1584657E003E7926 /* BudgetTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BudgetTableCell.xib; sourceTree = "<group>"; };
 		7AECD39D158458E1002EA79C /* BudgetFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BudgetFooterView.xib; sourceTree = "<group>"; };
 		7AF397351584501B0023B057 /* BudgetHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BudgetHeaderView.xib; sourceTree = "<group>"; };
@@ -502,6 +510,8 @@
 				7AFBD2C71596567C00C875AB /* SummaryHeaderView.xib */,
 				7AFBD2C915965C7400C875AB /* SummaryFooterView.xib */,
 				7A33F2D61598C3AB007909CF /* SummaryProgressTableCell.xib */,
+				7A8EB817159E5088006C987E /* CreateBudgetViewController.xib */,
+				7A79D4C1159E7B05000F887F /* BudgetMonthTableViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -534,6 +544,8 @@
 		7AF397361584501B0023B094 /* Budget */ = {
 			isa = PBXGroup;
 			children = (
+				7A8EB815159E5088006C987E /* CreateBudgetViewController.h */,
+				7A8EB816159E5088006C987E /* CreateBudgetViewController.m */,
 				7AFBD2CE159668FF00C875B2 /* BudgetMonthTableViewController.h */,
 				7AFBD2CE159668FF00C875B0 /* BudgetMonthTableViewController.m */,
 				7AF397361584501B0023B0AD /* BudgetItemListViewController.h */,
@@ -809,6 +821,8 @@
 				7AFBD2F415969AEA00C8760B /* save-button@2x.png in Resources */,
 				7AFBD2F415969AEA00C8760D /* cancel-button.png in Resources */,
 				7AFBD2F415969AEA00C8760F /* cancel-button@2x.png in Resources */,
+				7A8EB819159E5088006C987E /* CreateBudgetViewController.xib in Resources */,
+				7A79D4C2159E7B05000F887F /* BudgetMonthTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -898,6 +912,8 @@
 				7AFBD2F415969AEA00C87605 /* MagicalRecord.m in Sources */,
 				7AFBD2F415969AEA00C87611 /* BGBudgetManager.m in Sources */,
 				7AFBD2F415969AEA00C87614 /* BGManager.m in Sources */,
+				7A8EB818159E5088006C987E /* CreateBudgetViewController.m in Sources */,
+				7AFBD2F415969AEA00C87617 /* RevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

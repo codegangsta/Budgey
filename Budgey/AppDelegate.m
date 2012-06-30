@@ -11,10 +11,13 @@
 #import "TransactionViewController.h"
 #import "PPRevealSideViewController.h"
 #import "BudgetMonthTableViewController.h"
+#import "CreateBudgetViewController.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window, currentTransactionView;
+@synthesize currentCreateBudgetView = _currentCreateBudgetView;
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -37,8 +40,10 @@
     [revealController preloadViewController:monthTableViewController forSide:PPRevealSideDirectionLeft];
 
     // listen to notifications
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onCenterButtonClick) name:BGCenterButtonWasClicked object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onRevealLeftView) name:BGRevealLeftView object:nil];
+    NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
+    [center addObserver:self selector:@selector(onCenterButtonClick) name:BGCenterButtonWasClicked object:nil];
+    [center addObserver:self selector:@selector(onRevealLeftView) name:BGRevealLeftView object:nil];
+    [center addObserver:self selector:@selector(onCreateNewBudget) name:BGShowCreateBudgetView object:nil];
 
     return YES;
 }
@@ -80,6 +85,13 @@
     UIViewController *transactionController = [[TransactionViewController alloc] initWithModal];
     [[mainViewController view] addSubview:[transactionController view]];
     [self setCurrentTransactionView:transactionController];
+}
+
+- (void)onCreateNewBudget
+{
+    UIViewController *createBudgetController = [[CreateBudgetViewController alloc] init];
+    [[self.window.rootViewController view] addSubview:[createBudgetController view]];
+    [self setCurrentCreateBudgetView:createBudgetController];
 }
 
 - (void)onRevealLeftView
