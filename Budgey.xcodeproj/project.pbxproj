@@ -22,8 +22,8 @@
 		265E06C03432322C33230F85 /* background@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F84 /* background@2x.jpg */; };
 		265E06C03432322C33230F87 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		265E06C03432322C33230F90 /* (null) in Sources */ = {isa = PBXBuildFile; };
-		265E06C03432322C33230F94 /* BudgetListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F93 /* BudgetListViewController.m */; };
-		265E06C03432322C33230F97 /* BGCategoryStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F96 /* BGCategoryStore.m */; };
+		265E06C03432322C33230F94 /* CategoryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F93 /* CategoryListViewController.m */; };
+		265E06C03432322C33230F97 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		265E06C03432322C33230F9A /* header.png in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F99 /* header.png */; };
 		265E06C03432322C33230F9C /* header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F9B /* header@2x.png */; };
 		265E06C03432322C33230FA0 /* (null) in Resources */ = {isa = PBXBuildFile; };
@@ -37,7 +37,6 @@
 		7A1DB500159017FC0026A77B /* header-trimmed.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A1DB4FC159017FC0026A77B /* header-trimmed.png */; };
 		7A1DB501159017FC0026A77B /* header-trimmed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A1DB4FD159017FC0026A77B /* header-trimmed@2x.png */; };
 		7A2A52F915950D9B0087DEAB /* BudgetItemFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A2A52F815950D9B0087DEAB /* BudgetItemFooterView.xib */; };
-		7A33F2D71598C3AB007909CF /* SummaryProgressTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A33F2D61598C3AB007909CF /* SummaryProgressTableCell.xib */; };
 		7A4EEC47159411C600F50C24 /* header-blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A4EEC45159411C600F50C24 /* header-blank.png */; };
 		7A4EEC48159411C600F50C24 /* header-blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A4EEC46159411C600F50C24 /* header-blank@2x.png */; };
 		7A4EEC4B159411E700F50C24 /* BudgetItemHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A4EEC4A159411E700F50C24 /* BudgetItemHeaderView.xib */; };
@@ -88,7 +87,6 @@
 		7AFBD2C115964B2A00C875AB /* banner-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AFBD2BF15964B2A00C875AB /* banner-blue.png */; };
 		7AFBD2C215964B2A00C875AB /* banner-blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AFBD2C015964B2A00C875AB /* banner-blue@2x.png */; };
 		7AFBD2C41596535600C875AB /* SummaryIncomeTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AFBD2C31596535600C875AB /* SummaryIncomeTableCell.xib */; };
-		7AFBD2C61596543300C875AB /* SummarySpentTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AFBD2C51596543300C875AB /* SummarySpentTableCell.xib */; };
 		7AFBD2C81596567C00C875AB /* SummaryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AFBD2C71596567C00C875AB /* SummaryHeaderView.xib */; };
 		7AFBD2CA15965C7400C875AB /* SummaryFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AFBD2C915965C7400C875AB /* SummaryFooterView.xib */; };
 		7AFBD2CD159668FF00C875AB /* chart-placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AFBD2CB159668FF00C875AB /* chart-placeholder.png */; };
@@ -134,7 +132,9 @@
 		7AFBD2F415969AEA00C8760F /* cancel-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C8760E /* cancel-button@2x.png */; };
 		7AFBD2F415969AEA00C87611 /* BGBudgetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C87610 /* BGBudgetManager.m */; };
 		7AFBD2F415969AEA00C87614 /* BGManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C87613 /* BGManager.m */; };
-		7AFBD2F415969AEA00C87617 /* RevealViewController.m in Sources */ = {isa = PBXBuildFile; };
+		7AFBD2F415969AEA00C87617 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		7AFBD2F415969AEA00C87619 /* BudgetHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C87618 /* BudgetHeaderView.m */; };
+		7AFBD2F415969AEA00C8761C /* BudgetTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C8761B /* BudgetTableCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,10 +164,8 @@
 		265E06C03432322C33230F79 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		265E06C03432322C33230F82 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 		265E06C03432322C33230F84 /* background@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "background@2x.jpg"; sourceTree = "<group>"; };
-		265E06C03432322C33230F93 /* BudgetListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BudgetListViewController.m; sourceTree = "<group>"; };
-		265E06C03432322C33230F95 /* BudgetListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BudgetListViewController.h; sourceTree = "<group>"; };
-		265E06C03432322C33230F96 /* BGCategoryStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGCategoryStore.m; sourceTree = "<group>"; };
-		265E06C03432322C33230F98 /* BGCategoryStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGCategoryStore.h; sourceTree = "<group>"; };
+		265E06C03432322C33230F93 /* CategoryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryListViewController.m; sourceTree = "<group>"; };
+		265E06C03432322C33230F95 /* CategoryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryListViewController.h; sourceTree = "<group>"; };
 		265E06C03432322C33230F99 /* header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header.png; sourceTree = "<group>"; };
 		265E06C03432322C33230F9B /* header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header@2x.png"; sourceTree = "<group>"; };
 		265E06C03432322C33230FA1 /* BGColorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGColorUtil.m; sourceTree = "<group>"; };
@@ -182,7 +180,6 @@
 		7A1DB4FC159017FC0026A77B /* header-trimmed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header-trimmed.png"; sourceTree = "<group>"; };
 		7A1DB4FD159017FC0026A77B /* header-trimmed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header-trimmed@2x.png"; sourceTree = "<group>"; };
 		7A2A52F815950D9B0087DEAB /* BudgetItemFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BudgetItemFooterView.xib; sourceTree = "<group>"; };
-		7A33F2D61598C3AB007909CF /* SummaryProgressTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SummaryProgressTableCell.xib; sourceTree = "<group>"; };
 		7A4EEC45159411C600F50C24 /* header-blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header-blank.png"; sourceTree = "<group>"; };
 		7A4EEC46159411C600F50C24 /* header-blank@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header-blank@2x.png"; sourceTree = "<group>"; };
 		7A4EEC4A159411E700F50C24 /* BudgetItemHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BudgetItemHeaderView.xib; sourceTree = "<group>"; };
@@ -234,7 +231,6 @@
 		7AFBD2BF15964B2A00C875AB /* banner-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner-blue.png"; sourceTree = "<group>"; };
 		7AFBD2C015964B2A00C875AB /* banner-blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner-blue@2x.png"; sourceTree = "<group>"; };
 		7AFBD2C31596535600C875AB /* SummaryIncomeTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SummaryIncomeTableCell.xib; sourceTree = "<group>"; };
-		7AFBD2C51596543300C875AB /* SummarySpentTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SummarySpentTableCell.xib; sourceTree = "<group>"; };
 		7AFBD2C71596567C00C875AB /* SummaryHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SummaryHeaderView.xib; sourceTree = "<group>"; };
 		7AFBD2C915965C7400C875AB /* SummaryFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SummaryFooterView.xib; sourceTree = "<group>"; };
 		7AFBD2CB159668FF00C875AB /* chart-placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chart-placeholder.png"; sourceTree = "<group>"; };
@@ -317,6 +313,10 @@
 		7AFBD2F415969AEA00C87612 /* BGBudgetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGBudgetManager.h; sourceTree = "<group>"; };
 		7AFBD2F415969AEA00C87613 /* BGManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGManager.m; sourceTree = "<group>"; };
 		7AFBD2F415969AEA00C87615 /* BGManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGManager.h; sourceTree = "<group>"; };
+		7AFBD2F415969AEA00C87618 /* BudgetHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BudgetHeaderView.m; sourceTree = "<group>"; };
+		7AFBD2F415969AEA00C8761A /* BudgetHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BudgetHeaderView.h; sourceTree = "<group>"; };
+		7AFBD2F415969AEA00C8761B /* BudgetTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BudgetTableCell.m; sourceTree = "<group>"; };
+		7AFBD2F415969AEA00C8761D /* BudgetTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BudgetTableCell.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -471,6 +471,25 @@
 			name = Assets;
 			sourceTree = "<group>";
 		};
+		7A79D4D0159FA13B000F887F /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				7AECD39D158458E1002EA79C /* BudgetFooterView.xib */,
+				7A1DB4F6159016600026A77B /* TransactionViewController.xib */,
+				7AF397351584501B0023B057 /* BudgetHeaderView.xib */,
+				7AD41DDF1584657E003E7926 /* BudgetTableCell.xib */,
+				7A4EEC4A159411E700F50C24 /* BudgetItemHeaderView.xib */,
+				7A4EEC4C1594183300F50C24 /* BudgetItemTableCell.xib */,
+				7A2A52F815950D9B0087DEAB /* BudgetItemFooterView.xib */,
+				7AFBD2C31596535600C875AB /* SummaryIncomeTableCell.xib */,
+				7AFBD2C71596567C00C875AB /* SummaryHeaderView.xib */,
+				7AFBD2C915965C7400C875AB /* SummaryFooterView.xib */,
+				7A8EB817159E5088006C987E /* CreateBudgetViewController.xib */,
+				7A79D4C1159E7B05000F887F /* BudgetMonthTableViewController.xib */,
+			);
+			name = XIBs;
+			sourceTree = "<group>";
+		};
 		7AF397361584501B0023B05A /* LSInjector */ = {
 			isa = PBXGroup;
 			children = (
@@ -489,8 +508,6 @@
 				7AFBD2F415969AEA00C87610 /* BGBudgetManager.m */,
 				7AFBD2E815969A5F00C875AB /* Managed Objects */,
 				7AFBD2DF15968C4900C875AB /* Budgey.xcdatamodeld */,
-				265E06C03432322C33230F96 /* BGCategoryStore.m */,
-				265E06C03432322C33230F98 /* BGCategoryStore.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -498,20 +515,11 @@
 		7AF397361584501B0023B091 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7AECD39D158458E1002EA79C /* BudgetFooterView.xib */,
-				7A1DB4F6159016600026A77B /* TransactionViewController.xib */,
-				7AF397351584501B0023B057 /* BudgetHeaderView.xib */,
-				7AD41DDF1584657E003E7926 /* BudgetTableCell.xib */,
-				7A4EEC4A159411E700F50C24 /* BudgetItemHeaderView.xib */,
-				7A4EEC4C1594183300F50C24 /* BudgetItemTableCell.xib */,
-				7A2A52F815950D9B0087DEAB /* BudgetItemFooterView.xib */,
-				7AFBD2C31596535600C875AB /* SummaryIncomeTableCell.xib */,
-				7AFBD2C51596543300C875AB /* SummarySpentTableCell.xib */,
-				7AFBD2C71596567C00C875AB /* SummaryHeaderView.xib */,
-				7AFBD2C915965C7400C875AB /* SummaryFooterView.xib */,
-				7A33F2D61598C3AB007909CF /* SummaryProgressTableCell.xib */,
-				7A8EB817159E5088006C987E /* CreateBudgetViewController.xib */,
-				7A79D4C1159E7B05000F887F /* BudgetMonthTableViewController.xib */,
+				7AFBD2F415969AEA00C8761D /* BudgetTableCell.h */,
+				7AFBD2F415969AEA00C8761B /* BudgetTableCell.m */,
+				7AFBD2F415969AEA00C8761A /* BudgetHeaderView.h */,
+				7AFBD2F415969AEA00C87618 /* BudgetHeaderView.m */,
+				7A79D4D0159FA13B000F887F /* XIBs */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -552,8 +560,8 @@
 				7AF397361584501B0023B0AB /* BudgetItemListViewController.m */,
 				7AF397361584501B0023B077 /* BudgetViewController.m */,
 				7AF397361584501B0023B079 /* BudgetViewController.h */,
-				265E06C03432322C33230F93 /* BudgetListViewController.m */,
-				265E06C03432322C33230F95 /* BudgetListViewController.h */,
+				265E06C03432322C33230F93 /* CategoryListViewController.m */,
+				265E06C03432322C33230F95 /* CategoryListViewController.h */,
 				7A1DB4F4159016600026A77B /* TransactionViewController.h */,
 				7A1DB4F5159016600026A77B /* TransactionViewController.m */,
 			);
@@ -811,12 +819,10 @@
 				7AFBD2C115964B2A00C875AB /* banner-blue.png in Resources */,
 				7AFBD2C215964B2A00C875AB /* banner-blue@2x.png in Resources */,
 				7AFBD2C41596535600C875AB /* SummaryIncomeTableCell.xib in Resources */,
-				7AFBD2C61596543300C875AB /* SummarySpentTableCell.xib in Resources */,
 				7AFBD2C81596567C00C875AB /* SummaryHeaderView.xib in Resources */,
 				7AFBD2CA15965C7400C875AB /* SummaryFooterView.xib in Resources */,
 				7AFBD2CD159668FF00C875AB /* chart-placeholder.png in Resources */,
 				7AFBD2CE159668FF00C875AB /* chart-placeholder@2x.png in Resources */,
-				7A33F2D71598C3AB007909CF /* SummaryProgressTableCell.xib in Resources */,
 				7AFBD2F415969AEA00C87609 /* save-button.png in Resources */,
 				7AFBD2F415969AEA00C8760B /* save-button@2x.png in Resources */,
 				7AFBD2F415969AEA00C8760D /* cancel-button.png in Resources */,
@@ -861,8 +867,8 @@
 				265E06C03432322C33230F66 /* AppDelegate.m in Sources */,
 				265E06C03432322C33230F87 /* (null) in Sources */,
 				265E06C03432322C33230F90 /* (null) in Sources */,
-				265E06C03432322C33230F94 /* BudgetListViewController.m in Sources */,
-				265E06C03432322C33230F97 /* BGCategoryStore.m in Sources */,
+				265E06C03432322C33230F94 /* CategoryListViewController.m in Sources */,
+				265E06C03432322C33230F97 /* (null) in Sources */,
 				265E06C03432322C33230FA2 /* BGColorUtil.m in Sources */,
 				7AF397361584501B0023B05C /* LSInjector.m in Sources */,
 				7AF397361584501B0023B061 /* BGTabBarController.m in Sources */,
@@ -913,7 +919,9 @@
 				7AFBD2F415969AEA00C87611 /* BGBudgetManager.m in Sources */,
 				7AFBD2F415969AEA00C87614 /* BGManager.m in Sources */,
 				7A8EB818159E5088006C987E /* CreateBudgetViewController.m in Sources */,
-				7AFBD2F415969AEA00C87617 /* RevealViewController.m in Sources */,
+				7AFBD2F415969AEA00C87617 /* (null) in Sources */,
+				7AFBD2F415969AEA00C87619 /* BudgetHeaderView.m in Sources */,
+				7AFBD2F415969AEA00C8761C /* BudgetTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

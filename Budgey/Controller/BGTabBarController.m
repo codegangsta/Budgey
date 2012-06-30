@@ -6,7 +6,7 @@
 
 
 #import "BGTabBarController.h"
-#import "BudgetListViewController.h"
+#import "CategoryListViewController.h"
 #import "BudgetViewController.h"
 #import "BGNotificationNames.h"
 
@@ -18,7 +18,7 @@
     self = [super init];
 
     // create the budget list
-    BudgetViewController *budgetViewController = [[BudgetViewController alloc] initWithRootViewController:[[BudgetListViewController alloc] init]];
+    BudgetViewController *budgetViewController = [[BudgetViewController alloc] initWithRootViewController:[[CategoryListViewController alloc] init]];
     [budgetViewController setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"Budget" image:[UIImage imageNamed:@"162-receipt.png"] tag:0]];
     [self addChildViewController:budgetViewController];
 

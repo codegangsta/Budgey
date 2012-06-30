@@ -26,3 +26,5 @@ extern NSString *const BGShowCreateBudgetView;
 extern NSString *const BGBudgetWasUpdated;
 extern NSString *const BGBudgetWasCreated;
 extern NSString *const BGBudgetWasDeleted;
+extern NSString *const BGSelectedBudgetWasChanged;
+

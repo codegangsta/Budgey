@@ -12,6 +12,8 @@
 
 
 @implementation BGBudgetManager
+@synthesize selectedBudget;
+
 
 //---------------------------------------------------
 //  Static Functions
@@ -58,11 +60,11 @@
     [budget addCategoriesObject:businessCategory];
 
     BGBudgetItem *jeremyBusiness = [BGBudgetItem MR_createEntity];
-    jeremyBusiness.name = @"Jeremy Business";
+    jeremyBusiness.name = @"Jeremy";
     [businessCategory addBudgetItemsObject:jeremyBusiness];
 
     BGBudgetItem *lizzieBusiness = [BGBudgetItem MR_createEntity];
-    lizzieBusiness.name = @"Lizzie Business";
+    lizzieBusiness.name = @"Lizzie";
     [businessCategory addBudgetItemsObject:lizzieBusiness];
 
     BGBudgetItem *test = [BGBudgetItem MR_createEntity];
@@ -89,6 +91,12 @@
 {
     [[NSManagedObjectContext MR_contextForCurrentThread] MR_save];
     [[NSNotificationCenter defaultCenter] postNotificationName:BGBudgetWasUpdated object:budget];
+}
+
+- (void)setSelectedBudget:(BGBudget *)aSelectedBudget
+{
+    selectedBudget = aSelectedBudget;
+    [[NSNotificationCenter defaultCenter] postNotificationName:BGSelectedBudgetWasChanged object:selectedBudget];
 }
 
 - (NSArray *)findAll

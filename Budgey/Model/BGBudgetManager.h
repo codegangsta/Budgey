@@ -12,6 +12,9 @@
 
 @interface BGBudgetManager : BGManager
 
+// the currently selected budget in the application
+@property (nonatomic, strong) BGBudget *selectedBudget;
+
 + (BGBudgetManager *)sharedManager;
 
 // Creates a budget item

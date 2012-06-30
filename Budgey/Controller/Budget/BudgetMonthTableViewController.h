@@ -15,6 +15,9 @@
 // refresh the data source and reload rows in the table view
 -(void)refresh;
 
+// will place a checkmark on the specified row
+-(void)selectRow:(NSInteger)row;
+
 // IBAction when the add button is clicked
 -(IBAction)addButtonClick:(id)sender;
 

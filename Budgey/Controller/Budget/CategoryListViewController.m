@@ -5,17 +5,29 @@
 //
 
 
-#import "BudgetListViewController.h"
-#import "BGCategoryStore.h"
+#import "CategoryListViewController.h"
 #import "BGColorUtil.h"
 #import "QuartzCore/CALayer.h"
 #import "BudgetItemListViewController.h"
 #import "BGShadowUtil.h"
+#import "BGBudgetManager.h"
+#import "BGBudget.h"
+#import "BGCategory.h"
+#import "BudgetHeaderView.h"
+#import "BudgetTableCell.h"
+#import "BGBudgetItem.h"
 
-@implementation BudgetListViewController
+@implementation CategoryListViewController
+{
+    BGBudgetManager *budgetManager;
+}
+
 @synthesize currentFooterView;
 @synthesize currentCell;
 @synthesize currentHeaderView;
+@synthesize summaryHeaderView;
+@synthesize summaryFooterView;
+@synthesize summaryCell;
 
 
 - (id)init
@@ -23,11 +35,12 @@
     // call the superclasses initializer
     self = [super initWithStyle:UITableViewStyleGrouped];
     if (self) {
-        // create our categories for our datasource
-        for (int j = 0; j < 5; j++) {
-            [[BGCategoryStore sharedStore] createCategory];
-        }
+        budgetManager = [BGBudgetManager sharedManager];
+        [self refresh];
     }
+
+    // add observers
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refresh) name:BGSelectedBudgetWasChanged object:nil];
 
     return self;
 }
@@ -59,34 +72,33 @@
 //---------------------------------------------------
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *nibName;
+    UITableViewCell *cell;
 
     // is it the summary?
     if ([indexPath section] == 0) {
-        // return the right cell based on the index
-        if ([indexPath row] == 0) {
-            nibName = @"SummaryIncomeTableCell";
-        }
-        else if([indexPath row] == 1) {
-            nibName = @"SummarySpentTableCell";
-        }
-        else {
-            nibName = @"SummaryProgressTableCell";
-        }
+        [[UINib nibWithNibName:@"SummaryIncomeTableCell" bundle:nil] instantiateWithOwner:self options:nil];
+        cell = summaryCell;
     }
-    else {
-        nibName = @"BudgetTableCell";
-    }
+    else { // regular budget item cell
+        [[UINib nibWithNibName:@"BudgetTableCell" bundle:nil] instantiateWithOwner:self options:nil];
 
-    UINib *nib = [UINib nibWithNibName:nibName bundle:nil];
-    [nib instantiateWithOwner:self options:nil];
+        // lookup the budget item for the cell
+        BGCategory *category = [categories objectAtIndex:indexPath.section-1];
+        NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
+        NSArray *budgetItems = [[category budgetItems] sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+        BGBudgetItem *budgetItem = [budgetItems objectAtIndex:[indexPath row]];
+
+        [currentCell setBudgetItem:budgetItem];
+
+        cell = currentCell;
+    }
 
     // workaround to get border off of the grouped cells
     UIView *backView = [[UIView alloc] init];
     backView.backgroundColor = [BGColorUtil colorWithHexString:@"d4d4d4"];
-    currentCell.backgroundView = backView;
+    cell.backgroundView = backView;
 
-    return currentCell;
+    return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -101,7 +113,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return [[[BGCategoryStore sharedStore] sections] count] + 1;
+    return [categories count] + 1;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
@@ -116,8 +128,9 @@
         return 1 ;
     }
     else {
-        NSString *currentSection = [[[BGCategoryStore sharedStore] sections] objectAtIndex:section-1];
-        return [[[BGCategoryStore sharedStore] categoriesForSection:currentSection] count];
+
+        BGCategory *category = [categories objectAtIndex:section-1];
+        return category.budgetItems.count;
     }
 }
 
@@ -133,36 +146,29 @@
 //---------------------------------------------------
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    NSString *nibName;
-
     // is it the summary?
     if (section == 0) {
-        nibName = @"SummaryHeaderView";
+        [[UINib nibWithNibName:@"SummaryHeaderView" bundle:nil] instantiateWithOwner:self options:nil];
+        return summaryHeaderView;
     }
     else {
-        nibName = @"BudgetHeaderView";
+        [[UINib nibWithNibName:@"BudgetHeaderView" bundle:nil] instantiateWithOwner:self options:nil];
+        [currentHeaderView setTitle:[[categories objectAtIndex:section-1] name]];
+        return currentHeaderView;
     }
-
-    UINib *nib = [UINib nibWithNibName:nibName bundle:nil];
-    [nib instantiateWithOwner:self options:nil];
-    return currentHeaderView;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
 {
-    NSString *nibName;
-
     // is it the summary?
     if (section == 0) {
-        nibName = @"SummaryFooterView";
+        [[UINib nibWithNibName:@"SummaryFooterView" bundle:nil] instantiateWithOwner:self options:nil];
+        return summaryFooterView;
     }
     else {
-        nibName = @"BudgetFooterView";
+        [[UINib nibWithNibName:@"BudgetFooterView" bundle:nil] instantiateWithOwner:self options:nil];
+        return currentFooterView;
     }
-
-    UINib *nib = [UINib nibWithNibName:nibName bundle:nil];
-    [nib instantiateWithOwner:self options:nil];
-    return currentFooterView;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
@@ -192,5 +198,16 @@
 {
     [[NSNotificationCenter defaultCenter] postNotificationName:BGRevealLeftView object:self];
 }
+
+- (void)refresh
+{
+    // the selected budget has been updated, lets update our UI
+    // sort our categories by name
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
+    categories = [[budgetManager.selectedBudget categories] sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+
+    [self.tableView reloadData];
+}
+
 
 @end
