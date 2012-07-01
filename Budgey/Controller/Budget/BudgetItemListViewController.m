@@ -5,20 +5,28 @@
 //
 
 
-#import <CoreGraphics/CoreGraphics.h>
 #import "BudgetItemListViewController.h"
 #import "BGShadowUtil.h"
 #import "BGColorUtil.h"
-#import "BGNotificationNames.h"
 #import "TransactionViewController.h"
+#import "BGBudgetItem.h"
+#import "BGTransaction.h"
+#import "BudgetItemTableCell.h"
 
 
 @implementation BudgetItemListViewController
-@synthesize currentCell, currentFooterView, currentHeaderView;
+{
+    NSArray *transactions;
+}
+@synthesize currentCell, currentFooterView, currentHeaderView, budgetItem;
 
-- (id)init
+//---------------------------------------------------
+//  Initialization
+//---------------------------------------------------
+- (id)initWithBudgetItem:(BGBudgetItem *)aBudgetItem
 {
     self = [super initWithStyle:UITableViewStyleGrouped];
+    [self setBudgetItem:aBudgetItem];
     return self;
 }
 
@@ -41,6 +49,32 @@
 
     [BGShadowUtil applyShadowToView:self.tableView.layer];
     self.tableView.clipsToBounds = NO;
+
+    // add observers
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refresh) name:BGTransactionWasCreated object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refresh) name:BGTransactionWasUpdated object:nil];
+}
+
+- (void)viewDidUnload
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+//---------------------------------------------------
+//  Budget Item
+//---------------------------------------------------
+- (void)setBudgetItem:(BGBudgetItem *)aBudgetItem
+{
+    budgetItem = aBudgetItem;
+    [self refresh];
+}
+
+- (void)refresh
+{
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:NO];
+    transactions = [[budgetItem transactions] sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+    [self.tableView reloadData];
+    [self.tableView reloadData];
 }
 
 //---------------------------------------------------
@@ -55,7 +89,7 @@
     backView.backgroundColor = [BGColorUtil colorWithHexString:@"d4d4d4"];
     currentCell.backgroundView = backView;
 
-    //[[cell textLabel] setText:[category objectForKey:@"name"]];
+    [currentCell setTransaction:[transactions objectAtIndex:[indexPath row]]];
 
     return currentCell;
 }
@@ -67,30 +101,30 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+    return transactions.count == 0 ? 0 : 1;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    return @"Hello World";
+    return @"";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
+    return transactions.count;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSDictionary *transactionData = [[NSDictionary alloc] initWithObjectsAndKeys:
-            @"Some Expense",@"name",
+            @"Some Expense", @"name",
             @"50.00", @"amount",
-            @"Entertainment",@"category",
+            @"Entertainment", @"category",
             [[NSDate alloc] init], @"date",
             nil];
 
     UIViewController *transactionController = [[TransactionViewController alloc] initWithData:transactionData];
-    [(UINavigationController *)self.parentViewController pushViewController:transactionController animated:YES];
+    [(UINavigationController *) self.parentViewController pushViewController:transactionController animated:YES];
 
     // position the view controller properly and add a shadow
     [BGShadowUtil applyShadowToView:transactionController.view.layer];
@@ -123,9 +157,5 @@
 {
     return 24;
 }
-
-//---------------------------------------------------
-//  UITableViewCell Logic
-//---------------------------------------------------
 
 @end

@@ -8,33 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+@class BGBudgetItem;
+
 @interface TransactionViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
-{
-    //---------------------------------------------------
-    //  UI
-    //---------------------------------------------------
-    UIButton *saveButton;
-    UIButton *cancelButton;
-    UITextField *expenseField;
-    UITextField *amountField;
-    UITextField *categoryField;
-    UIPickerView *categoryPickerView;
-    UITextField *dateField;
-    UIDatePicker *datePickerView;
-    UIView *backgroundView;
-    UIView *cardView;
-    UIView *dateLineView;
-
-    //---------------------------------------------------
-    //  Flags
-    //---------------------------------------------------
-    BOOL isModal;
-
-    //---------------------------------------------------
-    //  Data
-    //---------------------------------------------------
-    NSMutableDictionary *data;
-}
 
 @property (nonatomic, strong) IBOutlet UIButton *saveButton;
 @property (nonatomic, strong) IBOutlet UIButton *cancelButton;
@@ -51,6 +27,8 @@
 -(id)initWithModal;
 
 -(id)initWithData:(NSDictionary *)dictionary;
+
+-(BGBudgetItem *)budgetItemFromIndex:(NSInteger)index;
 
 -(IBAction)cancel:(id)sender;
 -(IBAction)save:(id)sender;

@@ -28,3 +28,9 @@ extern NSString *const BGBudgetWasCreated;
 extern NSString *const BGBudgetWasDeleted;
 extern NSString *const BGSelectedBudgetWasChanged;
 
+//---------------------------------------------------
+//  BGTransactions Functions
+//---------------------------------------------------
+extern NSString *const BGTransactionWasUpdated;
+extern NSString *const BGTransactionWasCreated;
+extern NSString *const BGTransactionWasDeleted;

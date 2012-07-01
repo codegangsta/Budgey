@@ -9,8 +9,31 @@
 #import <CoreGraphics/CoreGraphics.h>
 #import "TransactionViewController.h"
 #import "BGNotificationNames.h"
+#import "BGBudgetManager.h"
+#import "BGCategory.h"
+#import "BGBudget.h"
+#import "BGBudgetItem.h"
+#import "BGTransactionManager.h"
 
 @implementation TransactionViewController
+{
+    //---------------------------------------------------
+    //  Flags
+    //---------------------------------------------------
+    BOOL isModal;
+
+    //---------------------------------------------------
+    //  Data
+    //---------------------------------------------------
+    NSMutableDictionary *data;
+    BGBudgetManager *budgetManager;
+
+    //---------------------------------------------------
+    //  Picker View
+    //---------------------------------------------------
+    BGCategory *selectedCategory;
+    NSArray *categories;
+}
 @synthesize saveButton, cancelButton, expenseField, amountField,
 categoryField, categoryPickerView, dateField, datePickerView,
 backgroundView, cardView, dateLineView;
@@ -18,6 +41,11 @@ backgroundView, cardView, dateLineView;
 - (id)init
 {
     self = [super initWithNibName:@"TransactionViewController" bundle:nil];
+
+    budgetManager = [BGBudgetManager sharedManager];
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
+    categories = [[budgetManager.selectedBudget categories] sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+    selectedCategory = [categories objectAtIndex:0];
 
     return self;
 }
@@ -120,6 +148,15 @@ backgroundView, cardView, dateLineView;
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (BGBudgetItem *)budgetItemFromIndex:(NSInteger)index
+{
+    BGCategory *category = selectedCategory;
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
+    NSArray *budgetItems = [[category budgetItems] sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+    BGBudgetItem *budgetItem = [budgetItems objectAtIndex:index];
+    return budgetItem;
+}
+
 //---------------------------------------------------
 //  IBActions
 //---------------------------------------------------
@@ -133,6 +170,8 @@ backgroundView, cardView, dateLineView;
 
 - (IBAction)save:(id)sender
 {
+    // our big fat save transaction call
+    [[BGTransactionManager sharedManager] createTransactionWithName:[expenseField text] andDate:[datePickerView date] andAmount:[NSDecimalNumber decimalNumberWithString:[amountField text]] forBudgetItem:[self budgetItemFromIndex:[categoryPickerView selectedRowInComponent:1]]];
     [[NSNotificationCenter defaultCenter] postNotificationName:BGTransactionWasSaved object:self];
 
     // remove our view
@@ -149,23 +188,43 @@ backgroundView, cardView, dateLineView;
 //---------------------------------------------------
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
-    // handle Selection
-    [categoryField setText:[NSString stringWithFormat:@"Category %d",row]];
+    if (component == 0) // categories
+    {
+        selectedCategory = [categories objectAtIndex:row];
+        [pickerView reloadComponent:1];
+    }
+
+    BGBudgetItem *budgetItem = [self budgetItemFromIndex:[pickerView selectedRowInComponent:1]];
+    [categoryField setText:[NSString stringWithFormat:@"%@: %@",[selectedCategory name],[budgetItem name]]];
 }
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
-    return [NSString stringWithFormat:@"Category %d",row];
+    if (component == 0) // categories
+    {
+        return [[categories objectAtIndex:row] name];
+    }
+    else // budget Items
+    {
+        return [[self budgetItemFromIndex:row] name];
+    }
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
 {
-    return 1;
+    return 2;
 }
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
-    return 40;
+    if (component == 0) // Categories
+    {
+        return [budgetManager.selectedBudget.categories count];
+    }
+    else // budget items
+    {
+        return [selectedCategory.budgetItems count];
+    }
 }
 
 //---------------------------------------------------

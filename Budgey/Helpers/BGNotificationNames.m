@@ -16,6 +16,8 @@ NSString *const BGBudgetWasUpdated = @"BGBudgetWasUpdated";
 NSString *const BGBudgetWasCreated = @"BGBudgetWasCreated";
 NSString *const BGBudgetWasDeleted = @"BGBudgetWasDeleted";
 NSString *const BGSelectedBudgetWasChanged = @"BGSelectedBudgetWasChanged";
-
+NSString *const BGTransactionWasUpdated = @"BGTransactionWasUpdated";
+NSString *const BGTransactionWasCreated = @"BGTransactionWasCreated";
+NSString *const BGTransactionWasDeleted = @"BGTransactionWasDeleted";
 @implementation BGNotificationNames
 @end

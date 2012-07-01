@@ -9,6 +9,7 @@
 
 @class BudgetHeaderView;
 @class BudgetTableCell;
+@class BGBudgetItem;
 
 //  View controller for a Budget category table that
 //  shows up in the main view in Budgey
@@ -21,6 +22,8 @@
 }
 
 -(void)refresh;
+
+-(BGBudgetItem *)budgetItemFromIndexPath:(NSIndexPath *)indexPath;
 
 // this is a workaround to use xibs to define our header, footer
 // and cell view instances via xibs

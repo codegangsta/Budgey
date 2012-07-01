@@ -180,6 +180,7 @@
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 				<int key="IBUIAccessoryType">1</int>
 				<reference key="IBUIContentView" ref="614375833"/>
+				<string key="IBUIReuseIdentifier">BudgetTableCell</string>
 				<real value="39" key="IBUIRowHeight"/>
 			</object>
 		</array>
@@ -353,7 +354,7 @@
 					<string key="className">CategoryListViewController</string>
 					<string key="superclassName">UITableViewController</string>
 					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="currentCell">UITableViewCell</string>
+						<string key="currentCell">BudgetTableCell</string>
 						<string key="currentFooterView">UIView</string>
 						<string key="currentHeaderView">BudgetHeaderView</string>
 						<string key="summaryCell">UITableViewCell</string>
@@ -363,7 +364,7 @@
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<object class="IBToOneOutletInfo" key="currentCell">
 							<string key="name">currentCell</string>
-							<string key="candidateClassName">UITableViewCell</string>
+							<string key="candidateClassName">BudgetTableCell</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="currentFooterView">
 							<string key="name">currentFooterView</string>

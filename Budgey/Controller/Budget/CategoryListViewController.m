@@ -20,6 +20,7 @@
 @implementation CategoryListViewController
 {
     BGBudgetManager *budgetManager;
+    BudgetItemListViewController *budgetItemListViewController;
 }
 
 @synthesize currentFooterView;
@@ -83,11 +84,7 @@
         [[UINib nibWithNibName:@"BudgetTableCell" bundle:nil] instantiateWithOwner:self options:nil];
 
         // lookup the budget item for the cell
-        BGCategory *category = [categories objectAtIndex:indexPath.section-1];
-        NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
-        NSArray *budgetItems = [[category budgetItems] sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
-        BGBudgetItem *budgetItem = [budgetItems objectAtIndex:[indexPath row]];
-
+        BGBudgetItem *budgetItem = [self budgetItemFromIndexPath:indexPath];
         [currentCell setBudgetItem:budgetItem];
 
         cell = currentCell;
@@ -137,8 +134,12 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // push a new view when we select
-    UIViewController *budgetItemListController = [[BudgetItemListViewController alloc] init];
-    [(UINavigationController *)self.parentViewController pushViewController:budgetItemListController animated:YES];
+    if (budgetItemListViewController == nil)
+        budgetItemListViewController = [[BudgetItemListViewController alloc] initWithBudgetItem:[self budgetItemFromIndexPath:indexPath]];
+    else
+        [budgetItemListViewController setBudgetItem:[self budgetItemFromIndexPath:indexPath]];
+
+    [(UINavigationController *)self.parentViewController pushViewController:budgetItemListViewController animated:YES];
 }
 
 //---------------------------------------------------
@@ -207,6 +208,16 @@
     categories = [[budgetManager.selectedBudget categories] sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
 
     [self.tableView reloadData];
+}
+
+- (BGBudgetItem *)budgetItemFromIndexPath:(NSIndexPath *)indexPath
+{
+    BGCategory *category = [categories objectAtIndex:indexPath.section-1];
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
+    NSArray *budgetItems = [[category budgetItems] sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+    BGBudgetItem *budgetItem = [budgetItems objectAtIndex:[indexPath row]];
+
+    return budgetItem;
 }
 
 

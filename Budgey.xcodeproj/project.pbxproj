@@ -135,6 +135,8 @@
 		7AFBD2F415969AEA00C87617 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		7AFBD2F415969AEA00C87619 /* BudgetHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C87618 /* BudgetHeaderView.m */; };
 		7AFBD2F415969AEA00C8761C /* BudgetTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C8761B /* BudgetTableCell.m */; };
+		7AFBD2F415969AEA00C8761F /* BudgetItemTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C8761E /* BudgetItemTableCell.m */; };
+		7AFBD2F415969AEA00C87622 /* BGTransactionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C87621 /* BGTransactionManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -317,6 +319,10 @@
 		7AFBD2F415969AEA00C8761A /* BudgetHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BudgetHeaderView.h; sourceTree = "<group>"; };
 		7AFBD2F415969AEA00C8761B /* BudgetTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BudgetTableCell.m; sourceTree = "<group>"; };
 		7AFBD2F415969AEA00C8761D /* BudgetTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BudgetTableCell.h; sourceTree = "<group>"; };
+		7AFBD2F415969AEA00C8761E /* BudgetItemTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BudgetItemTableCell.m; sourceTree = "<group>"; };
+		7AFBD2F415969AEA00C87620 /* BudgetItemTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BudgetItemTableCell.h; sourceTree = "<group>"; };
+		7AFBD2F415969AEA00C87621 /* BGTransactionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGTransactionManager.m; sourceTree = "<group>"; };
+		7AFBD2F415969AEA00C87623 /* BGTransactionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGTransactionManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -502,6 +508,8 @@
 		7AF397361584501B0023B090 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7AFBD2F415969AEA00C87623 /* BGTransactionManager.h */,
+				7AFBD2F415969AEA00C87621 /* BGTransactionManager.m */,
 				7AFBD2F415969AEA00C87615 /* BGManager.h */,
 				7AFBD2F415969AEA00C87613 /* BGManager.m */,
 				7AFBD2F415969AEA00C87612 /* BGBudgetManager.h */,
@@ -515,6 +523,8 @@
 		7AF397361584501B0023B091 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7AFBD2F415969AEA00C87620 /* BudgetItemTableCell.h */,
+				7AFBD2F415969AEA00C8761E /* BudgetItemTableCell.m */,
 				7AFBD2F415969AEA00C8761D /* BudgetTableCell.h */,
 				7AFBD2F415969AEA00C8761B /* BudgetTableCell.m */,
 				7AFBD2F415969AEA00C8761A /* BudgetHeaderView.h */,
@@ -922,6 +932,8 @@
 				7AFBD2F415969AEA00C87617 /* (null) in Sources */,
 				7AFBD2F415969AEA00C87619 /* BudgetHeaderView.m in Sources */,
 				7AFBD2F415969AEA00C8761C /* BudgetTableCell.m in Sources */,
+				7AFBD2F415969AEA00C8761F /* BudgetItemTableCell.m in Sources */,
+				7AFBD2F415969AEA00C87622 /* BGTransactionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
