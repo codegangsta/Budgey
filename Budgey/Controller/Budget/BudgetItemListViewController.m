@@ -13,6 +13,7 @@
 #import "BGTransaction.h"
 #import "BudgetItemTableCell.h"
 #import "BudgetItemHeaderView.h"
+#import "BGTransactionManager.h"
 
 
 @implementation BudgetItemListViewController
@@ -52,8 +53,9 @@
     self.tableView.clipsToBounds = NO;
 
     // add observers
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refresh) name:BGTransactionWasCreated object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refresh) name:BGTransactionWasUpdated object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTransactionCreated:) name:BGTransactionWasCreated object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTransactionDeleted:) name:BGTransactionWasDeleted object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTransactionUpdated:) name:BGTransactionWasUpdated object:nil];
 }
 
 - (void)viewDidUnload
@@ -68,12 +70,48 @@
 {
     budgetItem = aBudgetItem;
     [self refresh];
+    [self.tableView reloadData];
 }
 
 - (void)refresh
 {
     NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:NO];
     transactions = [[budgetItem transactions] sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+}
+
+//---------------------------------------------------
+//  Actions
+//---------------------------------------------------
+- (void)onTransactionCreated:(NSNotification *)notification
+{
+    // refresh the datasource
+    [self refresh];
+
+    BGTransaction *transaction = [notification object];
+
+    if (transaction) {
+        NSIndexPath *path = [NSIndexPath indexPathForRow:[transactions indexOfObject:transaction] inSection:0];
+        [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:path] withRowAnimation:UITableViewRowAnimationAutomatic];
+    }
+
+    [currentHeaderView setBudgetItem:budgetItem];
+}
+
+- (void)onTransactionDeleted:(NSNotification *)notification
+{
+    BGTransaction *budget = [notification object];
+    NSIndexPath *path = [NSIndexPath indexPathForRow:[transactions indexOfObject:budget] inSection:0];
+
+    // refresh the datasource
+    [self refresh];
+    [self.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:path] withRowAnimation:UITableViewRowAnimationAutomatic];
+
+    [currentHeaderView setBudgetItem:budgetItem];
+}
+
+- (void)onTransactionUpdated:(NSNotification *)notification
+{
+    [self refresh];
     [self.tableView reloadData];
 }
 
@@ -101,7 +139,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return transactions.count == 0 ? 0 : 1;
+    return 1;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
@@ -122,6 +160,21 @@
     // position the view controller properly and add a shadow
     [BGShadowUtil applyShadowToView:transactionController.view.layer];
     transactionController.view.clipsToBounds = NO;
+}
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        BGTransaction *transaction = [transactions objectAtIndex:[indexPath row]];
+        if (transaction) {
+            [[BGTransactionManager sharedManager] deleteTransaction:transaction];
+        }
+    }
 }
 
 //---------------------------------------------------

@@ -42,6 +42,9 @@
 
     // add observers
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refresh) name:BGSelectedBudgetWasChanged object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refresh) name:BGTransactionWasUpdated object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refresh) name:BGTransactionWasDeleted object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refresh) name:BGTransactionWasCreated object:nil];
 
     return self;
 }
