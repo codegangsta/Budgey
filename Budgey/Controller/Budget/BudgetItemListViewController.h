@@ -9,10 +9,11 @@
 
 @class BGBudgetItem;
 @class BudgetItemTableCell;
+@class BudgetItemHeaderView;
 
 @interface BudgetItemListViewController : UITableViewController
 
-@property (nonatomic, strong) IBOutlet UIView *currentHeaderView;
+@property (nonatomic, strong) IBOutlet BudgetItemHeaderView *currentHeaderView;
 @property (nonatomic, strong) IBOutlet UIView *currentFooterView;
 @property (nonatomic, strong) IBOutlet BudgetItemTableCell *currentCell;
 

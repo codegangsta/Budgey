@@ -14,6 +14,7 @@
 #import "BGBudget.h"
 #import "BGBudgetItem.h"
 #import "BGTransactionManager.h"
+#import "BGTransaction.h"
 
 @implementation TransactionViewController
 {
@@ -25,7 +26,7 @@
     //---------------------------------------------------
     //  Data
     //---------------------------------------------------
-    NSMutableDictionary *data;
+    BGTransaction *data;
     BGBudgetManager *budgetManager;
 
     //---------------------------------------------------
@@ -59,11 +60,11 @@ backgroundView, cardView, dateLineView;
     return self;
 }
 
-- (id)initWithData:(NSDictionary *)dictionary
+- (id)initWithData:(BGTransaction *)aData
 {
     self = [self init];
 
-    data = [NSMutableDictionary dictionaryWithDictionary:dictionary];
+    data = aData;
 
     return self;;
 }
@@ -118,14 +119,10 @@ backgroundView, cardView, dateLineView;
     // set any data if we have it
     if (data != nil)
     {
-        if([data valueForKey:@"name"])
-            [expenseField setText:[data valueForKey:@"name"]];
-        if([data valueForKey:@"amount"])
-            [amountField setText:[data valueForKey:@"amount"]];
-        if([data valueForKey:@"category"])
-            [categoryField setText:[data valueForKey:@"category"]];
-        if([data valueForKey:@"date"])
-            [dateField setText:[dateFormatter stringFromDate:[data valueForKey:@"date"]]];
+        [expenseField setText:[data name]];
+        [amountField setText:[[data amount] stringValue]];
+        [self selectBudgetItem:[data budgetItem]];
+        [dateField setText:[dateFormatter stringFromDate:[NSDate dateWithTimeIntervalSince1970:[data date]]]];
     }
 
     // set the expense field to be the primary focus
@@ -143,6 +140,21 @@ backgroundView, cardView, dateLineView;
     self.categoryPickerView = nil;
 }
 
+- (void)viewWillDisappear:(BOOL)animated
+{
+    // save out if we initialized with data
+    if (data != nil)
+    {
+        data.amount = [NSDecimalNumber decimalNumberWithString:[amountField text]];
+        data.date = [[datePickerView date] timeIntervalSince1970];
+        data.name = [expenseField text];
+        data.budgetItem = [self budgetItemFromIndex:[categoryPickerView selectedRowInComponent:1]];
+        [[BGTransactionManager sharedManager] updateTransaction:data];
+
+        data = nil;
+    }
+}
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
@@ -155,6 +167,17 @@ backgroundView, cardView, dateLineView;
     NSArray *budgetItems = [[category budgetItems] sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
     BGBudgetItem *budgetItem = [budgetItems objectAtIndex:index];
     return budgetItem;
+}
+
+- (void)selectBudgetItem:(BGBudgetItem *)budgetItem
+{
+    selectedCategory = [budgetItem category];
+    [categoryField setText:[NSString stringWithFormat:@"%@: %@",data.budgetItem.category.name,data.budgetItem.name]];
+
+    BGCategory *category = selectedCategory;
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
+    NSArray *budgetItems = [[category budgetItems] sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+    [categoryPickerView selectRow:[budgetItems indexOfObject:budgetItem] inComponent:1 animated:YES];
 }
 
 //---------------------------------------------------

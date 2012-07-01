@@ -12,6 +12,7 @@
 #import "BGBudgetItem.h"
 #import "BGTransaction.h"
 #import "BudgetItemTableCell.h"
+#import "BudgetItemHeaderView.h"
 
 
 @implementation BudgetItemListViewController
@@ -74,7 +75,6 @@
     NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:NO];
     transactions = [[budgetItem transactions] sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
     [self.tableView reloadData];
-    [self.tableView reloadData];
 }
 
 //---------------------------------------------------
@@ -116,14 +116,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSDictionary *transactionData = [[NSDictionary alloc] initWithObjectsAndKeys:
-            @"Some Expense", @"name",
-            @"50.00", @"amount",
-            @"Entertainment", @"category",
-            [[NSDate alloc] init], @"date",
-            nil];
-
-    UIViewController *transactionController = [[TransactionViewController alloc] initWithData:transactionData];
+    UIViewController *transactionController = [[TransactionViewController alloc] initWithData:[transactions objectAtIndex:[indexPath row]]];
     [(UINavigationController *) self.parentViewController pushViewController:transactionController animated:YES];
 
     // position the view controller properly and add a shadow
@@ -138,6 +131,7 @@
 {
     UINib *nib = [UINib nibWithNibName:@"BudgetItemHeaderView" bundle:nil];
     [nib instantiateWithOwner:self options:nil];
+    [currentHeaderView setBudgetItem:budgetItem];
     return currentHeaderView;
 }
 

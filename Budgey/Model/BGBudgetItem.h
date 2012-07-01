@@ -17,6 +17,10 @@
 @property (nonatomic, retain) NSDecimalNumber * amount;
 @property (nonatomic, retain) BGCategory *category;
 @property (nonatomic, retain) NSSet *transactions;
+
+// returns the total amount spent in the budget item
+-(NSNumber *)amountSpent;
+
 @end
 
 @interface BGBudgetItem (CoreDataGeneratedAccessors)

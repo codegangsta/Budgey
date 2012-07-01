@@ -8,6 +8,7 @@
 
 #import "BGBudgetItem.h"
 #import "BGCategory.h"
+#import "BGTransaction.h"
 
 
 @implementation BGBudgetItem
@@ -16,5 +17,16 @@
 @dynamic amount;
 @dynamic category;
 @dynamic transactions;
+
+- (NSNumber *)amountSpent
+{
+    float spent = 0.00;
+    for (BGTransaction *transaction in [self transactions]) {
+        spent += [[transaction amount] floatValue];
+    }
+
+    return [NSNumber numberWithFloat:spent];
+}
+
 
 @end

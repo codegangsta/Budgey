@@ -4,27 +4,28 @@
 // To change the template use AppCode | Preferences | File Templates.
 //
 
-#import "BudgetTableCell.h"
+
+#import "BudgetItemHeaderView.h"
 #import "BGBudgetItem.h"
 
-@implementation BudgetTableCell
 
-@synthesize nameLabel;
-@synthesize budgetedLabel;
-@synthesize spentLabel;
+@implementation BudgetItemHeaderView
 @synthesize budgetItem;
+@synthesize spentLabel;
+@synthesize budgetedLabel;
+@synthesize titleLabel;
 
 - (void)setBudgetItem:(BGBudgetItem *)aBudgetItem
 {
+    budgetItem = aBudgetItem;
+
     NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
     [formatter setCurrencySymbol:@"$"];
     [formatter setNumberStyle:NSNumberFormatterCurrencyStyle];
 
-    [nameLabel setText:[aBudgetItem name]];
-    [budgetedLabel setText:[formatter stringFromNumber:[aBudgetItem amount]]];
+    [titleLabel setText:[aBudgetItem name]];
     [spentLabel setText:[formatter stringFromNumber:[aBudgetItem amountSpent]]];
-
-    // TODO: Make text red if the spent is over the budget
+    [budgetedLabel setText:[formatter stringFromNumber:[aBudgetItem amount]]];
 }
 
 @end

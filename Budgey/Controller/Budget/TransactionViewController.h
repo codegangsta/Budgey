@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @class BGBudgetItem;
+@class BGTransaction;
 
 @interface TransactionViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 
@@ -26,9 +27,10 @@
 
 -(id)initWithModal;
 
--(id)initWithData:(NSDictionary *)dictionary;
+-(id)initWithData:(BGTransaction *)aData;
 
 -(BGBudgetItem *)budgetItemFromIndex:(NSInteger)index;
+-(void)selectBudgetItem:(BGBudgetItem *)budgetItem;
 
 -(IBAction)cancel:(id)sender;
 -(IBAction)save:(id)sender;
