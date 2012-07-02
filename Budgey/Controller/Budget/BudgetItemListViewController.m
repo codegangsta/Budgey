@@ -89,7 +89,7 @@
 
     BGTransaction *transaction = [notification object];
 
-    if (transaction) {
+    if (transaction && [transactions containsObject:transaction]) {
         NSIndexPath *path = [NSIndexPath indexPathForRow:[transactions indexOfObject:transaction] inSection:0];
         [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:path] withRowAnimation:UITableViewRowAnimationAutomatic];
     }
