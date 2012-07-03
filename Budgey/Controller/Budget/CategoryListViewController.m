@@ -156,7 +156,9 @@
         return summaryHeaderView;
     }
     else {
-        [[UINib nibWithNibName:@"BudgetHeaderView" bundle:nil] instantiateWithOwner:self options:nil];
+        //[[UINib nibWithNibName:@"BudgetHeaderView" bundle:nil] instantiateWithOwner:self options:nil];
+        // init the view class
+        currentHeaderView = [[BudgetHeaderView alloc] init];
         [currentHeaderView setTitle:[[categories objectAtIndex:section-1] name]];
         return currentHeaderView;
     }
