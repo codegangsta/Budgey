@@ -139,6 +139,7 @@
 		7AFBD2F415969AEA00C87622 /* BGTransactionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C87621 /* BGTransactionManager.m */; };
 		7AFBD2F415969AEA00C87625 /* BudgetItemHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C87624 /* BudgetItemHeaderView.m */; };
 		7AFBD2F415969AEA00C87628 /* BudgetFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C87627 /* BudgetFooterView.m */; };
+		7AFBD2F415969AEA00C8762B /* SummaryHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C8762A /* SummaryHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -329,6 +330,8 @@
 		7AFBD2F415969AEA00C87626 /* BudgetItemHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BudgetItemHeaderView.h; sourceTree = "<group>"; };
 		7AFBD2F415969AEA00C87627 /* BudgetFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BudgetFooterView.m; sourceTree = "<group>"; };
 		7AFBD2F415969AEA00C87629 /* BudgetFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BudgetFooterView.h; sourceTree = "<group>"; };
+		7AFBD2F415969AEA00C8762A /* SummaryHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryHeaderView.m; sourceTree = "<group>"; };
+		7AFBD2F415969AEA00C8762C /* SummaryHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryHeaderView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -483,6 +486,39 @@
 			name = Assets;
 			sourceTree = "<group>";
 		};
+		7A20E96F15A4E435006F996A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				7AFBD2F415969AEA00C87629 /* BudgetFooterView.h */,
+				7AFBD2F415969AEA00C87627 /* BudgetFooterView.m */,
+				7AFBD2F415969AEA00C8761D /* BudgetTableCell.h */,
+				7AFBD2F415969AEA00C8761B /* BudgetTableCell.m */,
+				7AFBD2F415969AEA00C8761A /* BudgetHeaderView.h */,
+				7AFBD2F415969AEA00C87618 /* BudgetHeaderView.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		7A20E97115A4E45C006F996A /* BudgetItem */ = {
+			isa = PBXGroup;
+			children = (
+				7AFBD2F415969AEA00C87626 /* BudgetItemHeaderView.h */,
+				7AFBD2F415969AEA00C87624 /* BudgetItemHeaderView.m */,
+				7AFBD2F415969AEA00C87620 /* BudgetItemTableCell.h */,
+				7AFBD2F415969AEA00C8761E /* BudgetItemTableCell.m */,
+			);
+			name = BudgetItem;
+			sourceTree = "<group>";
+		};
+		7A20E97215A4E477006F996A /* Summary */ = {
+			isa = PBXGroup;
+			children = (
+				7AFBD2F415969AEA00C8762C /* SummaryHeaderView.h */,
+				7AFBD2F415969AEA00C8762A /* SummaryHeaderView.m */,
+			);
+			name = Summary;
+			sourceTree = "<group>";
+		};
 		7A79D4D0159FA13B000F887F /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
@@ -529,16 +565,9 @@
 		7AF397361584501B0023B091 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7AFBD2F415969AEA00C87629 /* BudgetFooterView.h */,
-				7AFBD2F415969AEA00C87627 /* BudgetFooterView.m */,
-				7AFBD2F415969AEA00C87626 /* BudgetItemHeaderView.h */,
-				7AFBD2F415969AEA00C87624 /* BudgetItemHeaderView.m */,
-				7AFBD2F415969AEA00C87620 /* BudgetItemTableCell.h */,
-				7AFBD2F415969AEA00C8761E /* BudgetItemTableCell.m */,
-				7AFBD2F415969AEA00C8761D /* BudgetTableCell.h */,
-				7AFBD2F415969AEA00C8761B /* BudgetTableCell.m */,
-				7AFBD2F415969AEA00C8761A /* BudgetHeaderView.h */,
-				7AFBD2F415969AEA00C87618 /* BudgetHeaderView.m */,
+				7A20E97215A4E477006F996A /* Summary */,
+				7A20E97115A4E45C006F996A /* BudgetItem */,
+				7A20E96F15A4E435006F996A /* Category */,
 				7A79D4D0159FA13B000F887F /* XIBs */,
 			);
 			path = View;
@@ -946,6 +975,7 @@
 				7AFBD2F415969AEA00C87622 /* BGTransactionManager.m in Sources */,
 				7AFBD2F415969AEA00C87625 /* BudgetItemHeaderView.m in Sources */,
 				7AFBD2F415969AEA00C87628 /* BudgetFooterView.m in Sources */,
+				7AFBD2F415969AEA00C8762B /* SummaryHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

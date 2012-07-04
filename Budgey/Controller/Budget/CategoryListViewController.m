@@ -17,6 +17,7 @@
 #import "BudgetTableCell.h"
 #import "BGBudgetItem.h"
 #import "BudgetFooterView.h"
+#import "SummaryHeaderView.h"
 
 @implementation CategoryListViewController
 {
@@ -153,7 +154,7 @@
 {
     // is it the summary?
     if (section == 0) {
-        [[UINib nibWithNibName:@"SummaryHeaderView" bundle:nil] instantiateWithOwner:self options:nil];
+        summaryHeaderView = [[SummaryHeaderView alloc] init];
         return summaryHeaderView;
     }
     else {
