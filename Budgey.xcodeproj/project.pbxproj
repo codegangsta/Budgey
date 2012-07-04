@@ -141,6 +141,7 @@
 		7AFBD2F415969AEA00C87628 /* BudgetFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C87627 /* BudgetFooterView.m */; };
 		7AFBD2F415969AEA00C8762B /* SummaryHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C8762A /* SummaryHeaderView.m */; };
 		7AFBD2F415969AEA00C8762E /* SummaryTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C8762D /* SummaryTableCell.m */; };
+		7AFBD2F415969AEA00C87631 /* SummaryFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C87630 /* SummaryFooterView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -335,6 +336,8 @@
 		7AFBD2F415969AEA00C8762C /* SummaryHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryHeaderView.h; sourceTree = "<group>"; };
 		7AFBD2F415969AEA00C8762D /* SummaryTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryTableCell.m; sourceTree = "<group>"; };
 		7AFBD2F415969AEA00C8762F /* SummaryTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryTableCell.h; sourceTree = "<group>"; };
+		7AFBD2F415969AEA00C87630 /* SummaryFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryFooterView.m; sourceTree = "<group>"; };
+		7AFBD2F415969AEA00C87632 /* SummaryFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryFooterView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -516,6 +519,8 @@
 		7A20E97215A4E477006F996A /* Summary */ = {
 			isa = PBXGroup;
 			children = (
+				7AFBD2F415969AEA00C87632 /* SummaryFooterView.h */,
+				7AFBD2F415969AEA00C87630 /* SummaryFooterView.m */,
 				7AFBD2F415969AEA00C8762F /* SummaryTableCell.h */,
 				7AFBD2F415969AEA00C8762D /* SummaryTableCell.m */,
 				7AFBD2F415969AEA00C8762C /* SummaryHeaderView.h */,
@@ -982,6 +987,7 @@
 				7AFBD2F415969AEA00C87628 /* BudgetFooterView.m in Sources */,
 				7AFBD2F415969AEA00C8762B /* SummaryHeaderView.m in Sources */,
 				7AFBD2F415969AEA00C8762E /* SummaryTableCell.m in Sources */,
+				7AFBD2F415969AEA00C87631 /* SummaryFooterView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

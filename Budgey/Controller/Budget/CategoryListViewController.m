@@ -19,6 +19,7 @@
 #import "BudgetFooterView.h"
 #import "SummaryHeaderView.h"
 #import "SummaryTableCell.h"
+#import "SummaryFooterView.h"
 
 @implementation CategoryListViewController
 {
@@ -170,7 +171,7 @@
 {
     // is it the summary?
     if (section == 0) {
-        [[UINib nibWithNibName:@"SummaryFooterView" bundle:nil] instantiateWithOwner:self options:nil];
+        summaryFooterView = [[SummaryFooterView alloc] init];
         return summaryFooterView;
     }
     else {
