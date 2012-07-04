@@ -18,6 +18,7 @@
 #import "BGBudgetItem.h"
 #import "BudgetFooterView.h"
 #import "SummaryHeaderView.h"
+#import "SummaryTableCell.h"
 
 @implementation CategoryListViewController
 {
@@ -82,7 +83,7 @@
 
     // is it the summary?
     if ([indexPath section] == 0) {
-        [[UINib nibWithNibName:@"SummaryIncomeTableCell" bundle:nil] instantiateWithOwner:self options:nil];
+        summaryCell = [[SummaryTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"SummaryTableCell"];
         cell = summaryCell;
     }
     else { // regular budget item cell
@@ -158,7 +159,6 @@
         return summaryHeaderView;
     }
     else {
-        //[[UINib nibWithNibName:@"BudgetHeaderView" bundle:nil] instantiateWithOwner:self options:nil];
         // init the view class
         currentHeaderView = [[BudgetHeaderView alloc] init];
         [currentHeaderView setTitle:[[categories objectAtIndex:section-1] name]];
