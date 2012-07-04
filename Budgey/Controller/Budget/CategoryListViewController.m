@@ -16,6 +16,7 @@
 #import "BudgetHeaderView.h"
 #import "BudgetTableCell.h"
 #import "BGBudgetItem.h"
+#import "BudgetFooterView.h"
 
 @implementation CategoryListViewController
 {
@@ -84,7 +85,7 @@
         cell = summaryCell;
     }
     else { // regular budget item cell
-        [[UINib nibWithNibName:@"BudgetTableCell" bundle:nil] instantiateWithOwner:self options:nil];
+        currentCell = [[BudgetTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"BudgetTableCell"];
 
         // lookup the budget item for the cell
         BGBudgetItem *budgetItem = [self budgetItemFromIndexPath:indexPath];
@@ -172,7 +173,7 @@
         return summaryFooterView;
     }
     else {
-        [[UINib nibWithNibName:@"BudgetFooterView" bundle:nil] instantiateWithOwner:self options:nil];
+        currentFooterView = [[BudgetFooterView alloc] init];
         return currentFooterView;
     }
 }

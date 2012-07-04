@@ -10,6 +10,7 @@
 @class BudgetHeaderView;
 @class BudgetTableCell;
 @class BGBudgetItem;
+@class BudgetFooterView;
 
 //  View controller for a Budget category table that
 //  shows up in the main view in Budgey
@@ -28,7 +29,7 @@
 // this is a workaround to use xibs to define our header, footer
 // and cell view instances via xibs
 @property (nonatomic, strong) IBOutlet BudgetHeaderView *currentHeaderView;
-@property (nonatomic, strong) IBOutlet UIView *currentFooterView;
+@property (nonatomic, strong) IBOutlet BudgetFooterView *currentFooterView;
 @property (nonatomic, strong) IBOutlet BudgetTableCell *currentCell;
 
 @property (nonatomic, strong) IBOutlet UIView *summaryHeaderView;
