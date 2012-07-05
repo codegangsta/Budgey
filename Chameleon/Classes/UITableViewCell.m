@@ -51,7 +51,8 @@ extern CGFloat _UITableViewDefaultRowHeight;
         _selectionStyle = UITableViewCellSelectionStyleBlue;
 
         _seperatorView = [[UITableViewCellSeparator alloc] init];
-        [self addSubview:_seperatorView];
+        // TODO: HACK!!!!!
+        //[self addSubview:_seperatorView];
         
         self.accessoryType = UITableViewCellAccessoryNone;
         self.editingAccessoryType = UITableViewCellAccessoryNone;
@@ -87,9 +88,11 @@ extern CGFloat _UITableViewDefaultRowHeight;
     [super layoutSubviews];
 
     const CGRect bounds = self.bounds;
-    BOOL showingSeperator = !_seperatorView.hidden;
-    
-    CGRect contentFrame = CGRectMake(0,0,bounds.size.width,bounds.size.height-(showingSeperator? 1 : 0));
+    // TODO: HACK!!!!!
+    BOOL showingSeperator = NO;
+
+    // TODO: HACK!!!!!
+    CGRect contentFrame = CGRectMake(9,0,bounds.size.width-18,bounds.size.height-(showingSeperator? 1 : 0));
     CGRect accessoryRect = CGRectMake(bounds.size.width,0,0,0);
 
     if(_accessoryView) {
@@ -114,7 +117,7 @@ extern CGFloat _UITableViewDefaultRowHeight;
         _seperatorView.frame = CGRectMake(0,bounds.size.height-1,bounds.size.width,1);
         [self bringSubviewToFront:_seperatorView];
     }
-    
+
     if (_style == UITableViewCellStyleDefault) {
         const CGFloat padding = 5;
 
