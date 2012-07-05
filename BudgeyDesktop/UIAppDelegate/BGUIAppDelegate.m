@@ -6,6 +6,7 @@
 
 
 #import "BGUIAppDelegate.h"
+#import "CategoryListViewController.h"
 
 
 @implementation BGUIAppDelegate
@@ -16,6 +17,10 @@
     window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
     window.backgroundColor = [UIColor redColor];
     window.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+
+    // add the categoryListViewController
+    controller = [[CategoryListViewController alloc] init];
+    [window addSubview:[controller view]];
 
     [window makeKeyAndVisible];
 }

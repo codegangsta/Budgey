@@ -22,7 +22,6 @@
         self.clearsContextBeforeDrawing = YES;
         self.clipsToBounds = YES;
         self.contentMode = UIViewContentModeScaleToFill;
-        self.contentStretch = CGRectFromString(@"{{0, 0}, {1, 1}}");
         self.frame = CGRectMake(0.0, 0.0, 320.0, 198.0);
         self.hidden = NO;
         self.multipleTouchEnabled = NO;
@@ -38,7 +37,6 @@
         body.clearsContextBeforeDrawing = YES;
         body.clipsToBounds = NO;
         body.contentMode = UIViewContentModeScaleToFill;
-        body.contentStretch = CGRectFromString(@"{{0, 0}, {1, 1}}");
         body.frame = CGRectMake(9.0, 57.0, 302.0, 141.0);
         body.hidden = NO;
         body.multipleTouchEnabled = NO;
@@ -53,7 +51,6 @@
         bannerView.clearsContextBeforeDrawing = YES;
         bannerView.clipsToBounds = NO;
         bannerView.contentMode = UIViewContentModeScaleToFill;
-        bannerView.contentStretch = CGRectFromString(@"{{0, 0}, {1, 1}}");
         bannerView.frame = CGRectMake(1.0, 27.0, 127.0, 37.0);
         bannerView.hidden = NO;
         bannerView.highlighted = NO;
@@ -71,7 +68,6 @@
         separator.clearsContextBeforeDrawing = YES;
         separator.clipsToBounds = NO;
         separator.contentMode = UIViewContentModeScaleToFill;
-        separator.contentStretch = CGRectFromString(@"{{0, 0}, {1, 1}}");
         separator.frame = CGRectMake(15.0, 197.0, 290.0, 1.0);
         separator.hidden = NO;
         separator.multipleTouchEnabled = NO;
@@ -86,7 +82,6 @@
         serratedEdgeView.clearsContextBeforeDrawing = YES;
         serratedEdgeView.clipsToBounds = NO;
         serratedEdgeView.contentMode = UIViewContentModeScaleToFill;
-        serratedEdgeView.contentStretch = CGRectFromString(@"{{0, 0}, {1, 1}}");
         serratedEdgeView.frame = CGRectMake(-2.0, 0.0, 322.0, 57.0);
         serratedEdgeView.hidden = NO;
         serratedEdgeView.highlighted = NO;
@@ -107,7 +102,6 @@
         titleLabel.clearsContextBeforeDrawing = YES;
         titleLabel.clipsToBounds = YES;
         titleLabel.contentMode = UIViewContentModeLeft;
-        titleLabel.contentStretch = CGRectFromString(@"{{0, 0}, {1, 1}}");
         titleLabel.enabled = YES;
         titleLabel.frame = CGRectMake(20.0, 26.0, 103.0, 33.0);
         titleLabel.hidden = NO;
@@ -131,7 +125,6 @@
         separator2.clearsContextBeforeDrawing = YES;
         separator2.clipsToBounds = NO;
         separator2.contentMode = UIViewContentModeScaleToFill;
-        separator2.contentStretch = CGRectFromString(@"{{0, 0}, {1, 1}}");
         separator2.frame = CGRectMake(15.0, 66.0, 290.0, 1.0);
         separator2.hidden = NO;
         separator2.multipleTouchEnabled = NO;
@@ -146,7 +139,6 @@
         chartView.clearsContextBeforeDrawing = YES;
         chartView.clipsToBounds = NO;
         chartView.contentMode = UIViewContentModeScaleToFill;
-        chartView.contentStretch = CGRectFromString(@"{{0, 0}, {1, 1}}");
         chartView.frame = CGRectMake(33.0, 67.0, 254.0, 121.0);
         chartView.hidden = NO;
         chartView.highlighted = NO;

@@ -29,7 +29,6 @@
         spentLabel.clearsContextBeforeDrawing = YES;
         spentLabel.clipsToBounds = YES;
         spentLabel.contentMode = UIViewContentModeLeft;
-        spentLabel.contentStretch = CGRectFromString(@"{{0, 0}, {1, 1}}");
         spentLabel.enabled = YES;
         spentLabel.frame = CGRectMake(150.0, 42.0, 54.0, 21.0);
         spentLabel.hidden = NO;
@@ -53,7 +52,6 @@
         headerBackgroundSerrated.clearsContextBeforeDrawing = YES;
         headerBackgroundSerrated.clipsToBounds = NO;
         headerBackgroundSerrated.contentMode = UIViewContentModeScaleToFill;
-        headerBackgroundSerrated.contentStretch = CGRectFromString(@"{{0, 0}, {1, 1}}");
         headerBackgroundSerrated.frame = CGRectMake(-2.0, 0.0, 322.0, 57.0);
         headerBackgroundSerrated.hidden = NO;
         headerBackgroundSerrated.highlighted = NO;
@@ -73,7 +71,6 @@
         budgetedLabel.clearsContextBeforeDrawing = YES;
         budgetedLabel.clipsToBounds = YES;
         budgetedLabel.contentMode = UIViewContentModeLeft;
-        budgetedLabel.contentStretch = CGRectFromString(@"{{0, 0}, {1, 1}}");
         budgetedLabel.enabled = YES;
         budgetedLabel.frame = CGRectMake(224.0, 42.0, 58.0, 21.0);
         budgetedLabel.hidden = NO;
@@ -100,7 +97,6 @@
         titleLabel.clearsContextBeforeDrawing = YES;
         titleLabel.clipsToBounds = YES;
         titleLabel.contentMode = UIViewContentModeLeft;
-        titleLabel.contentStretch = CGRectFromString(@"{{0, 0}, {1, 1}}");
         titleLabel.enabled = YES;
         titleLabel.frame = CGRectMake(20.0, 26.0, 103.0, 33.0);
         titleLabel.hidden = NO;
@@ -124,7 +120,6 @@
         blueBannerImage.clearsContextBeforeDrawing = YES;
         blueBannerImage.clipsToBounds = NO;
         blueBannerImage.contentMode = UIViewContentModeScaleToFill;
-        blueBannerImage.contentStretch = CGRectFromString(@"{{0, 0}, {1, 1}}");
         blueBannerImage.frame = CGRectMake(1.0, 27.0, 127.0, 37.0);
         blueBannerImage.hidden = NO;
         blueBannerImage.highlighted = NO;
@@ -142,7 +137,6 @@
         view9.clearsContextBeforeDrawing = YES;
         view9.clipsToBounds = NO;
         view9.contentMode = UIViewContentModeScaleToFill;
-        view9.contentStretch = CGRectFromString(@"{{0, 0}, {1, 1}}");
         view9.frame = CGRectMake(15.0, 66.0, 290.0, 1.0);
         view9.hidden = NO;
         view9.multipleTouchEnabled = NO;
@@ -158,7 +152,6 @@
         view12.clearsContextBeforeDrawing = YES;
         view12.clipsToBounds = NO;
         view12.contentMode = UIViewContentModeScaleToFill;
-        view12.contentStretch = CGRectFromString(@"{{0, 0}, {1, 1}}");
         view12.frame = CGRectMake(9.0, 57.0, 302.0, 42.0);
         view12.hidden = NO;
         view12.multipleTouchEnabled = NO;
@@ -173,7 +166,6 @@
         self.clearsContextBeforeDrawing = YES;
         self.clipsToBounds = YES;
         self.contentMode = UIViewContentModeScaleToFill;
-        self.contentStretch = CGRectFromString(@"{{0, 0}, {1, 1}}");
         self.frame = CGRectMake(0.0, 0.0, 320.0, 67.0);
         self.hidden = NO;
         self.multipleTouchEnabled = NO;

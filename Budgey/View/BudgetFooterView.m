@@ -23,7 +23,6 @@
         footerImage.clearsContextBeforeDrawing = YES;
         footerImage.clipsToBounds = NO;
         footerImage.contentMode = UIViewContentModeScaleToFill;
-        footerImage.contentStretch = CGRectFromString(@"{{0, 0}, {1, 1}}");
         footerImage.frame = CGRectMake(0.0, 0.0, 320.0, 75.0);
         footerImage.hidden = NO;
         footerImage.highlighted = NO;
@@ -44,7 +43,6 @@
         amountLabel.clearsContextBeforeDrawing = YES;
         amountLabel.clipsToBounds = YES;
         amountLabel.contentMode = UIViewContentModeLeft;
-        amountLabel.contentStretch = CGRectFromString(@"{{0, 0}, {1, 1}}");
         amountLabel.enabled = YES;
         amountLabel.frame = CGRectMake(167.0, 5.0, 133.0, 30.0);
         amountLabel.hidden = NO;
@@ -71,7 +69,6 @@
         subtitleLabel.clearsContextBeforeDrawing = YES;
         subtitleLabel.clipsToBounds = YES;
         subtitleLabel.contentMode = UIViewContentModeLeft;
-        subtitleLabel.contentStretch = CGRectFromString(@"{{0, 0}, {1, 1}}");
         subtitleLabel.enabled = YES;
         subtitleLabel.frame = CGRectMake(167.0, 29.0, 133.0, 21.0);
         subtitleLabel.hidden = NO;
@@ -89,7 +86,8 @@
 
         UIButton *addButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [addButton setBackgroundImage:[UIImage imageNamed:@"rounded_button.png"] forState:UIControlStateNormal];
-        addButton.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+        // TODO: Fix this
+        //addButton.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
         addButton.adjustsImageWhenDisabled = YES;
         addButton.adjustsImageWhenHighlighted = YES;
         addButton.alpha = 1.000;
@@ -99,7 +97,6 @@
         addButton.clipsToBounds = NO;
         addButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
         addButton.contentMode = UIViewContentModeScaleToFill;
-        addButton.contentStretch = CGRectFromString(@"{{0, 0}, {1, 1}}");
         addButton.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
         addButton.enabled = YES;
         addButton.frame = CGRectMake(20.0, 11.0, 60.0, 30.0);
@@ -125,7 +122,6 @@
         self.clearsContextBeforeDrawing = YES;
         self.clipsToBounds = NO;
         self.contentMode = UIViewContentModeScaleToFill;
-        self.contentStretch = CGRectFromString(@"{{0, 0}, {1, 1}}");
         self.frame = CGRectMake(0.0, 0.0, 320.0, 75.0);
         self.hidden = NO;
         self.multipleTouchEnabled = NO;

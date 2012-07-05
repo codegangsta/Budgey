@@ -44,7 +44,6 @@
         nameLabel.clearsContextBeforeDrawing = YES;
         nameLabel.clipsToBounds = YES;
         nameLabel.contentMode = UIViewContentModeLeft;
-        nameLabel.contentStretch = CGRectFromString(@"{{0, 0}, {1, 1}}");
         nameLabel.enabled = YES;
         nameLabel.frame = CGRectMake(12.0, 11.0, 102.0, 21.0);
         nameLabel.hidden = NO;
@@ -69,7 +68,6 @@
         separator.clearsContextBeforeDrawing = YES;
         separator.clipsToBounds = NO;
         separator.contentMode = UIViewContentModeBottom;
-        separator.contentStretch = CGRectFromString(@"{{0, 0}, {1, 1}}");
         separator.frame = CGRectMake(7.0, 43.0, 330.0, 1.0);
         separator.hidden = NO;
         separator.multipleTouchEnabled = NO;
@@ -88,7 +86,6 @@
         spentLabel.clearsContextBeforeDrawing = YES;
         spentLabel.clipsToBounds = YES;
         spentLabel.contentMode = UIViewContentModeLeft;
-        spentLabel.contentStretch = CGRectFromString(@"{{0, 0}, {1, 1}}");
         spentLabel.enabled = YES;
         spentLabel.frame = CGRectMake(155.0, 11.0, 67.0, 21.0);
         spentLabel.hidden = NO;
@@ -116,7 +113,6 @@
         budgetedLabel.clearsContextBeforeDrawing = YES;
         budgetedLabel.clipsToBounds = YES;
         budgetedLabel.contentMode = UIViewContentModeLeft;
-        budgetedLabel.contentStretch = CGRectFromString(@"{{0, 0}, {1, 1}}");
         budgetedLabel.enabled = YES;
         budgetedLabel.frame = CGRectMake(243.0, 11.0, 67.0, 21.0);
         budgetedLabel.hidden = NO;
@@ -141,7 +137,6 @@
         self.clearsContextBeforeDrawing = YES;
         self.clipsToBounds = NO;
         self.contentMode = UIViewContentModeScaleToFill;
-        self.contentStretch = CGRectFromString(@"{{0, 0}, {1, 1}}");
         self.editingAccessoryType = UITableViewCellAccessoryNone;
         self.frame = CGRectMake(0.0, 0.0, 320.0, 44.0);
         self.hidden = NO;
@@ -150,8 +145,9 @@
         self.multipleTouchEnabled = NO;
         self.opaque = YES;
         self.selectionStyle = UITableViewCellSelectionStyleBlue;
-        self.shouldIndentWhileEditing = YES;
-        self.showsReorderControl = NO;
+        // TODO: Make workaround for this
+        //self.shouldIndentWhileEditing = YES;
+        //self.showsReorderControl = NO;
         self.tag = 0;
         self.userInteractionEnabled = YES;
 

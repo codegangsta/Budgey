@@ -24,7 +24,6 @@
         separator.clearsContextBeforeDrawing = YES;
         separator.clipsToBounds = NO;
         separator.contentMode = UIViewContentModeBottom;
-        separator.contentStretch = CGRectFromString(@"{{0, 0}, {1, 1}}");
         separator.frame = CGRectMake(150.0, 4.0, 1.0, 50.0);
         separator.hidden = NO;
         separator.multipleTouchEnabled = NO;
@@ -40,7 +39,6 @@
         separator2.clearsContextBeforeDrawing = YES;
         separator2.clipsToBounds = NO;
         separator2.contentMode = UIViewContentModeBottom;
-        separator2.contentStretch = CGRectFromString(@"{{0, 0}, {1, 1}}");
         separator2.frame = CGRectMake(15, 56.0, 270.0, 1.0);
         separator2.hidden = NO;
         separator2.multipleTouchEnabled = NO;
@@ -59,7 +57,6 @@
         spentSubtitle.clearsContextBeforeDrawing = YES;
         spentSubtitle.clipsToBounds = YES;
         spentSubtitle.contentMode = UIViewContentModeLeft;
-        spentSubtitle.contentStretch = CGRectFromString(@"{{0, 0}, {1, 1}}");
         spentSubtitle.enabled = YES;
         spentSubtitle.frame = CGRectMake(10.0, 20.0, 151.0, 41.0);
         spentSubtitle.hidden = NO;
@@ -87,7 +84,6 @@
         spentLabel.clearsContextBeforeDrawing = YES;
         spentLabel.clipsToBounds = YES;
         spentLabel.contentMode = UIViewContentModeLeft;
-        spentLabel.contentStretch = CGRectFromString(@"{{0, 0}, {1, 1}}");
         spentLabel.enabled = YES;
         spentLabel.frame = CGRectMake(10.0, -1.0, 151.0, 41.0);
         spentLabel.hidden = NO;
@@ -115,7 +111,6 @@
         incomeSubtitle.clearsContextBeforeDrawing = YES;
         incomeSubtitle.clipsToBounds = YES;
         incomeSubtitle.contentMode = UIViewContentModeLeft;
-        incomeSubtitle.contentStretch = CGRectFromString(@"{{0, 0}, {1, 1}}");
         incomeSubtitle.enabled = YES;
         incomeSubtitle.frame = CGRectMake(160.0, 20.0, 150.0, 41.0);
         incomeSubtitle.hidden = NO;
@@ -143,7 +138,6 @@
         incomeLabel.clearsContextBeforeDrawing = YES;
         incomeLabel.clipsToBounds = YES;
         incomeLabel.contentMode = UIViewContentModeLeft;
-        incomeLabel.contentStretch = CGRectFromString(@"{{0, 0}, {1, 1}}");
         incomeLabel.enabled = YES;
         incomeLabel.frame = CGRectMake(160.0, -1.0, 150.0, 41.0);
         incomeLabel.hidden = NO;
@@ -168,7 +162,6 @@
         self.clearsContextBeforeDrawing = YES;
         self.clipsToBounds = NO;
         self.contentMode = UIViewContentModeScaleToFill;
-        self.contentStretch = CGRectFromString(@"{{0, 0}, {1, 1}}");
         self.editingAccessoryType = UITableViewCellAccessoryNone;
         self.frame = CGRectMake(0.0, 0.0, 300.0, 58.0);
         self.hidden = NO;
@@ -177,8 +170,9 @@
         self.multipleTouchEnabled = NO;
         self.opaque = YES;
         self.selectionStyle = UITableViewCellSelectionStyleBlue;
-        self.shouldIndentWhileEditing = YES;
-        self.showsReorderControl = NO;
+        // TODO: Find workaround for this
+        //self.shouldIndentWhileEditing = YES;
+        //self.showsReorderControl = NO;
         self.tag = 0;
         self.userInteractionEnabled = YES;
 

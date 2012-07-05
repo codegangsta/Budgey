@@ -8,8 +8,11 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+@class CategoryListViewController;
+
 @interface BGUIAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
+    CategoryListViewController *controller;
 }
 
 @end

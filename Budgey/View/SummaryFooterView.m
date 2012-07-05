@@ -23,7 +23,6 @@
         footerImageView.clearsContextBeforeDrawing = YES;
         footerImageView.clipsToBounds = NO;
         footerImageView.contentMode = UIViewContentModeScaleToFill;
-        footerImageView.contentStretch = CGRectFromString(@"{{0, 0}, {1, 1}}");
         footerImageView.frame = CGRectMake(0.0, -14.0, 320.0, 76.0);
         footerImageView.hidden = NO;
         footerImageView.highlighted = NO;
@@ -44,7 +43,6 @@
         remainingLabel.clearsContextBeforeDrawing = YES;
         remainingLabel.clipsToBounds = YES;
         remainingLabel.contentMode = UIViewContentModeLeft;
-        remainingLabel.contentStretch = CGRectFromString(@"{{0, 0}, {1, 1}}");
         remainingLabel.enabled = YES;
         remainingLabel.frame = CGRectMake(20.0, 9.0, 280.0, 21.0);
         remainingLabel.hidden = NO;
@@ -66,7 +64,6 @@
         self.clearsContextBeforeDrawing = YES;
         self.clipsToBounds = YES;
         self.contentMode = UIViewContentModeScaleToFill;
-        self.contentStretch = CGRectFromString(@"{{0, 0}, {1, 1}}");
         self.frame = CGRectMake(0.0, 0.0, 320.0, 62.0);
         self.hidden = NO;
         self.multipleTouchEnabled = NO;

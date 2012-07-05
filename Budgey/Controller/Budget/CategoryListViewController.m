@@ -8,7 +8,6 @@
 #import "CategoryListViewController.h"
 #import "BGColorUtil.h"
 #import "QuartzCore/CALayer.h"
-#import "BudgetItemListViewController.h"
 #import "BGShadowUtil.h"
 #import "BGBudgetManager.h"
 #import "BGBudget.h"
@@ -24,7 +23,7 @@
 @implementation CategoryListViewController
 {
     BGBudgetManager *budgetManager;
-    BudgetItemListViewController *budgetItemListViewController;
+    //BudgetItemListViewController *budgetItemListViewController;
 }
 
 @synthesize currentFooterView;
@@ -141,12 +140,12 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // push a new view when we select
-    if (budgetItemListViewController == nil)
+    /*if (budgetItemListViewController == nil)
         budgetItemListViewController = [[BudgetItemListViewController alloc] initWithBudgetItem:[self budgetItemFromIndexPath:indexPath]];
     else
         [budgetItemListViewController setBudgetItem:[self budgetItemFromIndexPath:indexPath]];
 
-    [(UINavigationController *)self.parentViewController pushViewController:budgetItemListViewController animated:YES];
+    [(UINavigationController *)self.parentViewController pushViewController:budgetItemListViewController animated:YES];*/
 }
 
 //---------------------------------------------------
