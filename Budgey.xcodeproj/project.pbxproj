@@ -36,6 +36,17 @@
 		7A1DB4FF159017FC0026A77B /* footer-trimmed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A1DB4FB159017FC0026A77B /* footer-trimmed@2x.png */; };
 		7A1DB500159017FC0026A77B /* header-trimmed.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A1DB4FC159017FC0026A77B /* header-trimmed.png */; };
 		7A1DB501159017FC0026A77B /* header-trimmed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A1DB4FD159017FC0026A77B /* header-trimmed@2x.png */; };
+		7A24E26F15A63A0500289FDF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A24E26E15A63A0500289FDF /* Cocoa.framework */; };
+		7A24E27915A63A0500289FDF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7A24E27715A63A0500289FDF /* InfoPlist.strings */; };
+		7A24E27B15A63A0500289FDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A24E27A15A63A0500289FDF /* main.m */; };
+		7A24E27F15A63A0500289FDF /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7A24E27D15A63A0500289FDF /* Credits.rtf */; };
+		7A24E28215A63A0600289FDF /* BGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A24E28115A63A0600289FDF /* BGAppDelegate.m */; };
+		7A24E28515A63A0600289FDF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A24E28315A63A0600289FDF /* MainMenu.xib */; };
+		7A24E28C15A63A0600289FDF /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F70 /* SenTestingKit.framework */; };
+		7A24E28D15A63A0600289FDF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A24E26E15A63A0500289FDF /* Cocoa.framework */; };
+		7A24E29515A63A0600289FDF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7A24E29315A63A0600289FDF /* InfoPlist.strings */; };
+		7A24E29815A63A0600289FDF /* BudgeyDesktopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A24E29715A63A0600289FDF /* BudgeyDesktopTests.m */; };
+		7A24E46515A63A4C00289FDF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A24E46415A63A4400289FDF /* UIKit.framework */; };
 		7A2A52F915950D9B0087DEAB /* BudgetItemFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A2A52F815950D9B0087DEAB /* BudgetItemFooterView.xib */; };
 		7A4EEC47159411C600F50C24 /* header-blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A4EEC45159411C600F50C24 /* header-blank.png */; };
 		7A4EEC48159411C600F50C24 /* header-blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A4EEC46159411C600F50C24 /* header-blank@2x.png */; };
@@ -142,6 +153,7 @@
 		7AFBD2F415969AEA00C8762B /* SummaryHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C8762A /* SummaryHeaderView.m */; };
 		7AFBD2F415969AEA00C8762E /* SummaryTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C8762D /* SummaryTableCell.m */; };
 		7AFBD2F415969AEA00C87631 /* SummaryFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C87630 /* SummaryFooterView.m */; };
+		7AFBD2F415969AEA00C87635 /* BGUIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C87634 /* BGUIAppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +163,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 265E06C03432322C33230F4D;
 			remoteInfo = Budgey;
+		};
+		7A24E28E15A63A0600289FDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 265E06C03432322C33230F46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A24E26B15A63A0500289FDF;
+			remoteInfo = BudgeyDesktop;
+		};
+		7A24E46315A63A4400289FDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A24E45C15A63A4400289FDF /* UIKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = UIKit;
+		};
+		7A24E46615A63A5900289FDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A24E45C15A63A4400289FDF /* UIKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = UIKit;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -186,6 +219,25 @@
 		7A1DB4FB159017FC0026A77B /* footer-trimmed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "footer-trimmed@2x.png"; sourceTree = "<group>"; };
 		7A1DB4FC159017FC0026A77B /* header-trimmed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header-trimmed.png"; sourceTree = "<group>"; };
 		7A1DB4FD159017FC0026A77B /* header-trimmed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header-trimmed@2x.png"; sourceTree = "<group>"; };
+		7A24E26C15A63A0500289FDF /* BudgeyDesktop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BudgeyDesktop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A24E26E15A63A0500289FDF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		7A24E27115A63A0500289FDF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		7A24E27215A63A0500289FDF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7A24E27315A63A0500289FDF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7A24E27615A63A0500289FDF /* BudgeyDesktop-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BudgeyDesktop-Info.plist"; sourceTree = "<group>"; };
+		7A24E27815A63A0500289FDF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7A24E27A15A63A0500289FDF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7A24E27C15A63A0500289FDF /* BudgeyDesktop-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BudgeyDesktop-Prefix.pch"; sourceTree = "<group>"; };
+		7A24E27E15A63A0500289FDF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		7A24E28015A63A0500289FDF /* BGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGAppDelegate.h; sourceTree = "<group>"; };
+		7A24E28115A63A0600289FDF /* BGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGAppDelegate.m; sourceTree = "<group>"; };
+		7A24E28415A63A0600289FDF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		7A24E28B15A63A0600289FDF /* BudgeyDesktopTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BudgeyDesktopTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A24E29215A63A0600289FDF /* BudgeyDesktopTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BudgeyDesktopTests-Info.plist"; sourceTree = "<group>"; };
+		7A24E29415A63A0600289FDF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7A24E29615A63A0600289FDF /* BudgeyDesktopTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BudgeyDesktopTests.h; sourceTree = "<group>"; };
+		7A24E29715A63A0600289FDF /* BudgeyDesktopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BudgeyDesktopTests.m; sourceTree = "<group>"; };
+		7A24E45C15A63A4400289FDF /* UIKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UIKit.xcodeproj; path = Chameleon/UIKit.xcodeproj; sourceTree = "<group>"; };
 		7A2A52F815950D9B0087DEAB /* BudgetItemFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BudgetItemFooterView.xib; sourceTree = "<group>"; };
 		7A4EEC45159411C600F50C24 /* header-blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header-blank.png"; sourceTree = "<group>"; };
 		7A4EEC46159411C600F50C24 /* header-blank@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header-blank@2x.png"; sourceTree = "<group>"; };
@@ -338,6 +390,8 @@
 		7AFBD2F415969AEA00C8762F /* SummaryTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryTableCell.h; sourceTree = "<group>"; };
 		7AFBD2F415969AEA00C87630 /* SummaryFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryFooterView.m; sourceTree = "<group>"; };
 		7AFBD2F415969AEA00C87632 /* SummaryFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryFooterView.h; sourceTree = "<group>"; };
+		7AFBD2F415969AEA00C87634 /* BGUIAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGUIAppDelegate.m; sourceTree = "<group>"; };
+		7AFBD2F415969AEA00C87636 /* BGUIAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGUIAppDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -362,12 +416,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7A24E26915A63A0500289FDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A24E46515A63A4C00289FDF /* UIKit.framework in Frameworks */,
+				7A24E26F15A63A0500289FDF /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A24E28715A63A0600289FDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A24E28C15A63A0600289FDF /* SenTestingKit.framework in Frameworks */,
+				7A24E28D15A63A0600289FDF /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		265E06C03432322C33230F48 = {
 			isa = PBXGroup;
 			children = (
+				7A24E45C15A63A4400289FDF /* UIKit.xcodeproj */,
+				7A24E27415A63A0500289FDF /* BudgeyDesktop */,
+				7A24E29015A63A0600289FDF /* BudgeyDesktopTests */,
 				265E06C03432322C33230F49 /* Products */,
 				265E06C03432322C33230F54 /* Frameworks */,
 				265E06C03432322C33230F5B /* Budgey */,
@@ -380,6 +455,8 @@
 			children = (
 				265E06C03432322C33230F4C /* Budgey.app */,
 				265E06C03432322C33230F67 /* BudgeyTests.octest */,
+				7A24E26C15A63A0500289FDF /* BudgeyDesktop.app */,
+				7A24E28B15A63A0600289FDF /* BudgeyDesktopTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -392,6 +469,8 @@
 				265E06C03432322C33230F59 /* CoreGraphics.framework */,
 				265E06C03432322C33230F57 /* Foundation.framework */,
 				265E06C03432322C33230F55 /* UIKit.framework */,
+				7A24E26E15A63A0500289FDF /* Cocoa.framework */,
+				7A24E27015A63A0500289FDF /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -527,6 +606,67 @@
 				7AFBD2F415969AEA00C8762A /* SummaryHeaderView.m */,
 			);
 			name = Summary;
+			sourceTree = "<group>";
+		};
+		7A24E27015A63A0500289FDF /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A24E27115A63A0500289FDF /* AppKit.framework */,
+				7A24E27215A63A0500289FDF /* CoreData.framework */,
+				7A24E27315A63A0500289FDF /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		7A24E27415A63A0500289FDF /* BudgeyDesktop */ = {
+			isa = PBXGroup;
+			children = (
+				7A24E28015A63A0500289FDF /* BGAppDelegate.h */,
+				7A24E28115A63A0600289FDF /* BGAppDelegate.m */,
+				7A24E28315A63A0600289FDF /* MainMenu.xib */,
+				7A24E27515A63A0500289FDF /* Supporting Files */,
+				7AFBD2F415969AEA00C87633 /* UIAppDelegate */,
+			);
+			path = BudgeyDesktop;
+			sourceTree = "<group>";
+		};
+		7A24E27515A63A0500289FDF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A24E27615A63A0500289FDF /* BudgeyDesktop-Info.plist */,
+				7A24E27715A63A0500289FDF /* InfoPlist.strings */,
+				7A24E27A15A63A0500289FDF /* main.m */,
+				7A24E27C15A63A0500289FDF /* BudgeyDesktop-Prefix.pch */,
+				7A24E27D15A63A0500289FDF /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7A24E29015A63A0600289FDF /* BudgeyDesktopTests */ = {
+			isa = PBXGroup;
+			children = (
+				7A24E29615A63A0600289FDF /* BudgeyDesktopTests.h */,
+				7A24E29715A63A0600289FDF /* BudgeyDesktopTests.m */,
+				7A24E29115A63A0600289FDF /* Supporting Files */,
+			);
+			path = BudgeyDesktopTests;
+			sourceTree = "<group>";
+		};
+		7A24E29115A63A0600289FDF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A24E29215A63A0600289FDF /* BudgeyDesktopTests-Info.plist */,
+				7A24E29315A63A0600289FDF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7A24E45D15A63A4400289FDF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A24E46415A63A4400289FDF /* UIKit.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		7A79D4D0159FA13B000F887F /* XIBs */ = {
@@ -762,6 +902,15 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		7AFBD2F415969AEA00C87633 /* UIAppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				7AFBD2F415969AEA00C87636 /* BGUIAppDelegate.h */,
+				7AFBD2F415969AEA00C87634 /* BGUIAppDelegate.m */,
+			);
+			path = UIAppDelegate;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -801,6 +950,43 @@
 			productReference = 265E06C03432322C33230F67 /* BudgeyTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
+		7A24E26B15A63A0500289FDF /* BudgeyDesktop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A24E29D15A63A0600289FDF /* Build configuration list for PBXNativeTarget "BudgeyDesktop" */;
+			buildPhases = (
+				7A24E26815A63A0500289FDF /* Sources */,
+				7A24E26915A63A0500289FDF /* Frameworks */,
+				7A24E26A15A63A0500289FDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A24E46715A63A5900289FDF /* PBXTargetDependency */,
+			);
+			name = BudgeyDesktop;
+			productName = BudgeyDesktop;
+			productReference = 7A24E26C15A63A0500289FDF /* BudgeyDesktop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7A24E28A15A63A0600289FDF /* BudgeyDesktopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A24E29E15A63A0600289FDF /* Build configuration list for PBXNativeTarget "BudgeyDesktopTests" */;
+			buildPhases = (
+				7A24E28615A63A0600289FDF /* Sources */,
+				7A24E28715A63A0600289FDF /* Frameworks */,
+				7A24E28815A63A0600289FDF /* Resources */,
+				7A24E28915A63A0600289FDF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A24E28F15A63A0600289FDF /* PBXTargetDependency */,
+			);
+			name = BudgeyDesktopTests;
+			productName = BudgeyDesktopTests;
+			productReference = 7A24E28B15A63A0600289FDF /* BudgeyDesktopTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -816,13 +1002,31 @@
 			mainGroup = 265E06C03432322C33230F48;
 			productRefGroup = 265E06C03432322C33230F49 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7A24E45D15A63A4400289FDF /* Products */;
+					ProjectRef = 7A24E45C15A63A4400289FDF /* UIKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				265E06C03432322C33230F4D /* Budgey */,
 				265E06C03432322C33230F68 /* BudgeyTests */,
+				7A24E26B15A63A0500289FDF /* BudgeyDesktop */,
+				7A24E28A15A63A0600289FDF /* BudgeyDesktopTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7A24E46415A63A4400289FDF /* UIKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = UIKit.framework;
+			remoteRef = 7A24E46315A63A4400289FDF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		265E06C03432322C33230F53 /* Resources */ = {
@@ -899,10 +1103,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7A24E26A15A63A0500289FDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A24E27915A63A0500289FDF /* InfoPlist.strings in Resources */,
+				7A24E27F15A63A0500289FDF /* Credits.rtf in Resources */,
+				7A24E28515A63A0600289FDF /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A24E28815A63A0600289FDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A24E29515A63A0600289FDF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		265E06C03432322C33230F6F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		7A24E28915A63A0600289FDF /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1000,6 +1235,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7A24E26815A63A0500289FDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A24E27B15A63A0500289FDF /* main.m in Sources */,
+				7A24E28215A63A0600289FDF /* BGAppDelegate.m in Sources */,
+				7AFBD2F415969AEA00C87635 /* BGUIAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A24E28615A63A0600289FDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A24E29815A63A0600289FDF /* BudgeyDesktopTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1007,6 +1260,16 @@
 			isa = PBXTargetDependency;
 			target = 265E06C03432322C33230F4D /* Budgey */;
 			targetProxy = 265E06C03432322C33230F74 /* PBXContainerItemProxy */;
+		};
+		7A24E28F15A63A0600289FDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A24E26B15A63A0500289FDF /* BudgeyDesktop */;
+			targetProxy = 7A24E28E15A63A0600289FDF /* PBXContainerItemProxy */;
+		};
+		7A24E46715A63A5900289FDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIKit;
+			targetProxy = 7A24E46615A63A5900289FDF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1023,6 +1286,38 @@
 			isa = PBXVariantGroup;
 			children = (
 				265E06C03432322C33230F79 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7A24E27715A63A0500289FDF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A24E27815A63A0500289FDF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7A24E27D15A63A0500289FDF /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A24E27E15A63A0500289FDF /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		7A24E28315A63A0600289FDF /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A24E28415A63A0600289FDF /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		7A24E29315A63A0600289FDF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A24E29415A63A0600289FDF /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1131,6 +1426,88 @@
 			};
 			name = Debug;
 		};
+		7A24E29915A63A0600289FDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BudgeyDesktop/BudgeyDesktop-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "BudgeyDesktop/BudgeyDesktop-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7A24E29A15A63A0600289FDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BudgeyDesktop/BudgeyDesktop-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "BudgeyDesktop/BudgeyDesktop-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7A24E29B15A63A0600289FDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BudgeyDesktop.app/Contents/MacOS/BudgeyDesktop";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BudgeyDesktop/BudgeyDesktop-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "BudgeyDesktopTests/BudgeyDesktopTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		7A24E29C15A63A0600289FDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BudgeyDesktop.app/Contents/MacOS/BudgeyDesktop";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BudgeyDesktop/BudgeyDesktop-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "BudgeyDesktopTests/BudgeyDesktopTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1157,6 +1534,24 @@
 			buildConfigurations = (
 				265E06C03432322C33230F6A /* Release */,
 				265E06C03432322C33230F6B /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A24E29D15A63A0600289FDF /* Build configuration list for PBXNativeTarget "BudgeyDesktop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A24E29915A63A0600289FDF /* Release */,
+				7A24E29A15A63A0600289FDF /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A24E29E15A63A0600289FDF /* Build configuration list for PBXNativeTarget "BudgeyDesktopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A24E29B15A63A0600289FDF /* Release */,
+				7A24E29C15A63A0600289FDF /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
