@@ -18,6 +18,8 @@
     window.backgroundColor = [UIColor redColor];
     window.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 
+    window.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"background.jpg"]];
+
     // add the categoryListViewController
     controller = [[CategoryListViewController alloc] init];
     [window addSubview:[controller view]];

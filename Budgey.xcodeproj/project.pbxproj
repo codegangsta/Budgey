@@ -48,6 +48,8 @@
 		7A24E29815A63A0600289FDF /* BudgeyDesktopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A24E29715A63A0600289FDF /* BudgeyDesktopTests.m */; };
 		7A24E46515A63A4C00289FDF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A24E46415A63A4400289FDF /* UIKit.framework */; };
 		7A2A52F915950D9B0087DEAB /* BudgetItemFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A2A52F815950D9B0087DEAB /* BudgetItemFooterView.xib */; };
+		7A3343D615A8A33F000C9FD6 /* EDSideBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3343D515A8A33F000C9FD6 /* EDSideBar.m */; };
+		7A3343DC15A8A505000C9FD6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A3343DB15A8A505000C9FD6 /* QuartzCore.framework */; };
 		7A4EEC47159411C600F50C24 /* header-blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A4EEC45159411C600F50C24 /* header-blank.png */; };
 		7A4EEC48159411C600F50C24 /* header-blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A4EEC46159411C600F50C24 /* header-blank@2x.png */; };
 		7A4EEC4B159411E700F50C24 /* BudgetItemHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A4EEC4A159411E700F50C24 /* BudgetItemHeaderView.xib */; };
@@ -300,6 +302,9 @@
 		7A24E29715A63A0600289FDF /* BudgeyDesktopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BudgeyDesktopTests.m; sourceTree = "<group>"; };
 		7A24E45C15A63A4400289FDF /* UIKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UIKit.xcodeproj; path = Chameleon/UIKit.xcodeproj; sourceTree = "<group>"; };
 		7A2A52F815950D9B0087DEAB /* BudgetItemFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BudgetItemFooterView.xib; sourceTree = "<group>"; };
+		7A3343D415A8A33F000C9FD6 /* EDSideBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDSideBar.h; sourceTree = "<group>"; };
+		7A3343D515A8A33F000C9FD6 /* EDSideBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDSideBar.m; sourceTree = "<group>"; };
+		7A3343DB15A8A505000C9FD6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		7A4EEC45159411C600F50C24 /* header-blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header-blank.png"; sourceTree = "<group>"; };
 		7A4EEC46159411C600F50C24 /* header-blank@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header-blank@2x.png"; sourceTree = "<group>"; };
 		7A4EEC4A159411E700F50C24 /* BudgetItemHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BudgetItemHeaderView.xib; sourceTree = "<group>"; };
@@ -481,6 +486,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A3343DC15A8A505000C9FD6 /* QuartzCore.framework in Frameworks */,
 				7A24E46515A63A4C00289FDF /* UIKit.framework in Frameworks */,
 				7A24E26F15A63A0500289FDF /* Cocoa.framework in Frameworks */,
 			);
@@ -501,6 +507,7 @@
 		265E06C03432322C33230F48 = {
 			isa = PBXGroup;
 			children = (
+				7A3343DB15A8A505000C9FD6 /* QuartzCore.framework */,
 				7A24E45C15A63A4400289FDF /* UIKit.xcodeproj */,
 				7A24E27415A63A0500289FDF /* BudgeyDesktop */,
 				7A24E29015A63A0600289FDF /* BudgeyDesktopTests */,
@@ -685,6 +692,7 @@
 				7A24E28015A63A0500289FDF /* BGAppDelegate.h */,
 				7A24E28115A63A0600289FDF /* BGAppDelegate.m */,
 				7A24E28315A63A0600289FDF /* MainMenu.xib */,
+				7A3343D315A8A33F000C9FD6 /* EDSideBar */,
 				7A24E27515A63A0500289FDF /* Supporting Files */,
 				7AFBD2F415969AEA00C87633 /* UIAppDelegate */,
 			);
@@ -728,6 +736,15 @@
 				7A24E46415A63A4400289FDF /* UIKit.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		7A3343D315A8A33F000C9FD6 /* EDSideBar */ = {
+			isa = PBXGroup;
+			children = (
+				7A3343D415A8A33F000C9FD6 /* EDSideBar.h */,
+				7A3343D515A8A33F000C9FD6 /* EDSideBar.m */,
+			);
+			path = EDSideBar;
 			sourceTree = "<group>";
 		};
 		7A79D4D0159FA13B000F887F /* XIBs */ = {
@@ -1364,6 +1381,7 @@
 				7AFBD2F415969AEA00C87645 /* BGCategory.m in Sources */,
 				7AFBD2F415969AEA00C87646 /* BGTransaction.m in Sources */,
 				7AFBD2F415969AEA00C87647 /* BGColorUtil.m in Sources */,
+				7A3343D615A8A33F000C9FD6 /* EDSideBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

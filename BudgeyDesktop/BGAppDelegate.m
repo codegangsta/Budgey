@@ -15,6 +15,7 @@
 
 @synthesize window;
 @synthesize kitView;
+@synthesize sideBar;
 
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
@@ -22,6 +23,13 @@
     // Insert code here to initialize your application
     chameleonApp = [[BGUIAppDelegate alloc] init];
     [kitView launchApplicationWithDelegate:chameleonApp afterDelay:1];
+
+
+}
+
+- (void)awakeFromNib
+{
+    sideBar.backgroundColor = [NSColor blackColor];
 }
 
 @end
