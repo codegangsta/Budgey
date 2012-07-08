@@ -20,10 +20,22 @@
 #import "SummaryTableCell.h"
 #import "SummaryFooterView.h"
 
+#if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
+#import "BudgetItemListViewController.h"
+#else
+//Do Nothing
+#endif
+
 @implementation CategoryListViewController
 {
     BGBudgetManager *budgetManager;
-    //BudgetItemListViewController *budgetItemListViewController;
+
+#if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
+BudgetItemListViewController *budgetItemListViewController;
+#else
+//Do Nothing
+#endif
+
 }
 
 @synthesize currentFooterView;
@@ -139,13 +151,20 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+#if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
     // push a new view when we select
-    /*if (budgetItemListViewController == nil)
+    if (budgetItemListViewController == nil)
         budgetItemListViewController = [[BudgetItemListViewController alloc] initWithBudgetItem:[self budgetItemFromIndexPath:indexPath]];
     else
         [budgetItemListViewController setBudgetItem:[self budgetItemFromIndexPath:indexPath]];
 
-    [(UINavigationController *)self.parentViewController pushViewController:budgetItemListViewController animated:YES];*/
+    [(UINavigationController *)self.parentViewController pushViewController:budgetItemListViewController animated:YES];
+#else
+    // Do Nothing for now, we need to convert these over to make them compatible
+    // but for now we need to continue work on the iphone version
+#endif
+
+
 }
 
 //---------------------------------------------------

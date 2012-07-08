@@ -30,6 +30,7 @@
 		265E06C03432322C33230FA2 /* BGColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230FA1 /* BGColorUtil.m */; };
 		265E06C03432322C33230FA5 /* footer.png in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230FA4 /* footer.png */; };
 		265E06C03432322C33230FA7 /* footer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230FA6 /* footer@2x.png */; };
+		7A0F13D215A92BD100056838 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0F13D015A92BB900056838 /* UIKit.framework */; };
 		7A1DB4F7159016600026A77B /* TransactionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DB4F5159016600026A77B /* TransactionViewController.m */; };
 		7A1DB4F8159016600026A77B /* TransactionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A1DB4F6159016600026A77B /* TransactionViewController.xib */; };
 		7A1DB4FE159017FC0026A77B /* footer-trimmed.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A1DB4FA159017FC0026A77B /* footer-trimmed.png */; };
@@ -46,7 +47,6 @@
 		7A24E28D15A63A0600289FDF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A24E26E15A63A0500289FDF /* Cocoa.framework */; };
 		7A24E29515A63A0600289FDF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7A24E29315A63A0600289FDF /* InfoPlist.strings */; };
 		7A24E29815A63A0600289FDF /* BudgeyDesktopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A24E29715A63A0600289FDF /* BudgeyDesktopTests.m */; };
-		7A24E46515A63A4C00289FDF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A24E46415A63A4400289FDF /* UIKit.framework */; };
 		7A2A52F915950D9B0087DEAB /* BudgetItemFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A2A52F815950D9B0087DEAB /* BudgetItemFooterView.xib */; };
 		7A3343D615A8A33F000C9FD6 /* EDSideBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3343D515A8A33F000C9FD6 /* EDSideBar.m */; };
 		7A3343DC15A8A505000C9FD6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A3343DB15A8A505000C9FD6 /* QuartzCore.framework */; };
@@ -98,6 +98,7 @@
 		7A5CECA815A646B000C015F8 /* header.png in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F99 /* header.png */; };
 		7A5CECA915A646B000C015F8 /* background@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F84 /* background@2x.jpg */; };
 		7A5CECAA15A646B000C015F8 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F82 /* background.jpg */; };
+		7A6578F715A92FC800D9C6A8 /* Budgey.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = 7AFBD2DF15968C4900C875AB /* Budgey.xcdatamodeld */; };
 		7A79D4C2159E7B05000F887F /* BudgetMonthTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A79D4C1159E7B05000F887F /* BudgetMonthTableViewController.xib */; };
 		7A8EB818159E5088006C987E /* CreateBudgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8EB816159E5088006C987E /* CreateBudgetViewController.m */; };
 		7A8EB819159E5088006C987E /* CreateBudgetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A8EB817159E5088006C987E /* CreateBudgetViewController.xib */; };
@@ -217,6 +218,33 @@
 		7AFBD2F415969AEA00C87645 /* BGCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2ED15969AC600C875AB /* BGCategory.m */; };
 		7AFBD2F415969AEA00C87646 /* BGTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F315969AEA00C875AB /* BGTransaction.m */; };
 		7AFBD2F415969AEA00C87647 /* BGColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230FA1 /* BGColorUtil.m */; };
+		7AFBD2F415969AEA00C8764A /* INAppStoreWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C87649 /* INAppStoreWindow.m */; };
+		7AFBD2F415969AEA00C8764B /* MagicalRecord+Actions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875F2 /* MagicalRecord+Actions.m */; };
+		7AFBD2F415969AEA00C8764C /* MagicalRecord+ErrorHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875F5 /* MagicalRecord+ErrorHandling.m */; };
+		7AFBD2F415969AEA00C8764D /* MagicalRecord+iCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875F8 /* MagicalRecord+iCloud.m */; };
+		7AFBD2F415969AEA00C8764E /* MagicalRecord+Options.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875FB /* MagicalRecord+Options.m */; };
+		7AFBD2F415969AEA00C8764F /* MagicalRecord+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875FE /* MagicalRecord+Setup.m */; };
+		7AFBD2F415969AEA00C87650 /* MagicalRecord+ShorthandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C87601 /* MagicalRecord+ShorthandSupport.m */; };
+		7AFBD2F415969AEA00C87651 /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C87604 /* MagicalRecord.m */; };
+		7AFBD2F415969AEA00C87652 /* NSManagedObjectModel+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875E8 /* NSManagedObjectModel+MagicalRecord.m */; };
+		7AFBD2F415969AEA00C87653 /* NSPersistentStore+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875EB /* NSPersistentStore+MagicalRecord.m */; };
+		7AFBD2F415969AEA00C87654 /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875EE /* NSPersistentStoreCoordinator+MagicalRecord.m */; };
+		7AFBD2F415969AEA00C87655 /* NSManagedObjectContext+MagicalObserving.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875DC /* NSManagedObjectContext+MagicalObserving.m */; };
+		7AFBD2F415969AEA00C87656 /* NSManagedObjectContext+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875DF /* NSManagedObjectContext+MagicalRecord.m */; };
+		7AFBD2F415969AEA00C87657 /* NSManagedObjectContext+MagicalSaves.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875E2 /* NSManagedObjectContext+MagicalSaves.m */; };
+		7AFBD2F415969AEA00C87658 /* NSManagedObjectContext+MagicalThreading.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875E5 /* NSManagedObjectContext+MagicalThreading.m */; };
+		7AFBD2F415969AEA00C87659 /* NSManagedObject+MagicalAggregation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875CC /* NSManagedObject+MagicalAggregation.m */; };
+		7AFBD2F415969AEA00C8765A /* NSManagedObject+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875CF /* NSManagedObject+MagicalDataImport.m */; };
+		7AFBD2F415969AEA00C8765B /* NSManagedObject+MagicalFinders.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875D2 /* NSManagedObject+MagicalFinders.m */; };
+		7AFBD2F415969AEA00C8765C /* NSManagedObject+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875D5 /* NSManagedObject+MagicalRecord.m */; };
+		7AFBD2F415969AEA00C8765D /* NSManagedObject+MagicalRequests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875D8 /* NSManagedObject+MagicalRequests.m */; };
+		7AFBD2F415969AEA00C8765E /* MagicalImportFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875B6 /* MagicalImportFunctions.m */; };
+		7AFBD2F415969AEA00C8765F /* NSAttributeDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875B9 /* NSAttributeDescription+MagicalDataImport.m */; };
+		7AFBD2F415969AEA00C87660 /* NSEntityDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875BC /* NSEntityDescription+MagicalDataImport.m */; };
+		7AFBD2F415969AEA00C87661 /* NSNumber+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875BF /* NSNumber+MagicalDataImport.m */; };
+		7AFBD2F415969AEA00C87662 /* NSObject+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875C2 /* NSObject+MagicalDataImport.m */; };
+		7AFBD2F415969AEA00C87663 /* NSRelationshipDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875C5 /* NSRelationshipDescription+MagicalDataImport.m */; };
+		7AFBD2F415969AEA00C87664 /* NSString+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875C8 /* NSString+MagicalDataImport.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -227,26 +255,19 @@
 			remoteGlobalIDString = 265E06C03432322C33230F4D;
 			remoteInfo = Budgey;
 		};
+		7A0F13CF15A92BB900056838 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A0F13C815A92BB800056838 /* UIKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = UIKit;
+		};
 		7A24E28E15A63A0600289FDF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 265E06C03432322C33230F46 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 7A24E26B15A63A0500289FDF;
 			remoteInfo = BudgeyDesktop;
-		};
-		7A24E46315A63A4400289FDF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7A24E45C15A63A4400289FDF /* UIKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
-			remoteInfo = UIKit;
-		};
-		7A24E46615A63A5900289FDF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7A24E45C15A63A4400289FDF /* UIKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
-			remoteInfo = UIKit;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -275,6 +296,7 @@
 		265E06C03432322C33230FA3 /* BGColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGColorUtil.h; sourceTree = "<group>"; };
 		265E06C03432322C33230FA4 /* footer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = footer.png; sourceTree = "<group>"; };
 		265E06C03432322C33230FA6 /* footer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "footer@2x.png"; sourceTree = "<group>"; };
+		7A0F13C815A92BB800056838 /* UIKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UIKit.xcodeproj; path = BudgeyDesktop/Chameleon/UIKit.xcodeproj; sourceTree = "<group>"; };
 		7A1DB4F4159016600026A77B /* TransactionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionViewController.h; sourceTree = "<group>"; };
 		7A1DB4F5159016600026A77B /* TransactionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionViewController.m; sourceTree = "<group>"; };
 		7A1DB4F6159016600026A77B /* TransactionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TransactionViewController.xib; path = ../Controller/Budget/TransactionViewController.xib; sourceTree = "<group>"; };
@@ -300,11 +322,10 @@
 		7A24E29415A63A0600289FDF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7A24E29615A63A0600289FDF /* BudgeyDesktopTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BudgeyDesktopTests.h; sourceTree = "<group>"; };
 		7A24E29715A63A0600289FDF /* BudgeyDesktopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BudgeyDesktopTests.m; sourceTree = "<group>"; };
-		7A24E45C15A63A4400289FDF /* UIKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UIKit.xcodeproj; path = Chameleon/UIKit.xcodeproj; sourceTree = "<group>"; };
 		7A2A52F815950D9B0087DEAB /* BudgetItemFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BudgetItemFooterView.xib; sourceTree = "<group>"; };
 		7A3343D415A8A33F000C9FD6 /* EDSideBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDSideBar.h; sourceTree = "<group>"; };
 		7A3343D515A8A33F000C9FD6 /* EDSideBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDSideBar.m; sourceTree = "<group>"; };
-		7A3343DB15A8A505000C9FD6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		7A3343DB15A8A505000C9FD6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = ../../../../Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		7A4EEC45159411C600F50C24 /* header-blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header-blank.png"; sourceTree = "<group>"; };
 		7A4EEC46159411C600F50C24 /* header-blank@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header-blank@2x.png"; sourceTree = "<group>"; };
 		7A4EEC4A159411E700F50C24 /* BudgetItemHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BudgetItemHeaderView.xib; sourceTree = "<group>"; };
@@ -458,6 +479,8 @@
 		7AFBD2F415969AEA00C87632 /* SummaryFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryFooterView.h; sourceTree = "<group>"; };
 		7AFBD2F415969AEA00C87634 /* BGUIAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGUIAppDelegate.m; sourceTree = "<group>"; };
 		7AFBD2F415969AEA00C87636 /* BGUIAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGUIAppDelegate.h; sourceTree = "<group>"; };
+		7AFBD2F415969AEA00C87648 /* INAppStoreWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INAppStoreWindow.h; sourceTree = "<group>"; };
+		7AFBD2F415969AEA00C87649 /* INAppStoreWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INAppStoreWindow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -486,8 +509,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A0F13D215A92BD100056838 /* UIKit.framework in Frameworks */,
 				7A3343DC15A8A505000C9FD6 /* QuartzCore.framework in Frameworks */,
-				7A24E46515A63A4C00289FDF /* UIKit.framework in Frameworks */,
 				7A24E26F15A63A0500289FDF /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,8 +530,7 @@
 		265E06C03432322C33230F48 = {
 			isa = PBXGroup;
 			children = (
-				7A3343DB15A8A505000C9FD6 /* QuartzCore.framework */,
-				7A24E45C15A63A4400289FDF /* UIKit.xcodeproj */,
+				7A0F13C815A92BB800056838 /* UIKit.xcodeproj */,
 				7A24E27415A63A0500289FDF /* BudgeyDesktop */,
 				7A24E29015A63A0600289FDF /* BudgeyDesktopTests */,
 				265E06C03432322C33230F49 /* Products */,
@@ -532,6 +554,7 @@
 		265E06C03432322C33230F54 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7A3343DB15A8A505000C9FD6 /* QuartzCore.framework */,
 				7AFBD2DB15968BBA00C875AB /* CoreData.framework */,
 				265E06C03432322C33230F70 /* SenTestingKit.framework */,
 				265E06C03432322C33230F59 /* CoreGraphics.framework */,
@@ -639,6 +662,14 @@
 			name = Assets;
 			sourceTree = "<group>";
 		};
+		7A0F13C915A92BB800056838 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A0F13D015A92BB900056838 /* UIKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		7A20E96F15A4E435006F996A /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -692,7 +723,7 @@
 				7A24E28015A63A0500289FDF /* BGAppDelegate.h */,
 				7A24E28115A63A0600289FDF /* BGAppDelegate.m */,
 				7A24E28315A63A0600289FDF /* MainMenu.xib */,
-				7A3343D315A8A33F000C9FD6 /* EDSideBar */,
+				7A3343D315A8A33F000C9FD6 /* Third Party */,
 				7A24E27515A63A0500289FDF /* Supporting Files */,
 				7AFBD2F415969AEA00C87633 /* UIAppDelegate */,
 			);
@@ -730,21 +761,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		7A24E45D15A63A4400289FDF /* Products */ = {
+		7A3343D315A8A33F000C9FD6 /* Third Party */ = {
 			isa = PBXGroup;
 			children = (
-				7A24E46415A63A4400289FDF /* UIKit.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		7A3343D315A8A33F000C9FD6 /* EDSideBar */ = {
-			isa = PBXGroup;
-			children = (
+				7AFBD2F415969AEA00C87649 /* INAppStoreWindow.m */,
+				7AFBD2F415969AEA00C87648 /* INAppStoreWindow.h */,
 				7A3343D415A8A33F000C9FD6 /* EDSideBar.h */,
 				7A3343D515A8A33F000C9FD6 /* EDSideBar.m */,
 			);
-			path = EDSideBar;
+			path = "Third Party";
 			sourceTree = "<group>";
 		};
 		7A79D4D0159FA13B000F887F /* XIBs */ = {
@@ -1039,7 +1064,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				7A24E46715A63A5900289FDF /* PBXTargetDependency */,
 			);
 			name = BudgeyDesktop;
 			productName = BudgeyDesktop;
@@ -1082,8 +1106,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 7A24E45D15A63A4400289FDF /* Products */;
-					ProjectRef = 7A24E45C15A63A4400289FDF /* UIKit.xcodeproj */;
+					ProductGroup = 7A0F13C915A92BB800056838 /* Products */;
+					ProjectRef = 7A0F13C815A92BB800056838 /* UIKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1097,11 +1121,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		7A24E46415A63A4400289FDF /* UIKit.framework */ = {
+		7A0F13D015A92BB900056838 /* UIKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = UIKit.framework;
-			remoteRef = 7A24E46315A63A4400289FDF /* PBXContainerItemProxy */;
+			remoteRef = 7A0F13CF15A92BB900056838 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1185,6 +1209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A6578F715A92FC800D9C6A8 /* Budgey.xcdatamodeld in Resources */,
 				7A5CEC7F15A646B000C015F8 /* cancel-button@2x.png in Resources */,
 				7A5CEC8015A646B000C015F8 /* cancel-button.png in Resources */,
 				7A5CEC8115A646B000C015F8 /* save-button@2x.png in Resources */,
@@ -1382,6 +1407,33 @@
 				7AFBD2F415969AEA00C87646 /* BGTransaction.m in Sources */,
 				7AFBD2F415969AEA00C87647 /* BGColorUtil.m in Sources */,
 				7A3343D615A8A33F000C9FD6 /* EDSideBar.m in Sources */,
+				7AFBD2F415969AEA00C8764A /* INAppStoreWindow.m in Sources */,
+				7AFBD2F415969AEA00C8764B /* MagicalRecord+Actions.m in Sources */,
+				7AFBD2F415969AEA00C8764C /* MagicalRecord+ErrorHandling.m in Sources */,
+				7AFBD2F415969AEA00C8764D /* MagicalRecord+iCloud.m in Sources */,
+				7AFBD2F415969AEA00C8764E /* MagicalRecord+Options.m in Sources */,
+				7AFBD2F415969AEA00C8764F /* MagicalRecord+Setup.m in Sources */,
+				7AFBD2F415969AEA00C87650 /* MagicalRecord+ShorthandSupport.m in Sources */,
+				7AFBD2F415969AEA00C87651 /* MagicalRecord.m in Sources */,
+				7AFBD2F415969AEA00C87652 /* NSManagedObjectModel+MagicalRecord.m in Sources */,
+				7AFBD2F415969AEA00C87653 /* NSPersistentStore+MagicalRecord.m in Sources */,
+				7AFBD2F415969AEA00C87654 /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
+				7AFBD2F415969AEA00C87655 /* NSManagedObjectContext+MagicalObserving.m in Sources */,
+				7AFBD2F415969AEA00C87656 /* NSManagedObjectContext+MagicalRecord.m in Sources */,
+				7AFBD2F415969AEA00C87657 /* NSManagedObjectContext+MagicalSaves.m in Sources */,
+				7AFBD2F415969AEA00C87658 /* NSManagedObjectContext+MagicalThreading.m in Sources */,
+				7AFBD2F415969AEA00C87659 /* NSManagedObject+MagicalAggregation.m in Sources */,
+				7AFBD2F415969AEA00C8765A /* NSManagedObject+MagicalDataImport.m in Sources */,
+				7AFBD2F415969AEA00C8765B /* NSManagedObject+MagicalFinders.m in Sources */,
+				7AFBD2F415969AEA00C8765C /* NSManagedObject+MagicalRecord.m in Sources */,
+				7AFBD2F415969AEA00C8765D /* NSManagedObject+MagicalRequests.m in Sources */,
+				7AFBD2F415969AEA00C8765E /* MagicalImportFunctions.m in Sources */,
+				7AFBD2F415969AEA00C8765F /* NSAttributeDescription+MagicalDataImport.m in Sources */,
+				7AFBD2F415969AEA00C87660 /* NSEntityDescription+MagicalDataImport.m in Sources */,
+				7AFBD2F415969AEA00C87661 /* NSNumber+MagicalDataImport.m in Sources */,
+				7AFBD2F415969AEA00C87662 /* NSObject+MagicalDataImport.m in Sources */,
+				7AFBD2F415969AEA00C87663 /* NSRelationshipDescription+MagicalDataImport.m in Sources */,
+				7AFBD2F415969AEA00C87664 /* NSString+MagicalDataImport.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1405,11 +1457,6 @@
 			isa = PBXTargetDependency;
 			target = 7A24E26B15A63A0500289FDF /* BudgeyDesktop */;
 			targetProxy = 7A24E28E15A63A0600289FDF /* PBXContainerItemProxy */;
-		};
-		7A24E46715A63A5900289FDF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = UIKit;
-			targetProxy = 7A24E46615A63A5900289FDF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

@@ -15,4 +15,7 @@
     CategoryListViewController *controller;
 }
 
+@property (nonatomic, strong) UIWindow *window;
+@property (nonatomic, strong) CategoryListViewController *controller;
+
 @end

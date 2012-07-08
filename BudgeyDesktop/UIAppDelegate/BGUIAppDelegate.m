@@ -10,6 +10,9 @@
 
 
 @implementation BGUIAppDelegate
+@synthesize window;
+@synthesize controller;
+
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application
 {
@@ -17,13 +20,13 @@
     window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
     window.backgroundColor = [UIColor redColor];
     window.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-
+    window.autoresizesSubviews = YES;
     window.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"background.jpg"]];
 
     // add the categoryListViewController
     controller = [[CategoryListViewController alloc] init];
     [window addSubview:[controller view]];
-
+    [[controller view] setClipsToBounds:YES];
     [window makeKeyAndVisible];
 }
 
