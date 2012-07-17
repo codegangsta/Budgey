@@ -8,7 +8,6 @@
 #import "CategoryListViewController.h"
 #import "BGColorUtil.h"
 #import "QuartzCore/CALayer.h"
-#import "BudgetItemListViewController.h"
 #import "BGShadowUtil.h"
 #import "BGBudgetManager.h"
 #import "BGBudget.h"
@@ -16,11 +15,27 @@
 #import "BudgetHeaderView.h"
 #import "BudgetTableCell.h"
 #import "BGBudgetItem.h"
+#import "BudgetFooterView.h"
+#import "SummaryHeaderView.h"
+#import "SummaryTableCell.h"
+#import "SummaryFooterView.h"
+
+#if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
+#import "BudgetItemListViewController.h"
+#else
+//Do Nothing
+#endif
 
 @implementation CategoryListViewController
 {
     BGBudgetManager *budgetManager;
-    BudgetItemListViewController *budgetItemListViewController;
+
+#if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
+BudgetItemListViewController *budgetItemListViewController;
+#else
+//Do Nothing
+#endif
+
 }
 
 @synthesize currentFooterView;
@@ -80,11 +95,11 @@
 
     // is it the summary?
     if ([indexPath section] == 0) {
-        [[UINib nibWithNibName:@"SummaryIncomeTableCell" bundle:nil] instantiateWithOwner:self options:nil];
+        summaryCell = [[SummaryTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"SummaryTableCell"];
         cell = summaryCell;
     }
     else { // regular budget item cell
-        [[UINib nibWithNibName:@"BudgetTableCell" bundle:nil] instantiateWithOwner:self options:nil];
+        currentCell = [[BudgetTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"BudgetTableCell"];
 
         // lookup the budget item for the cell
         BGBudgetItem *budgetItem = [self budgetItemFromIndexPath:indexPath];
@@ -136,6 +151,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+#if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
     // push a new view when we select
     if (budgetItemListViewController == nil)
         budgetItemListViewController = [[BudgetItemListViewController alloc] initWithBudgetItem:[self budgetItemFromIndexPath:indexPath]];
@@ -143,6 +159,12 @@
         [budgetItemListViewController setBudgetItem:[self budgetItemFromIndexPath:indexPath]];
 
     [(UINavigationController *)self.parentViewController pushViewController:budgetItemListViewController animated:YES];
+#else
+    // Do Nothing for now, we need to convert these over to make them compatible
+    // but for now we need to continue work on the iphone version
+#endif
+
+
 }
 
 //---------------------------------------------------
@@ -152,11 +174,12 @@
 {
     // is it the summary?
     if (section == 0) {
-        [[UINib nibWithNibName:@"SummaryHeaderView" bundle:nil] instantiateWithOwner:self options:nil];
+        summaryHeaderView = [[SummaryHeaderView alloc] init];
         return summaryHeaderView;
     }
     else {
-        [[UINib nibWithNibName:@"BudgetHeaderView" bundle:nil] instantiateWithOwner:self options:nil];
+        // init the view class
+        currentHeaderView = [[BudgetHeaderView alloc] init];
         [currentHeaderView setTitle:[[categories objectAtIndex:section-1] name]];
         return currentHeaderView;
     }
@@ -166,11 +189,11 @@
 {
     // is it the summary?
     if (section == 0) {
-        [[UINib nibWithNibName:@"SummaryFooterView" bundle:nil] instantiateWithOwner:self options:nil];
+        summaryFooterView = [[SummaryFooterView alloc] init];
         return summaryFooterView;
     }
     else {
-        [[UINib nibWithNibName:@"BudgetFooterView" bundle:nil] instantiateWithOwner:self options:nil];
+        currentFooterView = [[BudgetFooterView alloc] init];
         return currentFooterView;
     }
 }

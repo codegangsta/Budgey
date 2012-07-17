@@ -1,0 +1,10 @@
+//
+// Prefix header for all source files of the 'BudgeyDesktop' target in the 'BudgeyDesktop' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+    #import <UIKit/UIKit.h>
+    #import "BGNotificationNames.h"
+    #import "CoreData+MagicalRecord.h"
+#endif
