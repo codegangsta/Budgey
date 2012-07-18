@@ -34,3 +34,10 @@ extern NSString *const BGSelectedBudgetWasChanged;
 extern NSString *const BGTransactionWasUpdated;
 extern NSString *const BGTransactionWasCreated;
 extern NSString *const BGTransactionWasDeleted;
+
+//---------------------------------------------------
+//  BGBudgetItem Functions
+//---------------------------------------------------
+extern NSString *const BGBudgetItemWasUpdated;
+extern NSString *const BGBudgetItemWasCreated;
+extern NSString *const BGBudgetItemWasDeleted;

@@ -22,6 +22,7 @@
 
 #if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
 #import "BudgetItemListViewController.h"
+#import "BGBudgetItemManager.h"
 #else
 //Do Nothing
 #endif
@@ -29,6 +30,8 @@
 @implementation CategoryListViewController
 {
     BGBudgetManager *budgetManager;
+    BGBudgetItemManager *budgetItemManager;
+    NSIndexPath *deletedIndexPath;
 
 #if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
 BudgetItemListViewController *budgetItemListViewController;
@@ -52,14 +55,17 @@ BudgetItemListViewController *budgetItemListViewController;
     self = [super initWithStyle:UITableViewStyleGrouped];
     if (self) {
         budgetManager = [BGBudgetManager sharedManager];
-        [self refresh];
+        budgetItemManager = [BGBudgetItemManager sharedManager];
+        [self refreshAndReload];
     }
 
     // add observers
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refresh) name:BGSelectedBudgetWasChanged object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refresh) name:BGTransactionWasUpdated object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refresh) name:BGTransactionWasDeleted object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refresh) name:BGTransactionWasCreated object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshAndReload) name:BGSelectedBudgetWasChanged object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshAndReload) name:BGTransactionWasUpdated object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshAndReload) name:BGTransactionWasDeleted object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshAndReload) name:BGTransactionWasCreated object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onBudgetItemAdded:) name:BGBudgetItemWasCreated object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onBudgetItemDeleted:) name:BGBudgetItemWasDeleted object:nil];
 
     return self;
 }
@@ -218,6 +224,22 @@ BudgetItemListViewController *budgetItemListViewController;
     }
 }
 
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        BGBudgetItem *budgetItem = [self budgetItemFromIndexPath:indexPath];
+        if (budgetItem) {
+            deletedIndexPath = indexPath;
+            [budgetItemManager deleteBudgetItem:budgetItem];
+        }
+    }
+}
+
 //---------------------------------------------------
 //  Actions
 //---------------------------------------------------
@@ -232,8 +254,37 @@ BudgetItemListViewController *budgetItemListViewController;
     // sort our categories by name
     NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
     categories = [[budgetManager.selectedBudget categories] sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+}
 
+- (void)refreshAndReload
+{
+    [self refresh];
     [self.tableView reloadData];
+}
+
+- (void)onBudgetItemAdded:(NSNotification *)notification
+{
+    // refresh the datasource
+    [self refresh];
+
+    BGBudgetItem *budgetItem = [notification object];
+
+    if (budgetItem) {
+        NSIndexPath *path = [self indexPathFromBudgetItem:budgetItem];
+        [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:path] withRowAnimation:UITableViewRowAnimationAutomatic];
+    }
+}
+
+- (void)onBudgetItemDeleted:(NSNotification *)notification
+{
+    if (!deletedIndexPath)
+        return;
+
+    NSIndexPath *path = deletedIndexPath;
+
+    // refresh the datasource
+    [self refresh];
+    [self.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:path] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
 - (BGBudgetItem *)budgetItemFromIndexPath:(NSIndexPath *)indexPath
@@ -244,6 +295,25 @@ BudgetItemListViewController *budgetItemListViewController;
     BGBudgetItem *budgetItem = [budgetItems objectAtIndex:[indexPath row]];
 
     return budgetItem;
+}
+
+- (NSIndexPath *)indexPathFromBudgetItem:(BGBudgetItem *)budgetItem
+{
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
+
+    // loop over each category and sort the budget items and look for
+    // the index of the particular budget item
+    for (int i = 0; i < categories.count; i++) {
+        BGCategory *category = [categories objectAtIndex:i];
+        NSArray *budgetItems = [[category budgetItems] sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+
+        if ([budgetItems containsObject:budgetItem])
+        {
+            return [NSIndexPath indexPathForRow:[budgetItems indexOfObject:budgetItem] inSection:i+1];
+        }
+    }
+
+    [NSException raise:@"Budget Item does not exist in budget" format:@""];
 }
 
 

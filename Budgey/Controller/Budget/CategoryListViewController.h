@@ -25,6 +25,7 @@
 -(void)refresh;
 
 -(BGBudgetItem *)budgetItemFromIndexPath:(NSIndexPath *)indexPath;
+-(NSIndexPath *)indexPathFromBudgetItem:(BGBudgetItem *)budgetItem;
 
 // this is a workaround to use xibs to define our header, footer
 // and cell view instances via xibs

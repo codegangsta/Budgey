@@ -142,6 +142,7 @@
 		7AFBD2F415969AEA00C8762B /* SummaryHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C8762A /* SummaryHeaderView.m */; };
 		7AFBD2F415969AEA00C8762E /* SummaryTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C8762D /* SummaryTableCell.m */; };
 		7AFBD2F415969AEA00C87631 /* SummaryFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C87630 /* SummaryFooterView.m */; };
+		7AFBD2F415969AEA00C87634 /* BGBudgetItemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C87633 /* BGBudgetItemManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -343,6 +344,8 @@
 		7AFBD2F415969AEA00C8762F /* SummaryTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryTableCell.h; sourceTree = "<group>"; };
 		7AFBD2F415969AEA00C87630 /* SummaryFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryFooterView.m; sourceTree = "<group>"; };
 		7AFBD2F415969AEA00C87632 /* SummaryFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryFooterView.h; sourceTree = "<group>"; };
+		7AFBD2F415969AEA00C87633 /* BGBudgetItemManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGBudgetItemManager.m; sourceTree = "<group>"; };
+		7AFBD2F415969AEA00C87635 /* BGBudgetItemManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGBudgetItemManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -578,6 +581,8 @@
 		7AF397361584501B0023B090 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7AFBD2F415969AEA00C87635 /* BGBudgetItemManager.h */,
+				7AFBD2F415969AEA00C87633 /* BGBudgetItemManager.m */,
 				7AFBD2F415969AEA00C87623 /* BGTransactionManager.h */,
 				7AFBD2F415969AEA00C87621 /* BGTransactionManager.m */,
 				7AFBD2F415969AEA00C87615 /* BGManager.h */,
@@ -1006,6 +1011,7 @@
 				7AFBD2F415969AEA00C8762B /* SummaryHeaderView.m in Sources */,
 				7AFBD2F415969AEA00C8762E /* SummaryTableCell.m in Sources */,
 				7AFBD2F415969AEA00C87631 /* SummaryFooterView.m in Sources */,
+				7AFBD2F415969AEA00C87634 /* BGBudgetItemManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
