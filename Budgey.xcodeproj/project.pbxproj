@@ -30,75 +30,17 @@
 		265E06C03432322C33230FA2 /* BGColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230FA1 /* BGColorUtil.m */; };
 		265E06C03432322C33230FA5 /* footer.png in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230FA4 /* footer.png */; };
 		265E06C03432322C33230FA7 /* footer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230FA6 /* footer@2x.png */; };
-		7A0F13D215A92BD100056838 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0F13D015A92BB900056838 /* UIKit.framework */; };
 		7A1DB4F7159016600026A77B /* TransactionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DB4F5159016600026A77B /* TransactionViewController.m */; };
 		7A1DB4F8159016600026A77B /* TransactionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A1DB4F6159016600026A77B /* TransactionViewController.xib */; };
 		7A1DB4FE159017FC0026A77B /* footer-trimmed.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A1DB4FA159017FC0026A77B /* footer-trimmed.png */; };
 		7A1DB4FF159017FC0026A77B /* footer-trimmed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A1DB4FB159017FC0026A77B /* footer-trimmed@2x.png */; };
 		7A1DB500159017FC0026A77B /* header-trimmed.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A1DB4FC159017FC0026A77B /* header-trimmed.png */; };
 		7A1DB501159017FC0026A77B /* header-trimmed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A1DB4FD159017FC0026A77B /* header-trimmed@2x.png */; };
-		7A24E26F15A63A0500289FDF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A24E26E15A63A0500289FDF /* Cocoa.framework */; };
-		7A24E27915A63A0500289FDF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7A24E27715A63A0500289FDF /* InfoPlist.strings */; };
-		7A24E27B15A63A0500289FDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A24E27A15A63A0500289FDF /* main.m */; };
-		7A24E27F15A63A0500289FDF /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7A24E27D15A63A0500289FDF /* Credits.rtf */; };
-		7A24E28215A63A0600289FDF /* BGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A24E28115A63A0600289FDF /* BGAppDelegate.m */; };
-		7A24E28515A63A0600289FDF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A24E28315A63A0600289FDF /* MainMenu.xib */; };
-		7A24E28C15A63A0600289FDF /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F70 /* SenTestingKit.framework */; };
-		7A24E28D15A63A0600289FDF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A24E26E15A63A0500289FDF /* Cocoa.framework */; };
-		7A24E29515A63A0600289FDF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7A24E29315A63A0600289FDF /* InfoPlist.strings */; };
-		7A24E29815A63A0600289FDF /* BudgeyDesktopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A24E29715A63A0600289FDF /* BudgeyDesktopTests.m */; };
 		7A2A52F915950D9B0087DEAB /* BudgetItemFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A2A52F815950D9B0087DEAB /* BudgetItemFooterView.xib */; };
-		7A3343D615A8A33F000C9FD6 /* EDSideBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3343D515A8A33F000C9FD6 /* EDSideBar.m */; };
-		7A3343DC15A8A505000C9FD6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A3343DB15A8A505000C9FD6 /* QuartzCore.framework */; };
 		7A4EEC47159411C600F50C24 /* header-blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A4EEC45159411C600F50C24 /* header-blank.png */; };
 		7A4EEC48159411C600F50C24 /* header-blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A4EEC46159411C600F50C24 /* header-blank@2x.png */; };
 		7A4EEC4B159411E700F50C24 /* BudgetItemHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A4EEC4A159411E700F50C24 /* BudgetItemHeaderView.xib */; };
 		7A4EEC4D1594183300F50C24 /* BudgetItemTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A4EEC4C1594183300F50C24 /* BudgetItemTableCell.xib */; };
-		7A5CEC7F15A646B000C015F8 /* cancel-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C8760E /* cancel-button@2x.png */; };
-		7A5CEC8015A646B000C015F8 /* cancel-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C8760C /* cancel-button.png */; };
-		7A5CEC8115A646B000C015F8 /* save-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C8760A /* save-button@2x.png */; };
-		7A5CEC8215A646B000C015F8 /* save-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C87608 /* save-button.png */; };
-		7A5CEC8315A646B000C015F8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AFBD2BD159632D200C875AB /* Default.png */; };
-		7A5CEC8415A646B000C015F8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AFBD2BB159632D000C875AB /* Default@2x.png */; };
-		7A5CEC8515A646B000C015F8 /* App-Icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AFBD2B915962D1D00C875AB /* App-Icon-small.png */; };
-		7A5CEC8615A646B000C015F8 /* App-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AFBD2B715962CF700C875AB /* App-Icon.png */; };
-		7A5CEC8715A646B000C015F8 /* chart-placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AFBD2CB159668FF00C875AB /* chart-placeholder.png */; };
-		7A5CEC8815A646B000C015F8 /* chart-placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AFBD2CC159668FF00C875AB /* chart-placeholder@2x.png */; };
-		7A5CEC8915A646B000C015F8 /* banner-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AFBD2BF15964B2A00C875AB /* banner-blue.png */; };
-		7A5CEC8A15A646B000C015F8 /* banner-blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AFBD2C015964B2A00C875AB /* banner-blue@2x.png */; };
-		7A5CEC8B15A646B000C015F8 /* header-blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A4EEC45159411C600F50C24 /* header-blank.png */; };
-		7A5CEC8C15A646B000C015F8 /* header-blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A4EEC46159411C600F50C24 /* header-blank@2x.png */; };
-		7A5CEC8D15A646B000C015F8 /* footer-trimmed.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A1DB4FA159017FC0026A77B /* footer-trimmed.png */; };
-		7A5CEC8E15A646B000C015F8 /* footer-trimmed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A1DB4FB159017FC0026A77B /* footer-trimmed@2x.png */; };
-		7A5CEC8F15A646B000C015F8 /* header-trimmed.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A1DB4FC159017FC0026A77B /* header-trimmed.png */; };
-		7A5CEC9015A646B000C015F8 /* header-trimmed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A1DB4FD159017FC0026A77B /* header-trimmed@2x.png */; };
-		7A5CEC9115A646B000C015F8 /* 259-list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B08E /* 259-list@2x.png */; };
-		7A5CEC9215A646B000C015F8 /* 259-list.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B08C /* 259-list.png */; };
-		7A5CEC9315A646B000C015F8 /* cameraTabBarItem@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B08A /* cameraTabBarItem@2x.png */; };
-		7A5CEC9415A646B000C015F8 /* cameraTabBarItem.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B088 /* cameraTabBarItem.png */; };
-		7A5CEC9515A646B000C015F8 /* 83-calendar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B086 /* 83-calendar@2x.png */; };
-		7A5CEC9615A646B000C015F8 /* 83-calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B084 /* 83-calendar.png */; };
-		7A5CEC9715A646B000C015F8 /* navigation-bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B082 /* navigation-bar@2x.png */; };
-		7A5CEC9815A646B000C015F8 /* navigation-bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B080 /* navigation-bar.png */; };
-		7A5CEC9915A646B000C015F8 /* tab-bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B07E /* tab-bar@2x.png */; };
-		7A5CEC9A15A646B000C015F8 /* tab-bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B07C /* tab-bar.png */; };
-		7A5CEC9B15A646B000C015F8 /* Museo900-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B07A /* Museo900-Regular.otf */; };
-		7A5CEC9C15A646B000C015F8 /* 172-pricetag@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B075 /* 172-pricetag@2x.png */; };
-		7A5CEC9D15A646B000C015F8 /* 172-pricetag.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B073 /* 172-pricetag.png */; };
-		7A5CEC9E15A646B000C015F8 /* 119-piggy-bank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B071 /* 119-piggy-bank@2x.png */; };
-		7A5CEC9F15A646B000C015F8 /* 119-piggy-bank.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B06F /* 119-piggy-bank.png */; };
-		7A5CECA015A646B000C015F8 /* 162-receipt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B069 /* 162-receipt@2x.png */; };
-		7A5CECA115A646B000C015F8 /* 162-receipt.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B067 /* 162-receipt.png */; };
-		7A5CECA215A646B000C015F8 /* capture-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B065 /* capture-button@2x.png */; };
-		7A5CECA315A646B000C015F8 /* capture-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B063 /* capture-button.png */; };
-		7A5CECA415A646B000C015F8 /* rounded_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B058 /* rounded_button.png */; };
-		7A5CECA515A646B000C015F8 /* footer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230FA6 /* footer@2x.png */; };
-		7A5CECA615A646B000C015F8 /* footer.png in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230FA4 /* footer.png */; };
-		7A5CECA715A646B000C015F8 /* header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F9B /* header@2x.png */; };
-		7A5CECA815A646B000C015F8 /* header.png in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F99 /* header.png */; };
-		7A5CECA915A646B000C015F8 /* background@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F84 /* background@2x.jpg */; };
-		7A5CECAA15A646B000C015F8 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F82 /* background.jpg */; };
-		7A6578F715A92FC800D9C6A8 /* Budgey.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = 7AFBD2DF15968C4900C875AB /* Budgey.xcdatamodeld */; };
 		7A79D4C2159E7B05000F887F /* BudgetMonthTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A79D4C1159E7B05000F887F /* BudgetMonthTableViewController.xib */; };
 		7A8EB818159E5088006C987E /* CreateBudgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8EB816159E5088006C987E /* CreateBudgetViewController.m */; };
 		7A8EB819159E5088006C987E /* CreateBudgetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A8EB817159E5088006C987E /* CreateBudgetViewController.xib */; };
@@ -200,51 +142,6 @@
 		7AFBD2F415969AEA00C8762B /* SummaryHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C8762A /* SummaryHeaderView.m */; };
 		7AFBD2F415969AEA00C8762E /* SummaryTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C8762D /* SummaryTableCell.m */; };
 		7AFBD2F415969AEA00C87631 /* SummaryFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C87630 /* SummaryFooterView.m */; };
-		7AFBD2F415969AEA00C87635 /* BGUIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C87634 /* BGUIAppDelegate.m */; };
-		7AFBD2F415969AEA00C87637 /* CategoryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230F93 /* CategoryListViewController.m */; };
-		7AFBD2F415969AEA00C87638 /* BGShadowUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B0AE /* BGShadowUtil.m */; };
-		7AFBD2F415969AEA00C87639 /* BGNotificationNames.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF397361584501B0023B0A8 /* BGNotificationNames.m */; };
-		7AFBD2F415969AEA00C8763A /* BGBudgetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C87610 /* BGBudgetManager.m */; };
-		7AFBD2F415969AEA00C8763B /* BGManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C87613 /* BGManager.m */; };
-		7AFBD2F415969AEA00C8763C /* BGTransactionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C87621 /* BGTransactionManager.m */; };
-		7AFBD2F415969AEA00C8763D /* SummaryFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C87630 /* SummaryFooterView.m */; };
-		7AFBD2F415969AEA00C8763E /* SummaryHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C8762A /* SummaryHeaderView.m */; };
-		7AFBD2F415969AEA00C8763F /* SummaryTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C8762D /* SummaryTableCell.m */; };
-		7AFBD2F415969AEA00C87640 /* BudgetFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C87627 /* BudgetFooterView.m */; };
-		7AFBD2F415969AEA00C87641 /* BudgetHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C87618 /* BudgetHeaderView.m */; };
-		7AFBD2F415969AEA00C87642 /* BudgetTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C8761B /* BudgetTableCell.m */; };
-		7AFBD2F415969AEA00C87643 /* BGBudget.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2EA15969A7A00C875AB /* BGBudget.m */; };
-		7AFBD2F415969AEA00C87644 /* BGBudgetItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F015969AD600C875AB /* BGBudgetItem.m */; };
-		7AFBD2F415969AEA00C87645 /* BGCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2ED15969AC600C875AB /* BGCategory.m */; };
-		7AFBD2F415969AEA00C87646 /* BGTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F315969AEA00C875AB /* BGTransaction.m */; };
-		7AFBD2F415969AEA00C87647 /* BGColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 265E06C03432322C33230FA1 /* BGColorUtil.m */; };
-		7AFBD2F415969AEA00C8764A /* INAppStoreWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C87649 /* INAppStoreWindow.m */; };
-		7AFBD2F415969AEA00C8764B /* MagicalRecord+Actions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875F2 /* MagicalRecord+Actions.m */; };
-		7AFBD2F415969AEA00C8764C /* MagicalRecord+ErrorHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875F5 /* MagicalRecord+ErrorHandling.m */; };
-		7AFBD2F415969AEA00C8764D /* MagicalRecord+iCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875F8 /* MagicalRecord+iCloud.m */; };
-		7AFBD2F415969AEA00C8764E /* MagicalRecord+Options.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875FB /* MagicalRecord+Options.m */; };
-		7AFBD2F415969AEA00C8764F /* MagicalRecord+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875FE /* MagicalRecord+Setup.m */; };
-		7AFBD2F415969AEA00C87650 /* MagicalRecord+ShorthandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C87601 /* MagicalRecord+ShorthandSupport.m */; };
-		7AFBD2F415969AEA00C87651 /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C87604 /* MagicalRecord.m */; };
-		7AFBD2F415969AEA00C87652 /* NSManagedObjectModel+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875E8 /* NSManagedObjectModel+MagicalRecord.m */; };
-		7AFBD2F415969AEA00C87653 /* NSPersistentStore+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875EB /* NSPersistentStore+MagicalRecord.m */; };
-		7AFBD2F415969AEA00C87654 /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875EE /* NSPersistentStoreCoordinator+MagicalRecord.m */; };
-		7AFBD2F415969AEA00C87655 /* NSManagedObjectContext+MagicalObserving.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875DC /* NSManagedObjectContext+MagicalObserving.m */; };
-		7AFBD2F415969AEA00C87656 /* NSManagedObjectContext+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875DF /* NSManagedObjectContext+MagicalRecord.m */; };
-		7AFBD2F415969AEA00C87657 /* NSManagedObjectContext+MagicalSaves.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875E2 /* NSManagedObjectContext+MagicalSaves.m */; };
-		7AFBD2F415969AEA00C87658 /* NSManagedObjectContext+MagicalThreading.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875E5 /* NSManagedObjectContext+MagicalThreading.m */; };
-		7AFBD2F415969AEA00C87659 /* NSManagedObject+MagicalAggregation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875CC /* NSManagedObject+MagicalAggregation.m */; };
-		7AFBD2F415969AEA00C8765A /* NSManagedObject+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875CF /* NSManagedObject+MagicalDataImport.m */; };
-		7AFBD2F415969AEA00C8765B /* NSManagedObject+MagicalFinders.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875D2 /* NSManagedObject+MagicalFinders.m */; };
-		7AFBD2F415969AEA00C8765C /* NSManagedObject+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875D5 /* NSManagedObject+MagicalRecord.m */; };
-		7AFBD2F415969AEA00C8765D /* NSManagedObject+MagicalRequests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875D8 /* NSManagedObject+MagicalRequests.m */; };
-		7AFBD2F415969AEA00C8765E /* MagicalImportFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875B6 /* MagicalImportFunctions.m */; };
-		7AFBD2F415969AEA00C8765F /* NSAttributeDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875B9 /* NSAttributeDescription+MagicalDataImport.m */; };
-		7AFBD2F415969AEA00C87660 /* NSEntityDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875BC /* NSEntityDescription+MagicalDataImport.m */; };
-		7AFBD2F415969AEA00C87661 /* NSNumber+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875BF /* NSNumber+MagicalDataImport.m */; };
-		7AFBD2F415969AEA00C87662 /* NSObject+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875C2 /* NSObject+MagicalDataImport.m */; };
-		7AFBD2F415969AEA00C87663 /* NSRelationshipDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875C5 /* NSRelationshipDescription+MagicalDataImport.m */; };
-		7AFBD2F415969AEA00C87664 /* NSString+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C875C8 /* NSString+MagicalDataImport.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -254,20 +151,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 265E06C03432322C33230F4D;
 			remoteInfo = Budgey;
-		};
-		7A0F13CF15A92BB900056838 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7A0F13C815A92BB800056838 /* UIKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
-			remoteInfo = UIKit;
-		};
-		7A24E28E15A63A0600289FDF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 265E06C03432322C33230F46 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7A24E26B15A63A0500289FDF;
-			remoteInfo = BudgeyDesktop;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -296,7 +179,6 @@
 		265E06C03432322C33230FA3 /* BGColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGColorUtil.h; sourceTree = "<group>"; };
 		265E06C03432322C33230FA4 /* footer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = footer.png; sourceTree = "<group>"; };
 		265E06C03432322C33230FA6 /* footer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "footer@2x.png"; sourceTree = "<group>"; };
-		7A0F13C815A92BB800056838 /* UIKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UIKit.xcodeproj; path = BudgeyDesktop/Chameleon/UIKit.xcodeproj; sourceTree = "<group>"; };
 		7A1DB4F4159016600026A77B /* TransactionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionViewController.h; sourceTree = "<group>"; };
 		7A1DB4F5159016600026A77B /* TransactionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionViewController.m; sourceTree = "<group>"; };
 		7A1DB4F6159016600026A77B /* TransactionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TransactionViewController.xib; path = ../Controller/Budget/TransactionViewController.xib; sourceTree = "<group>"; };
@@ -304,27 +186,11 @@
 		7A1DB4FB159017FC0026A77B /* footer-trimmed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "footer-trimmed@2x.png"; sourceTree = "<group>"; };
 		7A1DB4FC159017FC0026A77B /* header-trimmed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header-trimmed.png"; sourceTree = "<group>"; };
 		7A1DB4FD159017FC0026A77B /* header-trimmed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header-trimmed@2x.png"; sourceTree = "<group>"; };
-		7A24E26C15A63A0500289FDF /* BudgeyDesktop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BudgeyDesktop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A24E26E15A63A0500289FDF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		7A24E27115A63A0500289FDF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		7A24E27215A63A0500289FDF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		7A24E27315A63A0500289FDF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		7A24E27615A63A0500289FDF /* BudgeyDesktop-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BudgeyDesktop-Info.plist"; sourceTree = "<group>"; };
-		7A24E27815A63A0500289FDF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7A24E27A15A63A0500289FDF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7A24E27C15A63A0500289FDF /* BudgeyDesktop-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BudgeyDesktop-Prefix.pch"; sourceTree = "<group>"; };
-		7A24E27E15A63A0500289FDF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		7A24E28015A63A0500289FDF /* BGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGAppDelegate.h; sourceTree = "<group>"; };
-		7A24E28115A63A0600289FDF /* BGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGAppDelegate.m; sourceTree = "<group>"; };
-		7A24E28415A63A0600289FDF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		7A24E28B15A63A0600289FDF /* BudgeyDesktopTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BudgeyDesktopTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7A24E29215A63A0600289FDF /* BudgeyDesktopTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BudgeyDesktopTests-Info.plist"; sourceTree = "<group>"; };
-		7A24E29415A63A0600289FDF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7A24E29615A63A0600289FDF /* BudgeyDesktopTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BudgeyDesktopTests.h; sourceTree = "<group>"; };
-		7A24E29715A63A0600289FDF /* BudgeyDesktopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BudgeyDesktopTests.m; sourceTree = "<group>"; };
 		7A2A52F815950D9B0087DEAB /* BudgetItemFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BudgetItemFooterView.xib; sourceTree = "<group>"; };
-		7A3343D415A8A33F000C9FD6 /* EDSideBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDSideBar.h; sourceTree = "<group>"; };
-		7A3343D515A8A33F000C9FD6 /* EDSideBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDSideBar.m; sourceTree = "<group>"; };
 		7A3343DB15A8A505000C9FD6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = ../../../../Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		7A4EEC45159411C600F50C24 /* header-blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header-blank.png"; sourceTree = "<group>"; };
 		7A4EEC46159411C600F50C24 /* header-blank@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header-blank@2x.png"; sourceTree = "<group>"; };
@@ -477,10 +343,6 @@
 		7AFBD2F415969AEA00C8762F /* SummaryTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryTableCell.h; sourceTree = "<group>"; };
 		7AFBD2F415969AEA00C87630 /* SummaryFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryFooterView.m; sourceTree = "<group>"; };
 		7AFBD2F415969AEA00C87632 /* SummaryFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryFooterView.h; sourceTree = "<group>"; };
-		7AFBD2F415969AEA00C87634 /* BGUIAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGUIAppDelegate.m; sourceTree = "<group>"; };
-		7AFBD2F415969AEA00C87636 /* BGUIAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGUIAppDelegate.h; sourceTree = "<group>"; };
-		7AFBD2F415969AEA00C87648 /* INAppStoreWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INAppStoreWindow.h; sourceTree = "<group>"; };
-		7AFBD2F415969AEA00C87649 /* INAppStoreWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INAppStoreWindow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -505,34 +367,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7A24E26915A63A0500289FDF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7A0F13D215A92BD100056838 /* UIKit.framework in Frameworks */,
-				7A3343DC15A8A505000C9FD6 /* QuartzCore.framework in Frameworks */,
-				7A24E26F15A63A0500289FDF /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7A24E28715A63A0600289FDF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7A24E28C15A63A0600289FDF /* SenTestingKit.framework in Frameworks */,
-				7A24E28D15A63A0600289FDF /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		265E06C03432322C33230F48 = {
 			isa = PBXGroup;
 			children = (
-				7A0F13C815A92BB800056838 /* UIKit.xcodeproj */,
-				7A24E27415A63A0500289FDF /* BudgeyDesktop */,
-				7A24E29015A63A0600289FDF /* BudgeyDesktopTests */,
 				265E06C03432322C33230F49 /* Products */,
 				265E06C03432322C33230F54 /* Frameworks */,
 				265E06C03432322C33230F5B /* Budgey */,
@@ -545,8 +385,6 @@
 			children = (
 				265E06C03432322C33230F4C /* Budgey.app */,
 				265E06C03432322C33230F67 /* BudgeyTests.octest */,
-				7A24E26C15A63A0500289FDF /* BudgeyDesktop.app */,
-				7A24E28B15A63A0600289FDF /* BudgeyDesktopTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -662,14 +500,6 @@
 			name = Assets;
 			sourceTree = "<group>";
 		};
-		7A0F13C915A92BB800056838 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7A0F13D015A92BB900056838 /* UIKit.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		7A20E96F15A4E435006F996A /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -715,61 +545,6 @@
 				7A24E27315A63A0500289FDF /* Foundation.framework */,
 			);
 			name = "Other Frameworks";
-			sourceTree = "<group>";
-		};
-		7A24E27415A63A0500289FDF /* BudgeyDesktop */ = {
-			isa = PBXGroup;
-			children = (
-				7A24E28015A63A0500289FDF /* BGAppDelegate.h */,
-				7A24E28115A63A0600289FDF /* BGAppDelegate.m */,
-				7A24E28315A63A0600289FDF /* MainMenu.xib */,
-				7A3343D315A8A33F000C9FD6 /* Third Party */,
-				7A24E27515A63A0500289FDF /* Supporting Files */,
-				7AFBD2F415969AEA00C87633 /* UIAppDelegate */,
-			);
-			path = BudgeyDesktop;
-			sourceTree = "<group>";
-		};
-		7A24E27515A63A0500289FDF /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				7A24E27615A63A0500289FDF /* BudgeyDesktop-Info.plist */,
-				7A24E27715A63A0500289FDF /* InfoPlist.strings */,
-				7A24E27A15A63A0500289FDF /* main.m */,
-				7A24E27C15A63A0500289FDF /* BudgeyDesktop-Prefix.pch */,
-				7A24E27D15A63A0500289FDF /* Credits.rtf */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		7A24E29015A63A0600289FDF /* BudgeyDesktopTests */ = {
-			isa = PBXGroup;
-			children = (
-				7A24E29615A63A0600289FDF /* BudgeyDesktopTests.h */,
-				7A24E29715A63A0600289FDF /* BudgeyDesktopTests.m */,
-				7A24E29115A63A0600289FDF /* Supporting Files */,
-			);
-			path = BudgeyDesktopTests;
-			sourceTree = "<group>";
-		};
-		7A24E29115A63A0600289FDF /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				7A24E29215A63A0600289FDF /* BudgeyDesktopTests-Info.plist */,
-				7A24E29315A63A0600289FDF /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		7A3343D315A8A33F000C9FD6 /* Third Party */ = {
-			isa = PBXGroup;
-			children = (
-				7AFBD2F415969AEA00C87649 /* INAppStoreWindow.m */,
-				7AFBD2F415969AEA00C87648 /* INAppStoreWindow.h */,
-				7A3343D415A8A33F000C9FD6 /* EDSideBar.h */,
-				7A3343D515A8A33F000C9FD6 /* EDSideBar.m */,
-			);
-			path = "Third Party";
 			sourceTree = "<group>";
 		};
 		7A79D4D0159FA13B000F887F /* XIBs */ = {
@@ -1005,15 +780,6 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
-		7AFBD2F415969AEA00C87633 /* UIAppDelegate */ = {
-			isa = PBXGroup;
-			children = (
-				7AFBD2F415969AEA00C87636 /* BGUIAppDelegate.h */,
-				7AFBD2F415969AEA00C87634 /* BGUIAppDelegate.m */,
-			);
-			path = UIAppDelegate;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1053,42 +819,6 @@
 			productReference = 265E06C03432322C33230F67 /* BudgeyTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
-		7A24E26B15A63A0500289FDF /* BudgeyDesktop */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7A24E29D15A63A0600289FDF /* Build configuration list for PBXNativeTarget "BudgeyDesktop" */;
-			buildPhases = (
-				7A24E26815A63A0500289FDF /* Sources */,
-				7A24E26915A63A0500289FDF /* Frameworks */,
-				7A24E26A15A63A0500289FDF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = BudgeyDesktop;
-			productName = BudgeyDesktop;
-			productReference = 7A24E26C15A63A0500289FDF /* BudgeyDesktop.app */;
-			productType = "com.apple.product-type.application";
-		};
-		7A24E28A15A63A0600289FDF /* BudgeyDesktopTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7A24E29E15A63A0600289FDF /* Build configuration list for PBXNativeTarget "BudgeyDesktopTests" */;
-			buildPhases = (
-				7A24E28615A63A0600289FDF /* Sources */,
-				7A24E28715A63A0600289FDF /* Frameworks */,
-				7A24E28815A63A0600289FDF /* Resources */,
-				7A24E28915A63A0600289FDF /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7A24E28F15A63A0600289FDF /* PBXTargetDependency */,
-			);
-			name = BudgeyDesktopTests;
-			productName = BudgeyDesktopTests;
-			productReference = 7A24E28B15A63A0600289FDF /* BudgeyDesktopTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1104,31 +834,13 @@
 			mainGroup = 265E06C03432322C33230F48;
 			productRefGroup = 265E06C03432322C33230F49 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 7A0F13C915A92BB800056838 /* Products */;
-					ProjectRef = 7A0F13C815A92BB800056838 /* UIKit.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				265E06C03432322C33230F4D /* Budgey */,
 				265E06C03432322C33230F68 /* BudgeyTests */,
-				7A24E26B15A63A0500289FDF /* BudgeyDesktop */,
-				7A24E28A15A63A0600289FDF /* BudgeyDesktopTests */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		7A0F13D015A92BB900056838 /* UIKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = UIKit.framework;
-			remoteRef = 7A0F13CF15A92BB900056838 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		265E06C03432322C33230F53 /* Resources */ = {
@@ -1205,86 +917,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7A24E26A15A63A0500289FDF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7A6578F715A92FC800D9C6A8 /* Budgey.xcdatamodeld in Resources */,
-				7A5CEC7F15A646B000C015F8 /* cancel-button@2x.png in Resources */,
-				7A5CEC8015A646B000C015F8 /* cancel-button.png in Resources */,
-				7A5CEC8115A646B000C015F8 /* save-button@2x.png in Resources */,
-				7A5CEC8215A646B000C015F8 /* save-button.png in Resources */,
-				7A5CEC8315A646B000C015F8 /* Default.png in Resources */,
-				7A5CEC8415A646B000C015F8 /* Default@2x.png in Resources */,
-				7A5CEC8515A646B000C015F8 /* App-Icon-small.png in Resources */,
-				7A5CEC8615A646B000C015F8 /* App-Icon.png in Resources */,
-				7A5CEC8715A646B000C015F8 /* chart-placeholder.png in Resources */,
-				7A5CEC8815A646B000C015F8 /* chart-placeholder@2x.png in Resources */,
-				7A5CEC8915A646B000C015F8 /* banner-blue.png in Resources */,
-				7A5CEC8A15A646B000C015F8 /* banner-blue@2x.png in Resources */,
-				7A5CEC8B15A646B000C015F8 /* header-blank.png in Resources */,
-				7A5CEC8C15A646B000C015F8 /* header-blank@2x.png in Resources */,
-				7A5CEC8D15A646B000C015F8 /* footer-trimmed.png in Resources */,
-				7A5CEC8E15A646B000C015F8 /* footer-trimmed@2x.png in Resources */,
-				7A5CEC8F15A646B000C015F8 /* header-trimmed.png in Resources */,
-				7A5CEC9015A646B000C015F8 /* header-trimmed@2x.png in Resources */,
-				7A5CEC9115A646B000C015F8 /* 259-list@2x.png in Resources */,
-				7A5CEC9215A646B000C015F8 /* 259-list.png in Resources */,
-				7A5CEC9315A646B000C015F8 /* cameraTabBarItem@2x.png in Resources */,
-				7A5CEC9415A646B000C015F8 /* cameraTabBarItem.png in Resources */,
-				7A5CEC9515A646B000C015F8 /* 83-calendar@2x.png in Resources */,
-				7A5CEC9615A646B000C015F8 /* 83-calendar.png in Resources */,
-				7A5CEC9715A646B000C015F8 /* navigation-bar@2x.png in Resources */,
-				7A5CEC9815A646B000C015F8 /* navigation-bar.png in Resources */,
-				7A5CEC9915A646B000C015F8 /* tab-bar@2x.png in Resources */,
-				7A5CEC9A15A646B000C015F8 /* tab-bar.png in Resources */,
-				7A5CEC9B15A646B000C015F8 /* Museo900-Regular.otf in Resources */,
-				7A5CEC9C15A646B000C015F8 /* 172-pricetag@2x.png in Resources */,
-				7A5CEC9D15A646B000C015F8 /* 172-pricetag.png in Resources */,
-				7A5CEC9E15A646B000C015F8 /* 119-piggy-bank@2x.png in Resources */,
-				7A5CEC9F15A646B000C015F8 /* 119-piggy-bank.png in Resources */,
-				7A5CECA015A646B000C015F8 /* 162-receipt@2x.png in Resources */,
-				7A5CECA115A646B000C015F8 /* 162-receipt.png in Resources */,
-				7A5CECA215A646B000C015F8 /* capture-button@2x.png in Resources */,
-				7A5CECA315A646B000C015F8 /* capture-button.png in Resources */,
-				7A5CECA415A646B000C015F8 /* rounded_button.png in Resources */,
-				7A5CECA515A646B000C015F8 /* footer@2x.png in Resources */,
-				7A5CECA615A646B000C015F8 /* footer.png in Resources */,
-				7A5CECA715A646B000C015F8 /* header@2x.png in Resources */,
-				7A5CECA815A646B000C015F8 /* header.png in Resources */,
-				7A5CECA915A646B000C015F8 /* background@2x.jpg in Resources */,
-				7A5CECAA15A646B000C015F8 /* background.jpg in Resources */,
-				7A24E27915A63A0500289FDF /* InfoPlist.strings in Resources */,
-				7A24E27F15A63A0500289FDF /* Credits.rtf in Resources */,
-				7A24E28515A63A0600289FDF /* MainMenu.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7A24E28815A63A0600289FDF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7A24E29515A63A0600289FDF /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		265E06C03432322C33230F6F /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-		7A24E28915A63A0600289FDF /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1382,69 +1018,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7A24E26815A63A0500289FDF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7A24E27B15A63A0500289FDF /* main.m in Sources */,
-				7A24E28215A63A0600289FDF /* BGAppDelegate.m in Sources */,
-				7AFBD2F415969AEA00C87635 /* BGUIAppDelegate.m in Sources */,
-				7AFBD2F415969AEA00C87637 /* CategoryListViewController.m in Sources */,
-				7AFBD2F415969AEA00C87638 /* BGShadowUtil.m in Sources */,
-				7AFBD2F415969AEA00C87639 /* BGNotificationNames.m in Sources */,
-				7AFBD2F415969AEA00C8763A /* BGBudgetManager.m in Sources */,
-				7AFBD2F415969AEA00C8763B /* BGManager.m in Sources */,
-				7AFBD2F415969AEA00C8763C /* BGTransactionManager.m in Sources */,
-				7AFBD2F415969AEA00C8763D /* SummaryFooterView.m in Sources */,
-				7AFBD2F415969AEA00C8763E /* SummaryHeaderView.m in Sources */,
-				7AFBD2F415969AEA00C8763F /* SummaryTableCell.m in Sources */,
-				7AFBD2F415969AEA00C87640 /* BudgetFooterView.m in Sources */,
-				7AFBD2F415969AEA00C87641 /* BudgetHeaderView.m in Sources */,
-				7AFBD2F415969AEA00C87642 /* BudgetTableCell.m in Sources */,
-				7AFBD2F415969AEA00C87643 /* BGBudget.m in Sources */,
-				7AFBD2F415969AEA00C87644 /* BGBudgetItem.m in Sources */,
-				7AFBD2F415969AEA00C87645 /* BGCategory.m in Sources */,
-				7AFBD2F415969AEA00C87646 /* BGTransaction.m in Sources */,
-				7AFBD2F415969AEA00C87647 /* BGColorUtil.m in Sources */,
-				7A3343D615A8A33F000C9FD6 /* EDSideBar.m in Sources */,
-				7AFBD2F415969AEA00C8764A /* INAppStoreWindow.m in Sources */,
-				7AFBD2F415969AEA00C8764B /* MagicalRecord+Actions.m in Sources */,
-				7AFBD2F415969AEA00C8764C /* MagicalRecord+ErrorHandling.m in Sources */,
-				7AFBD2F415969AEA00C8764D /* MagicalRecord+iCloud.m in Sources */,
-				7AFBD2F415969AEA00C8764E /* MagicalRecord+Options.m in Sources */,
-				7AFBD2F415969AEA00C8764F /* MagicalRecord+Setup.m in Sources */,
-				7AFBD2F415969AEA00C87650 /* MagicalRecord+ShorthandSupport.m in Sources */,
-				7AFBD2F415969AEA00C87651 /* MagicalRecord.m in Sources */,
-				7AFBD2F415969AEA00C87652 /* NSManagedObjectModel+MagicalRecord.m in Sources */,
-				7AFBD2F415969AEA00C87653 /* NSPersistentStore+MagicalRecord.m in Sources */,
-				7AFBD2F415969AEA00C87654 /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
-				7AFBD2F415969AEA00C87655 /* NSManagedObjectContext+MagicalObserving.m in Sources */,
-				7AFBD2F415969AEA00C87656 /* NSManagedObjectContext+MagicalRecord.m in Sources */,
-				7AFBD2F415969AEA00C87657 /* NSManagedObjectContext+MagicalSaves.m in Sources */,
-				7AFBD2F415969AEA00C87658 /* NSManagedObjectContext+MagicalThreading.m in Sources */,
-				7AFBD2F415969AEA00C87659 /* NSManagedObject+MagicalAggregation.m in Sources */,
-				7AFBD2F415969AEA00C8765A /* NSManagedObject+MagicalDataImport.m in Sources */,
-				7AFBD2F415969AEA00C8765B /* NSManagedObject+MagicalFinders.m in Sources */,
-				7AFBD2F415969AEA00C8765C /* NSManagedObject+MagicalRecord.m in Sources */,
-				7AFBD2F415969AEA00C8765D /* NSManagedObject+MagicalRequests.m in Sources */,
-				7AFBD2F415969AEA00C8765E /* MagicalImportFunctions.m in Sources */,
-				7AFBD2F415969AEA00C8765F /* NSAttributeDescription+MagicalDataImport.m in Sources */,
-				7AFBD2F415969AEA00C87660 /* NSEntityDescription+MagicalDataImport.m in Sources */,
-				7AFBD2F415969AEA00C87661 /* NSNumber+MagicalDataImport.m in Sources */,
-				7AFBD2F415969AEA00C87662 /* NSObject+MagicalDataImport.m in Sources */,
-				7AFBD2F415969AEA00C87663 /* NSRelationshipDescription+MagicalDataImport.m in Sources */,
-				7AFBD2F415969AEA00C87664 /* NSString+MagicalDataImport.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7A24E28615A63A0600289FDF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7A24E29815A63A0600289FDF /* BudgeyDesktopTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1452,11 +1025,6 @@
 			isa = PBXTargetDependency;
 			target = 265E06C03432322C33230F4D /* Budgey */;
 			targetProxy = 265E06C03432322C33230F74 /* PBXContainerItemProxy */;
-		};
-		7A24E28F15A63A0600289FDF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7A24E26B15A63A0500289FDF /* BudgeyDesktop */;
-			targetProxy = 7A24E28E15A63A0600289FDF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1473,38 +1041,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				265E06C03432322C33230F79 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		7A24E27715A63A0500289FDF /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7A24E27815A63A0500289FDF /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		7A24E27D15A63A0500289FDF /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7A24E27E15A63A0500289FDF /* en */,
-			);
-			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		7A24E28315A63A0600289FDF /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7A24E28415A63A0600289FDF /* en */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		7A24E29315A63A0600289FDF /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7A24E29415A63A0600289FDF /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1617,88 +1153,6 @@
 			};
 			name = Debug;
 		};
-		7A24E29915A63A0600289FDF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
-				);
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BudgeyDesktop/BudgeyDesktop-Prefix.pch";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				INFOPLIST_FILE = "BudgeyDesktop/BudgeyDesktop-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		7A24E29A15A63A0600289FDF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
-				);
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BudgeyDesktop/BudgeyDesktop-Prefix.pch";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				INFOPLIST_FILE = "BudgeyDesktop/BudgeyDesktop-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		7A24E29B15A63A0600289FDF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BudgeyDesktop.app/Contents/MacOS/BudgeyDesktop";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BudgeyDesktop/BudgeyDesktop-Prefix.pch";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				INFOPLIST_FILE = "BudgeyDesktopTests/BudgeyDesktopTests-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
-		7A24E29C15A63A0600289FDF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BudgeyDesktop.app/Contents/MacOS/BudgeyDesktop";
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BudgeyDesktop/BudgeyDesktop-Prefix.pch";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				INFOPLIST_FILE = "BudgeyDesktopTests/BudgeyDesktopTests-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1725,24 +1179,6 @@
 			buildConfigurations = (
 				265E06C03432322C33230F6A /* Release */,
 				265E06C03432322C33230F6B /* Debug */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7A24E29D15A63A0600289FDF /* Build configuration list for PBXNativeTarget "BudgeyDesktop" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7A24E29915A63A0600289FDF /* Release */,
-				7A24E29A15A63A0600289FDF /* Debug */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7A24E29E15A63A0600289FDF /* Build configuration list for PBXNativeTarget "BudgeyDesktopTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7A24E29B15A63A0600289FDF /* Release */,
-				7A24E29C15A63A0600289FDF /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

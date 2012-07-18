@@ -581,8 +581,8 @@ static inline CGGradientRef createGradientWithColors(NSColor *startingColor, NSC
 // Solution for tracking area issue thanks to @Perspx (Alex Rozanski) <https://gist.github.com/972958>
 - (void)_setupTrafficLightsTrackingArea
 {
-    [[[self contentView] superview] viewWillStartLiveResize];
-    [[[self contentView] superview] viewDidEndLiveResize];
+    //[[[self contentView] superview] viewWillStartLiveResize];
+    //[[[self contentView] superview] viewDidEndLiveResize];
 }
 
 - (void)_recalculateFrameForTitleBarView
