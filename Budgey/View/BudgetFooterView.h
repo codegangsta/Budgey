@@ -7,6 +7,10 @@
 
 #import <Foundation/Foundation.h>
 
+@class BGCategory;
+
 @interface BudgetFooterView : UIView
+
+@property (nonatomic, strong) BGCategory *category;
 
 @end

@@ -6,9 +6,11 @@
 
 
 #import "BudgetFooterView.h"
+#import "BGCategory.h"
 
 
 @implementation BudgetFooterView
+@synthesize category;
 
 - (id)init
 {
@@ -86,8 +88,7 @@
 
         UIButton *addButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [addButton setBackgroundImage:[UIImage imageNamed:@"rounded_button.png"] forState:UIControlStateNormal];
-        // TODO: Fix this
-        //addButton.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+        addButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
         addButton.adjustsImageWhenDisabled = YES;
         addButton.adjustsImageWhenHighlighted = YES;
         addButton.alpha = 1.000;
@@ -115,6 +116,7 @@
         [addButton setTitleColor:[UIColor colorWithRed:0.000 green:0.000 blue:0.000 alpha:0.300] forState:UIControlStateNormal];
         [addButton setTitleColor:[UIColor colorWithWhite:1.000 alpha:1.000] forState:UIControlStateHighlighted];
         [addButton setTitleShadowColor:[UIColor colorWithWhite:0.500 alpha:1.000] forState:UIControlStateNormal];
+        [addButton addTarget:self action:@selector(onAddButtonClick) forControlEvents:UIControlEventTouchUpInside];
 
         self.alpha = 1.000;
         self.autoresizesSubviews = YES;
@@ -136,6 +138,11 @@
     }
 
     return self;
+}
+
+-(void)onAddButtonClick
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:BGShowCreateBudgetItemView object:category];
 }
 
 @end

@@ -200,6 +200,7 @@ BudgetItemListViewController *budgetItemListViewController;
     }
     else {
         currentFooterView = [[BudgetFooterView alloc] init];
+        [currentFooterView setCategory:[categories objectAtIndex:section-1]];
         return currentFooterView;
     }
 }

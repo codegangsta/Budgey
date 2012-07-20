@@ -10,6 +10,7 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate> {
     UIViewController *mainViewController;
+    UIViewController *currentCreateBudgetItemView;
 }
 
 @property (strong, nonatomic) UIWindow *window;

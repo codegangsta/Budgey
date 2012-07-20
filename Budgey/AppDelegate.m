@@ -12,6 +12,7 @@
 #import "PPRevealSideViewController.h"
 #import "BudgetMonthTableViewController.h"
 #import "CreateBudgetViewController.h"
+#import "CreateBudgetItemViewController.h"
 
 @implementation AppDelegate
 
@@ -44,6 +45,7 @@
     [center addObserver:self selector:@selector(onCenterButtonClick) name:BGCenterButtonWasClicked object:nil];
     [center addObserver:self selector:@selector(onRevealLeftView) name:BGRevealLeftView object:nil];
     [center addObserver:self selector:@selector(onCreateNewBudget) name:BGShowCreateBudgetView object:nil];
+    [center addObserver:self selector:@selector(onCreateNewBudgetItem:) name:BGShowCreateBudgetItemView object:nil];
 
     return YES;
 }
@@ -92,6 +94,14 @@
     UIViewController *createBudgetController = [[CreateBudgetViewController alloc] init];
     [[self.window.rootViewController view] addSubview:[createBudgetController view]];
     [self setCurrentCreateBudgetView:createBudgetController];
+}
+
+-(void)onCreateNewBudgetItem:(NSNotification *)notification
+{
+    CreateBudgetItemViewController *createBudgetItemController = [[CreateBudgetItemViewController alloc] init];
+    [[self.window.rootViewController view] addSubview:[createBudgetItemController view]];
+    [createBudgetItemController setSelectedCategory:[notification object]];
+    currentCreateBudgetItemView = createBudgetItemController;
 }
 
 - (void)onRevealLeftView

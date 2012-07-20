@@ -42,6 +42,7 @@
 		7A4EEC4B159411E700F50C24 /* BudgetItemHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A4EEC4A159411E700F50C24 /* BudgetItemHeaderView.xib */; };
 		7A4EEC4D1594183300F50C24 /* BudgetItemTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A4EEC4C1594183300F50C24 /* BudgetItemTableCell.xib */; };
 		7A79D4C2159E7B05000F887F /* BudgetMonthTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A79D4C1159E7B05000F887F /* BudgetMonthTableViewController.xib */; };
+		7A820B5815B75A2700E1E141 /* CreateBudgetItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A820B5715B75A2700E1E141 /* CreateBudgetItemViewController.xib */; };
 		7A8EB818159E5088006C987E /* CreateBudgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8EB816159E5088006C987E /* CreateBudgetViewController.m */; };
 		7A8EB819159E5088006C987E /* CreateBudgetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A8EB817159E5088006C987E /* CreateBudgetViewController.xib */; };
 		7AD41DE01584657E003E7926 /* BudgetTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AD41DDF1584657E003E7926 /* BudgetTableCell.xib */; };
@@ -143,6 +144,7 @@
 		7AFBD2F415969AEA00C8762E /* SummaryTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C8762D /* SummaryTableCell.m */; };
 		7AFBD2F415969AEA00C87631 /* SummaryFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C87630 /* SummaryFooterView.m */; };
 		7AFBD2F415969AEA00C87634 /* BGBudgetItemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C87633 /* BGBudgetItemManager.m */; };
+		7AFBD2F415969AEA00C87637 /* CreateBudgetItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBD2F415969AEA00C87636 /* CreateBudgetItemViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -198,6 +200,7 @@
 		7A4EEC4A159411E700F50C24 /* BudgetItemHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BudgetItemHeaderView.xib; sourceTree = "<group>"; };
 		7A4EEC4C1594183300F50C24 /* BudgetItemTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BudgetItemTableCell.xib; sourceTree = "<group>"; };
 		7A79D4C1159E7B05000F887F /* BudgetMonthTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BudgetMonthTableViewController.xib; sourceTree = "<group>"; };
+		7A820B5715B75A2700E1E141 /* CreateBudgetItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateBudgetItemViewController.xib; sourceTree = "<group>"; };
 		7A8EB815159E5088006C987E /* CreateBudgetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateBudgetViewController.h; path = ../../View/CreateBudgetViewController.h; sourceTree = "<group>"; };
 		7A8EB816159E5088006C987E /* CreateBudgetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreateBudgetViewController.m; path = ../../View/CreateBudgetViewController.m; sourceTree = "<group>"; };
 		7A8EB817159E5088006C987E /* CreateBudgetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateBudgetViewController.xib; sourceTree = "<group>"; };
@@ -346,6 +349,8 @@
 		7AFBD2F415969AEA00C87632 /* SummaryFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryFooterView.h; sourceTree = "<group>"; };
 		7AFBD2F415969AEA00C87633 /* BGBudgetItemManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGBudgetItemManager.m; sourceTree = "<group>"; };
 		7AFBD2F415969AEA00C87635 /* BGBudgetItemManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGBudgetItemManager.h; sourceTree = "<group>"; };
+		7AFBD2F415969AEA00C87636 /* CreateBudgetItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateBudgetItemViewController.m; sourceTree = "<group>"; };
+		7AFBD2F415969AEA00C87638 /* CreateBudgetItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateBudgetItemViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -553,6 +558,7 @@
 		7A79D4D0159FA13B000F887F /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
+				7A8EB817159E5088006C987E /* CreateBudgetViewController.xib */,
 				7AECD39D158458E1002EA79C /* BudgetFooterView.xib */,
 				7A1DB4F6159016600026A77B /* TransactionViewController.xib */,
 				7AF397351584501B0023B057 /* BudgetHeaderView.xib */,
@@ -563,8 +569,8 @@
 				7AFBD2C31596535600C875AB /* SummaryIncomeTableCell.xib */,
 				7AFBD2C71596567C00C875AB /* SummaryHeaderView.xib */,
 				7AFBD2C915965C7400C875AB /* SummaryFooterView.xib */,
-				7A8EB817159E5088006C987E /* CreateBudgetViewController.xib */,
 				7A79D4C1159E7B05000F887F /* BudgetMonthTableViewController.xib */,
+				7A820B5715B75A2700E1E141 /* CreateBudgetItemViewController.xib */,
 			);
 			name = XIBs;
 			sourceTree = "<group>";
@@ -634,6 +640,8 @@
 		7AF397361584501B0023B094 /* Budget */ = {
 			isa = PBXGroup;
 			children = (
+				7AFBD2F415969AEA00C87636 /* CreateBudgetItemViewController.m */,
+				7AFBD2F415969AEA00C87638 /* CreateBudgetItemViewController.h */,
 				7A8EB815159E5088006C987E /* CreateBudgetViewController.h */,
 				7A8EB816159E5088006C987E /* CreateBudgetViewController.m */,
 				7AFBD2CE159668FF00C875B2 /* BudgetMonthTableViewController.h */,
@@ -911,6 +919,7 @@
 				7AFBD2F415969AEA00C8760F /* cancel-button@2x.png in Resources */,
 				7A8EB819159E5088006C987E /* CreateBudgetViewController.xib in Resources */,
 				7A79D4C2159E7B05000F887F /* BudgetMonthTableViewController.xib in Resources */,
+				7A820B5815B75A2700E1E141 /* CreateBudgetItemViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1012,6 +1021,7 @@
 				7AFBD2F415969AEA00C8762E /* SummaryTableCell.m in Sources */,
 				7AFBD2F415969AEA00C87631 /* SummaryFooterView.m in Sources */,
 				7AFBD2F415969AEA00C87634 /* BGBudgetItemManager.m in Sources */,
+				7AFBD2F415969AEA00C87637 /* CreateBudgetItemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
